@@ -307,5 +307,161 @@ $$\begin{array}{|l||l|c|}
 			}
 		\end{proof}
 }
+\slide{
+	\begin{exa}
+		If there are 10 pigeons and only 9 holes, then if all 10 pigeons are to fly into holes, then at least one hole will contain more than on pigeon.
+		\begin{center}
+			\includegraphics[width=3in]{php}
+		\end{center}
+	\end{exa}
+}
+\slide{
+	\begin{statementblock}{Pigeonhole Principle}
+		If $m$ and $n$ are positive integers with $m<n$, then if we are to place $n$ objects in $m$ containers then at least one container will contain more than one object.
+	\end{statementblock}\vskip 2in\mbox{}
+}
+\slide{
+	\begin{statementblock}{Lemma}
+		If $a,b\in\Z$ and leave the same remainder when divided by some $d\in\Z$, then $d$ divides $a-b$.
+	\end{statementblock}	
+	\begin{exercise}
+		Verify this for $a=51$, $b=16$, and $d=7$.
+		\begin{eqnarray*}
+			51&=&\fbox{\color{white}ASDF}\cdot7+\fbox{\color{white}ASDF},\\
+			16&=&\fbox{\color{white}ASDF}\cdot7+\fbox{\color{white}ASDF}.
+		\end{eqnarray*}
+		Thus we see
+		\[51-16=(\fbox{\color{white}ASDF}-\fbox{\color{white}ASDF})\cdot 7.\]
+	\end{exercise}
+}
+%\slide{
+%	\begin{statementblock}{Lemma}
+%		If $a,b\in\Z$ and leave the same remainder when divided by some $d\in\Z$, then $d$ divides $a-b$.
+%	\end{statementblock}	
+%	\begin{proof}
+%		Let $a,b,d\in\Z$.  Assume $a$ and $b$ have the same remainder when divided by $d$.\vskip 3in
+%	\end{proof}
+%}
+\slide{
+	\begin{statementblock}{A fun result}
+		Consider the following sequence of integers with repeating digits:
+		\[1,11,111,1111,11111,111111,\dots\]
+		There is at least one term in this sequence divisible by 2023.
+	\end{statementblock}
+	\begin{proof}
+		We will prove that one of the first 2023 terms is divisible by 2023.  For notation, assume that $y_i$ is the $i$th term in the sequence and let $(y_i)_{i=1}^{2023}$ denote the sequence of the first 2023 terms.
+		
+		Assume toward contradiction that for every $1\leq i\leq 2023$, none of the $y_i$ is divisible by 2023.  Set $r_i$ to be the remainder when dividing $y_i$ by 2023.  \vskip 1in
+	\end{proof}
+}
+\slide{
+	\begin{proof}[Continuing]
+		Observe the following
+		\bulletize{
+			\item $0<r_i<2023$ for all $i$ \fbox{WHY}\vskip .5in
+			\item there are at least two equal $r$ values	\fbox{WHY}\vskip .5in
+		}
+		We denote two equal remainders $r_j$ and $r_k$ for some $r,k$ with $1\leq j<k\leq 2023$. Consider $y_k-y_j$.\vskip 2in
+	\end{proof}
+}
+\slide{
+	\begin{proof}[Continuing]
+		Observe the following
+		\bulletize{
+			\item $y_k-y_j$ leaves a remainder of 0 upon dividing by 2023 \fbox{WHY}\vskip .25in
+			\item $y_k-y_j$ equals $y_{k-j}\cdot 10^j$.	\fbox{WHY}\vskip .5in
+			\item 2023 divides $y_{k-j}\cdot 10^j$, and thus divides $y_{k-j}$.	\fbox{WHY}\vskip .5in
+		}
+		Therefore, we have a contradiction.	\fbox{WHY}\vskip .25in
+		We conclude that some term in the sequence $(y_i)_{i=1}^{2023}$ is divisible by 2023.
+	\end{proof}
+}
+\slide{
+	\begin{statementblock}{Afterthoughts and Remarks/Questions}
+		\bulletize{
+			\item Was there anything special about the ones?  For example, does 2023 divide some term in the sequence
+			\[2, 22, 222, 2222, 22222, 222222,\dots?\]\vskip .5in
+			\item Was there anything special about 2023? For example, can we replace the 2023 with 2022 and use the same proof.\vskip .5in
+			\item This is called an \emph{existence proof} because it does not tell us which term is divisible by 2023 only that \textit{some} term is divisible by 2023.
+		}
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		For you to think about.
+		$$\begin{array}{|c||l|c|}
+			\hline
+			n&y_n&21|y_n\\\hline\hline
+			1&1&False\\\hline
+			2&11&False\\\hline
+			3&111&False\\\hline
+			4&1111&False\\\hline
+			5&11111&False\\\hline
+			6&111111&True\\\hline
+			7&1111111&False\\\hline
+			8&11111111&False\\\hline
+			9&111111111&False\\\hline
+		\end{array}\hskip 2em
+		\begin{array}{|c||l|c|}
+			\hline
+			n&y_n&21|y_n\\\hline\hline
+			10&1111111111&False\\\hline
+			11&11111111111&False\\\hline
+			12&111111111111&True\\\hline
+			13&1111111111111&False\\\hline
+			14&11111111111111&False\\\hline
+			15&111111111111111&False\\\hline
+			16&1111111111111111&False\\\hline
+			17&11111111111111111&False\\\hline
+			18&111111111111111111&True\\\hline
+		\end{array}$$
+		
+		Make a conjecture about the values $y_n$ divisible by 21.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem}
+		The sum $1+2+3+\cdots+n$ equals $\ds\frac{n(n+1)}{2}$.
+	\end{statementblock}
+	\begin{block}{\textbf{Picture.}}
+		\begin{center}
+			\includegraphics[width=2in]{integer_sum}
+		\end{center}
+	\end{block}
+}
+\slide{
+	\begin{statementblock}{Theorem}
+		The sum $1^3+2^3+3^3+\cdots+n^3$ equals $\ds\frac{n^4+2n^3+n^2}{4}$.
+	\end{statementblock}
+	\begin{exercise}
+		Let's look past the ``ugliness'' and see if we actually believe this statement.
+		$$\begin{array}{|c||c|c|c|}
+			\hline
+			n&1^3+2^3+\cdots+n^3&\frac{n^4+2n^3+n^2}{4}&\text{Equal}?\\\hline\hline
+			1&&&\\\hline
+			2&&&\\\hline
+			3&&&\\\hline
+			4&&&\\\hline
+			5&&&\\\hline
+		\end{array}$$
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Re-write the last theorem by simplifying $\frac{n^4+2n^3+n^2}{4}$.\vskip 3in\mbox{}
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem}
+		\[1^3+2^3+3^3+\cdots +n^3 = (1+2+3+\cdots+n)^3\]
+	\end{statementblock}
+	\begin{exercise}
+		How do these pictures ``prove'' the re-written version?
+		\begin{center}
+			\includegraphics[width=2in]{unit_cubes}\hskip2em
+			\includegraphics[width=1.5in]{cube_friends}
+		\end{center}
+	\end{exercise}
+}
 \end{document}
 
