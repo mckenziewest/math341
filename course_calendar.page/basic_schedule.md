@@ -1,0 +1,42 @@
+Welcome to the course and basics of number theory.
+Continued summary of number theory.
+One more day of intro to number theory.
+Divisibility, direct proofs, and counterexamples.
+Divisibility and proof by induction.
+Section 2.1 - The Division Algorithm and using Sage
+Section 2.1 Part 2 - Proving things with the division algorithm.
+Section 2.2 - The Greatest Common Divisor
+Section 2.3 - The Euclidean Algorithm
+Section 2.4 - Aryabhata's Kuttaka Method
+Finishing Chapter 2
+Section 3.1 - Linear Diophantine Equations
+Section 3.4 - Pythagorean Triples
+Section 3.7 - Two facts from the gcd
+Section 4.1 - Introduction to Congruence
+Section 4.2 - Going Modulo First
+Section 4.3 - Properties of Congruence
+Section 4.4 - Equivalence Classes
+Section 4.5 - Why modular arithmetic matters
+Section 4.6 - Toward Congruence
+Finishing Chapter 4
+Section 5.1 - Solving Linear Congruences
+Section 5.2 - Strategies for Solving Congruences
+Section 5.3 - Systems of Linear Congruences
+Section 5.4 - Using the Chinese Remainder Theorem
+Finishing Chapter 5
+Section 6.1 - Introduction to Primes
+Section 6.2 - To Infinity and Beyond
+Section 6.3 - The Fundamental Theorem of Arithmetic
+NCUR (No Class)
+Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
+Section 7.5 - Fermat and Wilson's Theorems
+Section 8.1 - The Integers modulo n
+Section 9.1 - Groups and Number Systems
+Section 9.2 - The Euler Phi Function
+Section 9.3 - Using Euler's Theorem
+Section 10.1 Primitive Roots
+Sections 10.3 and 10.4: When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
+Section 11.1: What is Cryptography
+Student Presentations
+Student Presentations
+Student Presentations
