@@ -206,13 +206,13 @@
      Week 13
     </th>
     <td>
-     5/1 - Section 10.1 Primitive Roots
+     5/1 - Section 10.1 - Primitive Roots
     </td>
     <td>
-     5/3 - Sections 10.3 and 10.4: When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
+     5/3 - Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
     </td>
     <td>
-     5/5 - Section 11.1: What is Cryptography
+     5/5 - Section 11.1 - What is Cryptography
     </td>
    </tr>
    <tr>
@@ -220,13 +220,13 @@
      Week 14
     </th>
     <td>
-     5/8 - Student Presentations
+     5/8 - Section 11.2
     </td>
     <td>
-     5/10 - Student Presentations
+     5/10 - Presentations
     </td>
     <td>
-     5/12 - Student Presentations
+     5/12 - Presentations
     </td>
    </tr>
   </tbody>

@@ -3,6 +3,12 @@
 Created on Wed Aug 31 10:18:29 2022
 
 @author: WESTMR
+
+There should be a text file with the daily schedule for the course in a
+file named "basic_schedule.txt". The content from this schedule will be placed
+sequentially in a grid with 3 columns.
+
+TODO Make this a csv with columns: short description, long description, reading, notes
 """
 from bs4 import BeautifulSoup
 
@@ -13,7 +19,7 @@ soup = BeautifulSoup(html_source,'html.parser')
 table_body = soup.table.tbody
 table_body.clear()
 
-with open('basic_schedule.md','r') as list_form:
+with open('basic_schedule.txt','r') as list_form:
     calendar_details = list_form.read().split('\n')
 
 import datetime
