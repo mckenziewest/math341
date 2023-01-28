@@ -1,6 +1,6 @@
 ## Math 425
-Fall 2022<br>
-MWF 2:00-2:50 pm HHH 311
+Spring 2023<br>
+MWF 2:00-2:50 pm HHH 318
 
 ## Instructor
 <img src="textbook.png" style="float:right;clear:right;margin-left:20px;">
@@ -8,55 +8,61 @@ Mckenzie West<br>
 Preferred Names: Prof. West, Dr. West, Mckenzie<br>
 Pronouns: She/Her/Hers<br>
 Office: HHH 524<br>
-Drop-in Hours: Tu 2-3 pm, or whenever my door is open
+Drop-in Hours: Wed 11-12 pm, or whenever my door is open.
 
-Group Working Time: W 10-10:50 and F 11-11:50 in HHH 311
+Additional drop-in hours will be decided as a group and may entirely change.
 
 E-mail: [westmr@uwec.edu](mailto:westmr@uwec.edu)<br>
-Textbook: Introduction to Abstract Algebra, Fourth Edition, by W. Keith Nicholson
+Official Textbook: Elementary Number Theory, Seventh Edition, by David M. Burton
+Second Textbook:  [Number Theory: In Context and Interactive](https://math.gordon.edu/ntic/ntic/frontmatter-1.html), Karl-Dieter Crisman
+
+We're going to be using this online textbook as our main source of content. There are many advantages to using an Online Education Resource: we don’t feel financially limited to the content of the single textbook, there is direct software integration with SageMath, and we can all easily access the textbook where and when we need. 
+
+That being said, I will generally provide readings from both sources for you to choose which you prefer.
 
 ## Course Description
-An introduction to the abstract concepts of algebra such as groups, rings, and fields. Topics such as direct products, group homomorphisms, factor groups, integral domains, and polynomial rings will be included.
+Classical number theory including divisibility, primes and their properties, theory of congruences, Diophantine equations, number theoretic functions, primitive roots, and selected optional topics.
 
 ## Course Goals 
-After the completion of Math 425, students will be able to
-1.	analyze objects and statements using the definitions of groups and rings (e.g., understand why the symmetries of a regular n-sided figure in the plane form a group),
-2.	relate algebraic structures through homomorphisms and isomorphisms (e.g., establish all possible homomorphic maps between two specific groups and understand how these maps can tell you more about one group from your understanding of the other group), 
-3.	recognize and apply the special properties of algebraic structures (e.g., principal ideal domains), 
-4.	prove or disprove statements using a given list of definitions and theorems, and
-5.	communicate mathematics through written and verbal means. 
+After the completion of Math 341, students will be able to
+1.	recognize and answer number theoretic questions,
+2.	understand and describe the words in the course description: divisibility, primes, congruences, Diophantine equations, number theoretic functions, and primitive roots,
+3.	prove or disprove statements using a given list of definitions and theorems, and
+4.	communicate mathematics through written and verbal means. 
 
-
-## Welcoming Environment
+## Equity and Inclusion
 A major component of this course is large group discussion. I ask that you recognize that all of your classmates have different mathematical backgrounds and experiences. Respect one another; give everyone a space to answer a question, to ask a question, to have an idea, and to be wrong.
 
+
 ## Important Dates
-*	Last Day to Drop: September 19
-*	Last Day to Withdraw (W on transcript): December 1
+*	Last Day to Drop: February 14
+*	Last Day to Withdraw (W on transcript):  April 28
 
 ## Evauation
 ### Summary
-This course is going to be graded, in part, using the scheme known as Specs grading. This means that I will share a list of 27 specifications that I expect you to complete for the course. You will be given exercises that correspond to each of the objectives that will be graded as exceptional/satisfactory/unsatisfactory. You will be given many opportunities to complete each of the objectives and improve your marks.
-### Purpose
-There are many reasons instructors choose to use specifications grading in their classrooms. Among those reasons are improved learning and interest in the content, more time for student questions, and faster turnaround on grading. The freedom of choice offered by specs grading often results in a moral boost for both the students and the professor. 
+This course is going to be graded using a standard point-based grading scheme.
+
 ### Grading Scheme
-*	60% - Completion of Objectives
-*	15% - Completion of Supplemental Exercises
-*	25% - Final Project
-#### Completion of Objectives
-I have specified 27 topics which you are expected to learn in this course. Of these 27, you will need to complete 22 at a level of exceptional or satisfactory. You will be given a homework assignment each week with associated objectives that is due on the following Friday at 4pm to Canvas. Most of the objectives will require you to write a proof. Some will require you to complete a computational assignment using WeBWorK or on paper. As said before, your assignments will be graded on a scale of exceptional/satisfactory/unsatisfactory. 
+*	40% - Written Assignments
+* 15% - Computational Assignments (WeBWorK)
+*	15% - Midterm Exam 
+*	15% - Final Exam
+* 15% - Project
 
-For proof assignments, this grade will be determined by persuasiveness of your argument and proper reference to existing results and definitions. You must reference theorem numbers and definitions from our textbook and notes, and use full sentences and proper grammar to earn a satisfactory or exceptional grade. Succinct proofs that stand out as particularly well-written will earn the mark of exceptional. I will write a good supply of comments on any improvements that can be made so help you improve your mark. On following Wednesdays, you may submit new attempts at any previous unsatisfactory objectives. You will need to complete a different exercise for each attempt at earning a specification.
+#### Written Assignments
+The written homework will be due weekly at 4pm on Wednesdays. These problems will be graded for accuracy and are expected to be complete, well-organized, and clearly written. You can either submit the assignments on Canvas or in person. If you hand-write your solutions I strongly prefer you submit in person.
 
-For computational WeBWorK assignments, your grade will be determined by percentage score and number of attempts. If you do not fully complete the exercise or have a large number of attempts (more than 5) you will earn an unsatisfactory score on the assignment. A new version of the assignment will then be generated for you.
+In some cases re-writes will be allowed. This depends on the assignment and the opportunity for growth.
 
-The score you earn for the 60% of your grade that is “completion of specifications” will be (number of objectives passed) / 22. The numerator of this score is capped at 22, so while you’re welcome to complete additional specifications, they will not count toward your grade.
+#### Computational Assignments 
+WeBWorK assignments will be due weekly on Mondays.  For most WeBWorK problems you will have unlimited attempts. Think of these as low-stakes practice.
 
-#### Completion of Supplemental Exercises 
-Each week, you will be presented with about two exercises that do not fit into the list of objectives. These will be graded according to the same scale as the objectives exercises, exceptional/satisfactory/unsatisfactory. Each of the supplemental exercises that you complete at an exceptional level will award you one percentage point toward this 15% of your grade, each that you complete at a satisfactory level will earn you half of a percentage point toward this score. For example, if you complete 7 of these exercises at an exceptional level and complete 12 at the satisfactory level, then you will earn 13% toward your overall grade.   You will not be able to earn more than 15% though this category. You are welcome to rewrite and resubmit any of the additional exercises on which you earn an unsatisfactory grade. Rewrites will be due on Wednesdays via Canvas.
+#### Midterm and Final Exam
+There will be one midterm exam and one final exam. Exams are closed internet and to be completed individually. The proposed due dates for the take-home midterm exam is March 8.
 
-#### Final Project
-You will be researching, writing about, and creating a video about a topic related to the course. This portion of the course will be assigned a grade using a standard point-based grading scheme. Rubrics for each task, and additional details will be available when the time comes.
+#### Project 
+Starting after Spring Break, you will begin working on a project, more details about the content and due dates will be provided at that point in the course.
+
 
 ## Attendance Policy
 You are expected to attend class every day. Consistent with university policy, attendance will be taken each class period to ensure you keep your insurance and financial aid.
@@ -78,9 +84,7 @@ Due to the nature of specifications grading, you will be expected to turn in rep
 
 ## Resources
 * **Drop-in Hours:** These are designated times where I will be available in my office. Stop by with questions or concerns about the class. Every question is welcome. We all have questions and need clarifications sometimes. 
-* **STUDENT SUCCESS CENTER:** CENT2104 - A wonderful resource that includes:
-    * *ACADEMIC SKILLS CENTER* - Free peer tutoring!
-    * *SERVICES FOR STUDENTS WITH DISABILITIES* - Any student who has a disability and is in need of classroom accommodations should contact the instructor and the Services for Students with Disabilities Office in Centennial Hall 2106 at the beginning of the semester. [HTTPS://WWW.UWEC.EDU/EQUITY-DIVERSITY-INCLUSION/EDI-SERVICES-PROGRAMS/SERVICES-FOR-STUDENTS-WITH-DISABILITIES/](HTTPS://WWW.UWEC.EDU/EQUITY-DIVERSITY-INCLUSION/EDI-SERVICES-PROGRAMS/SERVICES-FOR-STUDENTS-WITH-DISABILITIES/)
+* **SERVICES FOR STUDENTS WITH DISABILITIES** - Any student who has a disability and is in need of classroom accommodations should contact the instructor and the Services for Students with Disabilities Office in Centennial Hall 2106 at the beginning of the semester. [HTTPS://WWW.UWEC.EDU/EQUITY-DIVERSITY-INCLUSION/EDI-SERVICES-PROGRAMS/SERVICES-FOR-STUDENTS-WITH-DISABILITIES/](HTTPS://WWW.UWEC.EDU/EQUITY-DIVERSITY-INCLUSION/EDI-SERVICES-PROGRAMS/SERVICES-FOR-STUDENTS-WITH-DISABILITIES/)
 *	**UWEC COUNSELING SERVICES** – A place on campus where you can find someone to talk to when you're feeling hopeless, lonely, depressed, confused, upset over a relationship, or just plain stressed. Call for an appointment: (715) 836-5521.
 
 ## Accessibility
@@ -95,5 +99,3 @@ I ask that you only submit your own work in order to ensure that you are indeed 
 ## Course Notes
 **Do Not Post Class Notes Online** – *This includes posting homework assignments to sites like Chegg.*<br>
 I do not consent to having notes from my class uploaded to the internet, including commercial note-selling websites such as StudySoup. Some companies target students and solicit course material acting as if they are working in coordination with colleges and universities, but that is not true for this class. This means that you do not have the right to provide your notes to anyone else or to make any commercial use of them without express prior permission from me. Unless you are a qualified disabled student, you do not have the right to record my lectures. Inappropriate use of notes may be in violation of the Blugold Conduct Code and sanctions will be pursued accordingly.
-
-</div>
