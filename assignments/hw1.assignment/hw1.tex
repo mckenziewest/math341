@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref}
+\usepackage[margin=1in]{geometry}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+
+\begin{document}
+	Math 341 Homework 1
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	\begin{enumerate}
+	\item (14 pts) Watch \url{https://www.youtube.com/watch?v=QKHKD8bRAro} and answer the following questions using full sentences.	
+		\begin{enumerate}
+			\item Who might we attribute the twin prime conjecture to?
+				\vfill
+			\item What's the first finite bound for prime gaps?
+				\vfill
+			\item What was this value improved to using the Polymath project?
+				\vfill
+			\item Describe the comparison between Maynard's approach and Zhang's.
+				\vfill
+			\item What was the current state of the art as stated in the video?
+				\vfill
+			\item How does Maynard answer the question about randomness and ``hand waving'' that appears in his proof?
+				\vfill
+			\item What motivates Maynard to study the twin prime conjecture?
+				\vfill
+		\end{enumerate}
+	\newpage
+	\item (6 pts) The sum of three cubes problem is among the problems that remains quite intriguing to computational number theorists. Read this article from Quanta Magazine: {\footnotesize\url{https://www.quantamagazine.org/why-the-sum-of-three-cubes-is-a-hard-math-problem-20191105/}}.  
+		\begin{enumerate}
+			\item How many known ways are there to write 3 as the sum of 3 cubes?
+			\vskip 1in
+			\item How does the sum of three squares problem differ from the sum of three cubes problem?
+			\vskip 1in
+			\item What are three different ways to attack the sum of three cubes problem? Which is best,computationally?
+			\vskip 1in
+		\end{enumerate}
+	\item (6 pts) Brocard's Problem asks us to find integers $m$ and $n$ such that $n!+1=m^2$.
+		\begin{enumerate}
+			\item Verify that $n=4,5,7$ produce solutions to Brocard's problem.
+				\vskip 1in
+			\item Berndt and Galway in their paper \textit{On the Brocard--Ramanujan Diophantine Equation $n!+1=m^2$}, \url{https://link.springer.com/article/10.1023/A:1009873805276}, verify that these are the only solutions up to $10^9$.  This is a rather short paper. Take some time to read it over and list down here the mathematical terms you don't know but would like to learn more about.  Do your best to look two of the terms up.  If you can find what they mean, write it down.  If you're having a hard time understanding them, don't be afraid to be honest and say that.
+		\end{enumerate}
+	\newpage
+	\item (14 pts) The Golden Ratio can be expressed by the continued fraction
+		\[\frac{1+\sqrt 5}{2}=1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{\ddots}}}}.\]
+		Let's explore continued fractions briefly.
+		\begin{enumerate}
+			\item Before getting to the infinite, let's start with the finite.
+			 Write the following as a traditional fraction with a single integer in the numerator and denominator. 
+			 $$\displaystyle 4+\cfrac{1}{2+\cfrac{1}{6+\cfrac{1}{7}}}=\hspace*{1in}\mbox{}$$
+
+			 \item An infinite continued fraction is actually computed by taking a limit of the sequence of finite fractions.  Complete the following table
+			 
+			 	$$\begin{array}{|c|c|c|}
+			 	\hline
+			 	n&\textbf{Continued Fraction}&\textbf{Simplified Fraction}\\\hline
+			 	0 & 1& 1\\\hline&&\\
+			 	1 & 1+\frac{1}{1}&\\&&\\\hline
+			 	2 & 1+\cfrac{1}{1+\frac{1}{1}}&\\\hline
+			 	3 & 1+\cfrac{1}{1+\cfrac{1}{1+\frac{1}{1}}}&\\\hline
+			 	4 & 1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{1+\frac{1}{1}}}}&\\\hline
+			 	5 & 1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{1+\frac{1}{1}}}}}&\\\hline
+			 	\end{array}$$
+			 \item Do you notice the pattern? Explain. 
+		\end{enumerate}
+	\end{enumerate}
+		
+\end{document}

@@ -2,3 +2,7 @@
 ..\syllabus.page
 
 ..\Introduction\introduction.slides
+..\Introduction\Day_1.page
+..\Introduction\Day_2.page
+..\webwork\webwork_1.assignment
+..\assignments\hw1.assignment

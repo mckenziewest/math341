@@ -1,0 +1,16 @@
+{
+    "link": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_1/",
+    "ww_name": "WeBWorK_1",
+    "name": "🐣 WeBWorK 1 - Intro to NT",
+    "unlock_at": "2023-01-30T00:00:00",
+    "due_at": "2023-02-06T16:00:00",
+    "type": "assignment",
+    "points_possible": 1,
+    "submission_types": "external_tool",
+    "external_tool_tag_attributes": {
+        "url": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_1/",
+        "new_tab": true
+    },
+  	"omit_from_final_grade":"True",
+    "modules": ["Week 2"]
+}
