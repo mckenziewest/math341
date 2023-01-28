@@ -11,6 +11,7 @@
         "url": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_1/",
         "new_tab": true
     },
-  	"omit_from_final_grade":"True",
-    "modules": ["Week 2"]
+  	"omit_from_final_grade":"False",
+    "modules": ["Week 2"],
+    "points_possible": 10
 }
