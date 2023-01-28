@@ -96,6 +96,11 @@
 	\setbeamercolor{block body}{bg=Gold!20}
 	\setbeamercolor{block title}{bg=Gold}
 	\begin{block}{\textbf{#1.}}}{\end{block}}
+\newenvironment{goldblock}{%
+	\setbeamercolor{block body}{bg=Gold!20}
+	\setbeamercolor{block title}{bg=Gold}
+	\setbeamertemplate{blocks}[shadow=true]
+	\begin{block}{}}{\end{block}}
 \newenvironment{thm}[1]{%
 	\setbeamercolor{block body}{bg=Gold!20}
 	\setbeamercolor{block title}{bg=Gold}
@@ -105,6 +110,11 @@
 %%%%%%%%%%
 %Custom Environment Wrappers
 %%%%%%%%%%
+\newcommand{\exer}[1]{
+	\begin{exercise}
+		#1
+	\end{exercise}
+}
 \newcommand{\enumarabic}[1]{
 	\begin{enumerate}[label=\textbf{\arabic*.}]
 		#1
