@@ -1,0 +1,311 @@
+\documentclass[t]{beamer}
+
+\subtitle{What Is Number Theory}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item Hmmm....
+	}
+	{
+		% This time
+		\item Introduction to Number Theory 
+			
+			We will spend 2-3 days on these slides and on this topic.
+	}
+
+\slidec{
+	\begin{question}
+		What is Number Theory and what is its purpose?
+	\end{question}
+	\begin{defn}
+		\emph{Pure mathematics} is the study of mathematical concepts independently of any application outside mathematics.
+		
+		\emph{Number Theory} is a branch of pure mathematics devoted primarily to the study of the integers.
+	\end{defn}
+}
+
+\slidec{
+	\begin{goldblock}
+		``[Number theory] produces, without effort, innumerable problems which have a sweet, innocent air about them, tempting flowers; and yet…number theory swarms with bugs, waiting to bite the tempted flower-lovers who, once bitten, are inspired to excesses of effort!''
+	
+	(Barry Mazur, "Number Theory as Gadfly", The American Mathematical Monthly, Volume 98, 1991)
+	\end{goldblock}
+}
+
+\slidec{
+	\begin{question}
+		Why study Number Theory?
+		\bulletize{
+			\item The beauty and elegance of the statements of the claims.
+			\item The beauty and elegance of the proofs of the claims.
+			\item The pleasure one receives from understanding the proofs.
+			\item Beauty.
+		}
+	\end{question}
+}
+\slidec{
+	\begin{goldblock}
+		``Thank God that
+		number theory is unsullied by any application.''
+		
+		(Leonard Dickson 1874--1954, Year Unknown)
+	\end{goldblock}
+\vskip .25in
+	\begin{goldblock}
+		``...virtually every theorem in elementary number theory arises in a natural, motivated
+		way in connection with the problem of making computers do high-speed
+		numerical calculations.''
+		
+		(Donald Knuth, 1974)
+	\end{goldblock}
+}
+
+\slide{
+	\begin{block}{\textbf{Srinivasa Ramanujan.}}
+		\begin{minipage}{.7\textwidth}
+			\bulletize{
+				\item Indian Mathematician
+				\item Lived 1887-1920
+				\item Had little formal training in mathematics
+				\item Produced almost 3,900 results, mostly identities and equations.
+				\item Began correspondence with G.H.~Hardy in 1913.
+			}
+		\end{minipage}
+		\begin{minipage}{.25\textwidth}\includegraphics[width=\textwidth]{ramanujan}\end{minipage}
+	\end{block}
+	\begin{goldblock}
+		``An equation for me has no meaning unless
+		it expresses a thought of God.''
+		
+		(Srinivasa Ramanujan)
+	\end{goldblock}
+	\begin{goldblock}
+	``They must be true, because if they were not true, no one would have had the imagination to invent them.''
+	
+	(G.H.~Hardy)
+	\end{goldblock}
+}
+
+\slide{
+\begin{statementblock}{Ramanujan's Series for $\pi$}
+	\[\pi=\frac{9801}{2\sqrt 2}\left(\sum_{k=0}^\infty \frac{(4k)!\cdot(1103+26390k)}{(k!)^4\cdot396^{4k}}\right)^{-1}\]
+\end{statementblock}
+\exer{
+	\enumalph{
+		\item How good is the estimate if we just truncate to the first term of the sum.
+		\item How about 2 terms?
+	}
+}
+\begin{nb}
+	This sum converges exponentially (FAST) and is used for some of the fastest algorithms for computing $\pi$.
+\end{nb}
+}
+
+\slide{
+	\begin{statementblock}{Ramanujan's Tantalizing Continued Fraction}
+		In a letter to Hardy in 1913, Ramanujan wrote:
+		\[\cfrac{1}{1+
+			\cfrac{e^{-2\pi}}{1+
+				\cfrac{e^{-4\pi}}{1+
+					\cfrac{e^{-6\pi}}{1+
+						\cfrac{e^{-8\pi}}{1+
+							\ddots}}}}}=\left(\sqrt{\frac{5+\sqrt 5}{2}}-\frac{1+\sqrt{5}}{2}\right)\sqrt[5]{e^{2\pi}}\]
+	\end{statementblock}
+}
+
+\slide{
+	\begin{statementblock}{Ramanujan's Tantalizing Nested Radical}
+		\[3=\sqrt{1+2\sqrt{1+3\sqrt{1+4\sqrt{1+5\sqrt{1+\cdots}}}}}.\]
+	\end{statementblock}
+	\vskip 3in\mbox{}
+}
+
+\slide{
+	\begin{statementblock}{Theorem 0.6 (Ramanujan's Second Notebook, Chapter XII, entry 4)}
+		The following identity holds,
+		\[x+n+a=\sqrt{ax+(n+a)^2+x\sqrt{a(x+n)+(n+a)^2+(x+n)\sqrt{\cdots}}}\]
+	\end{statementblock}
+	Read more: \url{https://www.sciencedirect.com/science/article/pii/S0377042704001906}
+	\begin{question}
+		What do we get if we take $x=2$, $n=1$ and $a=0$?
+	\end{question}
+}
+
+\slidet{Typical Number Theory Questions}{
+	\begin{question}
+		Can a sum of two squares be a square?
+	\end{question}
+	\vskip 1in
+	\begin{question}
+		Can a sum of two cubes be a cube?
+	\end{question}
+	\vskip 1in\mbox{}
+}
+
+\slidet{Typical Number Theory Questions}{
+	\begin{question}
+		Regarding prime numbers (positive integers $p>1$ such that its only divisors are 1 and $p$ itself):
+		\enumarabic{
+			\item Are there infinitely many primes?
+			\item Are there infinitely many primes of the form $4k+1$ where $k$ is an integer?
+			\item Are there infinitely many primes of the form $4k+3$ where $k$ is an integer?
+		}
+	\end{question}
+	\vskip 2in\mbox{}
+}
+\slidet{Typical Number Theory Questions}{
+\begin{question}
+	Are there infinitely many twin primes? That is, are there
+	infinitely many primes p such that p + 2 is also prime?
+\end{question}
+Here are the first several twin prime pairs:
+$$(3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43), (59, 61),$$
+$$(71, 73), (101, 103), (107, 109), (137, 139), \dots$$
+\vskip 1in\mbox{}
+}
+\slidet{Typical Number Theory Questions}{
+\begin{question}
+	What, if anything, is significant about the even integer
+	lying between each pair, excluding the first pair $(3,5)$?
+\end{question}
+Here are the first several twin prime pairs again.
+$$(3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43), (59, 61),$$
+$$(71, 73), (101, 103), (107, 109), (137, 139), \dots$$
+\vskip 1in\mbox{}
+}
+\slidet{Typical Number Theory Questions}{
+\begin{question}
+	Is $\sqrt 2$ irrational?
+\end{question}
+\vskip 1in
+\begin{question}
+	If $i=\sqrt{-1}$ is $i^i$ a real number?
+\end{question}
+\vskip 1in\mbox{}
+}
+\slidet{Typical Number Theory Questions}{
+\begin{question}
+	Are there infinitely many primes of the form $n^2+1$?
+\end{question}
+Here are some values:
+$$\begin{array}{|l||l|c|}
+	\hline
+	\mathbf{n}&\mathbf{n^2+1}&\text{\textbf{Is Prime?}}\\
+	\hline\hline
+	2&2^2+1=5&\text{ True }\\\hline
+	4&4^2+1=17&\text{ True }\\\hline
+	6&6^2+1=37&\text{ True }\\\hline
+	8&8^2+1=65&\text{ False }\\\hline
+	10&10^2+1=101&\text{ True }\\\hline
+	12&12^2+1=145&\text{ False }\\\hline
+	14&14^2+1=197&\text{ True }\\\hline
+	16&16^2+1=257&\text{ True }\\\hline
+	18&18^2+1=325&\text{ False }\\\hline
+	20&20^2+1=401&\text{ True }\\\hline
+	22&22^2+1=485&\text{ False }\\\hline
+	24&24^2+1=577&\text{ True }\\\hline
+\end{array}$$
+\vskip 1in\mbox{}
+}
+\slide{
+\begin{statementblock}{Four Famous Conjectures}
+	\begin{description}\setlength{\itemsep}{2em}
+		\item[Goldbach's Conjecture] Can every even integer greater than 2 be written as the sum of two primes?
+		\item[Twin Prime Conjecture] Are there infinitely many primes $p$ such that $p+2$ is also prime?
+		\item[Legendre's Conjecture] Does there always exist at least one prime between consecutive perfect squares?
+		\item[Landau's Conjecture] Are there infinitely many primes $p$ such that $p-1$ is a perfect square.
+	\end{description}
+\end{statementblock}
+}
+\slide{
+	\begin{question}
+		Which positive integers are the sum of two squares?
+	\end{question}
+
+	Here are all of them that are less than 100:
+	\begin{center}
+		\begin{tabular}{ccccccccccc}
+		1&2&4&5&8&9&10&13&16&17&18\\
+		20&25&26&29&32&34&36&37&40&41&45\\
+		49&50&52&53&58&61&64&65&68&72&73\\
+		74&80&81&82&85&89&90&97&98
+		\end{tabular}
+	\end{center}
+	\begin{exercise}
+		What is special about the primes that appear in this list?
+	\end{exercise}\vskip .5in
+	\begin{exercise}
+		What is special about the primes factors of the numbers that appear in this list?
+	\end{exercise}
+	\vskip 1in \mbox{}
+}
+
+\slide{
+	\begin{statementblock}{Erd\v os--Straus Conjectures}
+		For all integers $n\geq 2$, the rational number $\frac{4}{n}$ can be expressed as the sum of three positive unit fractions (fractions of the form $\frac{1}{k}$).  For example, when $n=5$,
+			\[\frac{4}{5}=\frac{1}{2}+\frac{1}{5}+\frac{1}{10}.\]
+	\end{statementblock}
+
+	\begin{nb}
+		Computer searches have confirmed this for $n\leq 10^{17}$.
+	\end{nb}
+}
+
+%\slide{
+%\begin{statementblock}{Brocard's Problem}
+%	What integers $n,m$ satisfy $n!+1=m^2$? 
+%\end{statementblock}
+%\begin{exercise}
+%	Verify that $n=4,5,7$ satisfy such an equation.\vskip 3in\mbox{}
+%\end{exercise}
+%}
+%\slide{
+%\begin{statementblock}{Conjecture (Brocard, 1876 and 1855) and (Ramanujan, 1913)}
+%	 $n=4,5,7$ are the only values that makes this work.
+%\end{statementblock}
+%}
+\slide{
+	\begin{statementblock}{Brocard's Conjecture}
+		There are at least four prime numbers between $(p_n)^2$ and $(p_{n+1})^2$, for $n\geq 2$, where $p_n$ is the $n$th prime number.
+	\end{statementblock}
+	\begin{exercise}
+		Verify this statement for $n=2,3$.\vskip 3in\mbox{}
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Reimann Hypothesis}
+		Define the Riemann-zeta function to be the infinite series
+			\[\zeta(s)=\sum_{n=1}^\infty n^{-s}=\frac{1}{1^s}+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{4^s}+\cdots.\]
+		This series \textit{converges absolutely} if $s$ is a complex number with real part greater than 1. 
+		
+		Using the method of ``analytic continuation'' $\zeta(s)$ can be defined for all complex numbers aside from $s=1$.
+		
+		\textbf{Conjecture.} $\zeta(s)=0$ exactly when $s$ is a negative even integer or $s=\frac{1}{2}+ri$ for some $r\in\R$.
+	\end{statementblock}
+}
+\slide{
+	\begin{center}
+		\includegraphics[width=.75\textwidth]{riemann_hypothesis}
+	\end{center}
+}
+\slidet{Some Good News!}{
+		\begin{statementblock}{Conjecture (Fermat, c.~1637) Theorem (Wiles, 1995)}
+			The equation $a^n+b^n=c^n$ has no non-trivial integer solutions $(a,b,c)$ if $n\geq 3$.
+		\end{statementblock}
+		\begin{proof}[Proof Idea]
+			\enumalph{
+				\item \textbf{Fact:} The general equation for FLT is elliptic.
+				\item \textbf{Taniyama--Shimura--Weil (TSW) Conjecture, 1967:} Each rational elliptic curve is also a modular form.
+				\item \textbf{Frey's Conjecture, 1986:} Any counterexample to FLT would also imply that a semistable elliptic curve existed that was not modular.
+				\item \textbf{Ribet, 1990:} Frey's conjecture holds.
+				\item \textbf{Wiles, 1995:} Wiles proves TSW's conjecture holds.
+			}
+		\end{proof}
+}
+\end{document}
+
