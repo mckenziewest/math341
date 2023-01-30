@@ -1,18 +1,17 @@
-## Math 425
+## Math 341
 Spring 2023<br>
 MWF 2:00-2:50 pm HHH 318
 
 ## Instructor
 <img src="textbook.png" style="float:right;clear:right;margin-left:20px;">
-Mckenzie West<br>
+Mckenzie West
 Preferred Names: Prof. West, Dr. West, Mckenzie<br>
-Pronouns: She/Her/Hers<br>
-Office: HHH 524<br>
+Pronouns: She/Her/Hers
+Office: HHH 524
 Drop-in Hours: Wed 11-12 pm, or whenever my door is open.
-
 Additional drop-in hours will be decided as a group and may entirely change.
 
-E-mail: [westmr@uwec.edu](mailto:westmr@uwec.edu)<br>
+E-mail: [westmr@uwec.edu](mailto:westmr@uwec.edu)
 Official Textbook: Elementary Number Theory, Seventh Edition, by David M. Burton
 Second Textbook:  [Number Theory: In Context and Interactive](https://math.gordon.edu/ntic/ntic/frontmatter-1.html), Karl-Dieter Crisman
 
