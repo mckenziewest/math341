@@ -1,5 +1,5 @@
 ## Math 341
-Spring 2023<br>
+Spring 2023
 MWF 2:00-2:50 pm HHH 318
 
 ## Instructor
