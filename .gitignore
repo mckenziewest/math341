@@ -7,6 +7,8 @@ _tools/publish_this_time.txt
 ## Unneeded pdfs for note slides
 **/*.slides/*.pdf
 **/result.html
+Introduction/**/*.pdf
+assignments/**/*.pdf
 
 ## Python
 *.pyc
