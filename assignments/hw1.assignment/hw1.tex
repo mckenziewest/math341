@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{amsmath,amsthm,amssymb,hyperref}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
 \usepackage[margin=1in]{geometry}
 
 
@@ -33,16 +33,17 @@
 	\item (6 pts) The sum of three cubes problem is among the problems that remains quite intriguing to computational number theorists. Read this article from Quanta Magazine: {\footnotesize\url{https://www.quantamagazine.org/why-the-sum-of-three-cubes-is-a-hard-math-problem-20191105/}}.  
 		\begin{enumerate}
 			\item How many known ways are there to write 3 as the sum of 3 cubes?
-			\vskip 1in
+			\vfill
 			\item How does the sum of three squares problem differ from the sum of three cubes problem?
-			\vskip 1in
+			\vfill
 			\item What are three different ways to attack the sum of three cubes problem? Which is best,computationally?
-			\vskip 1in
+			\vfill
 		\end{enumerate}
+	\newpage
 	\item (6 pts) Brocard's Problem asks us to find integers $m$ and $n$ such that $n!+1=m^2$.
 		\begin{enumerate}
 			\item Verify that $n=4,5,7$ produce solutions to Brocard's problem.
-				\vskip 1in
+				\vskip 2in
 			\item Berndt and Galway in their paper \textit{On the Brocard--Ramanujan Diophantine Equation $n!+1=m^2$}, \url{https://link.springer.com/article/10.1023/A:1009873805276}, verify that these are the only solutions up to $10^9$.  This is a rather short paper. Take some time to read it over and list down here the mathematical terms you don't know but would like to learn more about.  Do your best to look two of the terms up.  If you can find what they mean, write it down.  If you're having a hard time understanding them, don't be afraid to be honest and say that.
 		\end{enumerate}
 	\newpage
@@ -68,6 +69,24 @@
 			 	\end{array}$$
 			 \item Do you notice the pattern? Explain. 
 		\end{enumerate}
+	\newpage
+	\item 
+	\begin{enumerate}
+		\item In the first part of the letter \url{https://www.sciencedirect.com/science/article/pii/S0377042704001906}, we see the following equalities,
+			$$
+			n(n+2)=n\sqrt{1+(n+1)(n+3)}
+			\quad\text{and}\quad
+			n(n+3)=n\sqrt{(n+5)+(n+1)(n+4)}.
+			$$
+		Expand and simplify the radical to verify these facts.
+		\vfill
+		\item Find a similar statement for $n(n+4)$ (or, for $n(n+k)$ in general), that is determine what should go in the blank here:			$$n(n+4)=\sqrt{\underline{\hspace*{1in}}+(n+1)(n+5)}.$$
+		\vfill
+		\item Following the first of the equalities, the author lets $f(n)$ be the function such that $f(n)=n(n+2)$, then using the fact that $f(n+1)=(n+1)(n+3)$ substitutes this into the equation:	\[f(n)=n(n+2)=n\sqrt{1+(n+1)(n+3)}=n\sqrt{1+f(n+1)}=\cdots\]
+		Continue this process as written in the letter to verify you understand the components.\vfill
+		\newpage
+		\item Repeat this process for your equality in part (b), to explore $n(n+4)$.\vfill
+		\item What does your solution to part (d) say about the case $n=1$?\vskip 1in
 	\end{enumerate}
-		
+	\end{enumerate}
 \end{document}
