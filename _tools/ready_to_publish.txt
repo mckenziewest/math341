@@ -4,6 +4,7 @@
 ..\Introduction\introduction.slides
 ..\Introduction\Day_1.page
 ..\Introduction\Day_2.page
+..\Introduction\day_2.file
 ..\Introduction\Day_3.page
 
 ..\webwork\webwork_1.assignment
