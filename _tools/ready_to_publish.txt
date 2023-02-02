@@ -6,6 +6,7 @@
 ..\Introduction\Day_2.page
 ..\Introduction\day_2.file
 ..\Introduction\Day_3.page
+..\Introduction\day_3.file
 
 ..\webwork\webwork_1.assignment
 ..\assignments\hw1.assignment

@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,fancyhdr,color}
+\usepackage[margin=.75in]{geometry}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+
+\begin{document}
+	\noindent Math 341: Classical Number Theory\hfill Introduction to Number Theory\\
+	\mbox{}\hfill Day 3
+	
+	
+	\begin{enumerate}
+		\item You will explore the following statement: If $a,b$ are integers such that both $a$ and $b$ have the same remainder when divided by some integer $d$, then $d$ divides $a-b$ evenly.
+		
+		\begin{enumerate}
+			\item Consider $a=51$, $b=16$, and $d=7$.  
+				\begin{enumerate}
+					\item What is the remainder when dividing 51 or 16 by 7?
+					\item Using the remainder from the last part in the second box,
+						$$51=\fbox{\color{white}ABC}\cdot7+\fbox{\color{white}ABC}$$
+						$$16=\fbox{\color{white}ABC}\cdot7+\fbox{\color{white}ABC}$$
+					\item Using these last two lines, write
+						$$51-16=(\fbox{\color{white}ABC}-\fbox{\color{white}ABC})\cdot 7.$$
+				\end{enumerate}
+			\item Now we'll do the same in general.
+				
+				Suppose $a$ and $b$ have the same remainder when divided by $d$.  This means we can write
+						$$a=qd+r\quad\text{and}\quad b=sd+r,$$ 
+					for some integers $q$ and $s$.
+				
+				\begin{enumerate}
+					\item Simplify $a-b$.\vskip 1in
+					\item Why does this mean $d$ divides $a-b$?\vskip 1in
+				\end{enumerate}
+		\end{enumerate}
+		\item The next statement we need is that of the Pigeon Hole Principle.
+		
+			Let $m$ and $n$ be positive integers with $m<n$. If we place $n$ objects into $n$ containers then one of those containers must contain more than one object.
+			
+			\begin{enumerate}
+				\item Use the Pigeon Hole Principle to explain why if you have 1000 people in the same room then at least two of them will have the same birthday.\vfill
+				\item As written, does the PHP say anything else about duplicate birthdays?\vfill
+			\end{enumerate}
+		\newpage
+		\item We will use the remainder and PHP results to verify the following:
+			\begin{quote}
+				Consider the following sequence of integers with repeating digits
+					$$1,11,111,1111,11111,\dots.$$
+				There is at least one term in this sequence divisible by 2023.
+			\end{quote}
+			For simplicity, we're going to write
+				$$y_1=1, y_2=11,y_3=111,y_4=1111,y_5=11111,\dots.$$
+			We will also use $r_1,r_2,r_3,r_4,r_5,\dots$ to be the remainder when we divide the corresponding $y$-value by 2023.
+			\begin{enumerate}
+				\item To verify you are following, compute some $r$-values:
+				
+					$$\begin{array}{lllllll}
+						r_1=1&\hspace*{3em}&r_2=11&\hspace*{3em}&r_3=111&\hspace*{3em}&r_4=1111\\ \\
+						r_5=996&&r_6=&&r_7=&&r_8=
+					\end{array}$$
+				
+					Hint: One quick way to compute a remainder is to use Google.  To compute $r_5$, I typed \texttt{11111\%2023} into the search bar.  The \texttt{\%} is the \emph{modulo} operator.  It computes the remainder when dividing the number before by the number after.
+					
+					Do a sanity check: what is $(11111-996)/2023$?
+				\item Think for a moment, what are the possible values for remainders?  What's the smallest a remainder can be? What's the biggest a remainder can be?
+						\vskip 1in
+				\item What does it mean if the remainder is 0?
+					\vskip 1in
+				\item How many possible remainders are there?
+					\vskip 1in
+				\item Use the PHP to argue that there must be at least two equal $r$-values.
+					\vskip 1in
+				\item We can now assume that we know $j$ and $k$ such that $r_j=r_k$.
+					That is we know $y_j$ and $y_k$ have the same remainder when divided by 2023.
+					What does the divisibility property we started with say about $y_j-y_k$?
+					\vskip 1in
+				\item Now let's explore what $y_j-y_k$ could be.  Compute the following and look for a pattern: \\\\
+					$\begin{array}{l}
+						y_5-y_3=\\\\
+						y_7-y_2=\\\\
+						y_{10}-y_{6}=\\
+					\end{array}$
+				\item Explain why (asuming $j>k$)
+					$$y_j-y_k=10^j y_{k-j}$$
+					\vskip 1in
+				\item The divisibility property should tell us that $y_j-y_k$ is divisible by 2023. So now use the equality in the last part to explain why $y_{j-k}$ is divisible by $2023$.
+			\end{enumerate}
+			
+			
+\end{enumerate}
+\end{document}
