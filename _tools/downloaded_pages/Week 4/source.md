@@ -61,17 +61,7 @@
 <li><a class="instructure_file_link instructure_scribd_file" title="341Notes_2-24-21.pdf" href="https://uweau.instructure.com/courses/365635/files/30501400?verifier=Y9yewDeWzUQ3lBCDQYidGLvtedmM9U7gflNGyoV5&amp;wrap=1" target="_blank" data-canvas-previewable="false" data-api-endpoint="https://uweau.instructure.com/api/v1/courses/365635/files/30501400" data-api-returntype="File">Slides with Notes</a></li>
 <li><a class="instructure_file_link inline_disabled" href="https://us-lti.bbcollab.com/recording/8a729ca2cea04dae901ab986aeeba871" target="_blank">Recording</a></li>
 </ul>
-<h3>Due:</h3>
-<ul>
-<li>
-<a title="Homework 3" href="https://uweau.instructure.com/courses/365635/assignments/3240296" data-api-endpoint="https://uweau.instructure.com/api/v1/courses/365635/assignments/3240296" data-api-returntype="Assignment">Homework 3</a>&nbsp;</li>
-</ul>
-<h3>Assigned:</h3>
-<ul>
-<li>
-<a title="Homework 4" href="https://uweau.instructure.com/courses/365635/assignments/3254864" data-api-endpoint="https://uweau.instructure.com/api/v1/courses/365635/assignments/3254864" data-api-returntype="Assignment">Homework 4</a> (Due 3/3)</li>
-</ul>
-<p><img src="https://uweau.instructure.com/courses/365635/files/30236082/preview?verifier=gSBjWLxTSGjm8TIEPLOr24gZ4lBJwPoNBXzGdAVN" alt="Week 4 - v2 Banner (2).png" data-api-endpoint="https://uweau.instructure.com/api/v1/courses/365635/files/30236082" data-api-returntype="File">&nbsp;&nbsp;</p>
+
 <h2>Friday</h2>
 <h3>Outcomes:</h3>
 <ul>
