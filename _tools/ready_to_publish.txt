@@ -8,5 +8,7 @@
 ..\Introduction\Day_3.page
 ..\Introduction\day_3.file
 
+..\Chapter_1\Day_1.page
+
 ..\webwork\webwork_1.assignment
 ..\assignments\hw1.assignment
