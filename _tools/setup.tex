@@ -83,10 +83,8 @@
 \newtheorem{exercise}{Exercise}
 \newtheorem{question}[exercise]{Question}
 \newtheorem{warmup}{Warm-Up}
-\newtheorem*{defn}{Definition}
 \newtheorem*{exa}{Example}
 \newtheorem*{disc}{Group Discussion}
-\newtheorem*{nb}{Note}
 \newtheorem*{recall}{Recall}
 \renewcommand{\emph}[1]{{\color{blue}\texttt{#1}}}
 
@@ -101,6 +99,26 @@
 	\setbeamercolor{block title}{bg=Gold}
 	\setbeamertemplate{blocks}[shadow=true]
 	\begin{block}{}}{\end{block}}
+\newenvironment{defn}{%
+	\setbeamercolor{block body}{bg=gray!20}
+	\setbeamercolor{block title}{bg=violet, fg=white}
+	\setbeamertemplate{blocks}[shadow=true]
+	\begin{block}{\textbf{Definition.}}}{\end{block}}
+\newenvironment{nb}{%
+	\setbeamercolor{block body}{bg=gray!20}
+	\setbeamercolor{block title}{bg=teal, fg=white}
+	\setbeamertemplate{blocks}[shadow=true]
+	\begin{block}{\textbf{Note.}}}{\end{block}}
+\newenvironment{blockexample}{%
+	\setbeamercolor{block body}{bg=gray!20}
+	\setbeamercolor{block title}{bg=Blu, fg=white}
+	\setbeamertemplate{blocks}[shadow=true]
+	\begin{block}{\textbf{Example.}}}{\end{block}}
+\newenvironment{blocknonexample}{%
+	\setbeamercolor{block body}{bg=gray!20}
+	\setbeamercolor{block title}{bg=purple, fg=white}
+	\setbeamertemplate{blocks}[shadow=true]
+	\begin{block}{\textbf{Non-Example.}}}{\end{block}}
 \newenvironment{thm}[1]{%
 	\setbeamercolor{block body}{bg=Gold!20}
 	\setbeamercolor{block title}{bg=Gold}
@@ -114,6 +132,16 @@
 	\begin{exercise}
 		#1
 	\end{exercise}
+}
+\newcommand{\exam}[1]{
+\begin{blockexample}
+	#1
+\end{blockexample}
+}
+\newcommand{\nexam}[1]{
+\begin{blocknonexample}
+	#1
+\end{blocknonexample}
 }
 \newcommand{\enumarabic}[1]{
 	\begin{enumerate}[label=\textbf{\arabic*.}]
@@ -162,7 +190,7 @@
 }
 
 \newcommand{\topics}[2]{
-	\begin{frame}{\insertframenumber}
+	\begin{frame}[c]{\insertframenumber}
 		\begin{block}{\textbf{Last Section.}}
 			\begin{itemize}[label=--]
 				#1
