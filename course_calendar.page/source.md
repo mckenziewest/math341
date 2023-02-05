@@ -24,13 +24,13 @@
      Week 1
     </th>
     <td>
-     1/30 - Welcome to the course and basics of number theory.
+     1/30 - Welcome to the course and basics of number theory
     </td>
     <td>
-     2/1 - Continued summary of number theory.
+     2/1 - Continued summary of number theory
     </td>
     <td>
-     2/3 - One more day of intro to number theory.
+     2/3 - One more day of intro to number theory
     </td>
    </tr>
    <tr>
@@ -38,10 +38,10 @@
      Week 2
     </th>
     <td>
-     2/6 - Divisibility, direct proofs, and counterexamples.
+     2/6 - Divisibility, direct proofs, and counterexamples
     </td>
     <td>
-     2/8 - Divisibility and proof by induction.
+     2/8 - Divisibility and proof by induction
     </td>
     <td>
      2/10 - Section 2.1 - The Division Algorithm and using Sage
@@ -52,13 +52,13 @@
      Week 3
     </th>
     <td>
-     2/13 - Section 2.1 Part 2 - Proving things with the division algorithm.
+     2/13 - Section 2.1 Part 2 - Proving things with the division algorithm
     </td>
     <td>
      2/15 - Section 2.2 - The Greatest Common Divisor
     </td>
     <td>
-     2/17 - Section 2.3 - The Euclidean Algorithm
+     2/17 - Sections 2.3 and 2.4 - The Euclidean Algorithm and Ahryabata's Method
     </td>
    </tr>
    <tr>
@@ -66,13 +66,13 @@
      Week 4
     </th>
     <td>
-     2/20 - Section 2.4 - Aryabhata's Kuttaka Method
+     2/20 - Finishing Chapter 2
     </td>
     <td>
-     2/22 - Finishing Chapter 2
+     2/22 - Section 3.1 - Linear Diophantine Equations
     </td>
     <td>
-     2/24 - Section 3.1 - Linear Diophantine Equations
+     2/24 - Section 3.4 - Pythagorean Triples
     </td>
    </tr>
    <tr>
@@ -80,13 +80,13 @@
      Week 5
     </th>
     <td>
-     2/27 - Section 3.4 - Pythagorean Triples
+     2/27 - Section 3.7 - Two facts from the gcd
     </td>
     <td>
-     3/1 - Section 3.7 - Two facts from the gcd
+     3/1 - Section 4.1 - Introduction to Congruence
     </td>
     <td>
-     3/3 - Section 4.1 - Introduction to Congruence
+     3/3 - Section 4.2 - Going Modulo First
     </td>
    </tr>
    <tr>
@@ -94,13 +94,13 @@
      Week 6
     </th>
     <td>
-     3/6 - Section 4.2 - Going Modulo First
+     3/6 - Section 4.3 - Properties of Congruence
     </td>
     <td>
-     3/8 - Section 4.3 - Properties of Congruence
+     3/8 - Section 4.4 - Equivalence Classes
     </td>
     <td>
-     3/10 - Section 4.4 - Equivalence Classes
+     3/10 - Section 4.5 - Why modular arithmetic matters
     </td>
    </tr>
    <tr>
@@ -108,13 +108,13 @@
      Week 7
     </th>
     <td>
-     3/13 - Section 4.5 - Why modular arithmetic matters
+     3/13 - Section 4.6 - Toward Congruence
     </td>
     <td>
-     3/15 - Section 4.6 - Toward Congruence
+     3/15 - Finishing Chapter 4
     </td>
     <td>
-     3/17 - Finishing Chapter 4
+     3/17 - TBD
     </td>
    </tr>
    <tr>

@@ -33,3 +33,19 @@ Therefore, there is some assumption as to proof-writing abilities.
     * Worksheet: [Induction_ws](Chapter_1/Induction_ws.file/Induction_ws.tex)
 * Day 1: Complete content up to induction (hopefully)
 * Day 2: Start with induction examples in slides then pass out worksheet. Again, this worksheet has 3 version so potentially groups could present.
+
+### Chapter 2 (4-5 days)
+* Division Algorithm, GCD, Euclidean Algorithm,  Aryabhata's Kuttaka Method
+* Content
+    * Python Notebook: [Division_Algorithm_Sage](Chapter_2/div_alg_notebook.file/Division_Algorithm_Sage.ipynb)
+    * (TODO) Slides: Proofs using division algorithm 
+    * (TODO) Worksheet: Proofs using division algorithm 
+    * (TODO) Slides: GCD and properties
+    * (TODO) Slides: Euclidean Algorithm
+    * (TODO) Worksheet: Aryabhata's Kuttaka Method
+    * (TODO) Slides/Worksheet...? for day 5?
+* Day 1: Teach students how to generate Sage notebooks and how to use them.
+* Day 2: Complete division algorithm content by giving examples followed by a worksheet about proving facts using the division algorithm.
+* Day 3: Define GCD and cover related content, complete associated slides.
+* Day 4: Explain Euclidean Algorithm and how it is used for Aryabhata. (Worksheet)
+* Day 5: Wrap up Chapter.

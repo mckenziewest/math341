@@ -1,13 +1,12 @@
-Welcome to the course and basics of number theory.
-Continued summary of number theory.
-One more day of intro to number theory.
-Divisibility, direct proofs, and counterexamples.
-Divisibility and proof by induction.
+Welcome to the course and basics of number theory
+Continued summary of number theory
+One more day of intro to number theory
+Divisibility, direct proofs, and counterexamples
+Divisibility and proof by induction
 Section 2.1 - The Division Algorithm and using Sage
-Section 2.1 Part 2 - Proving things with the division algorithm.
+Section 2.1 Part 2 - Proving things with the division algorithm
 Section 2.2 - The Greatest Common Divisor
-Section 2.3 - The Euclidean Algorithm
-Section 2.4 - Aryabhata's Kuttaka Method
+Sections 2.3 and 2.4 - The Euclidean Algorithm and Ahryabata's Method
 Finishing Chapter 2
 Section 3.1 - Linear Diophantine Equations
 Section 3.4 - Pythagorean Triples
@@ -19,6 +18,7 @@ Section 4.4 - Equivalence Classes
 Section 4.5 - Why modular arithmetic matters
 Section 4.6 - Toward Congruence
 Finishing Chapter 4
+TBD
 Section 5.1 - Solving Linear Congruences
 Section 5.2 - Strategies for Solving Congruences
 Section 5.3 - Systems of Linear Congruences
