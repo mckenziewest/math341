@@ -9,6 +9,8 @@
 ..\Introduction\day_3.file
 
 ..\Chapter_1\Day_1.page
+..\Chapter_1\divisibility.slides
+..\Chapter_1\Induction_ws.file
 
 ..\webwork\webwork_1.assignment
 ..\assignments\hw1.assignment
