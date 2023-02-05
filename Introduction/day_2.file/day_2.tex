@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{amsmath,amsthm,amssymb,hyperref,fancyhdr}
+\usepackage{amsmath,amsthm,amssymb,hyperref,fancyhdr,pgffor}
 \usepackage[margin=.75in]{geometry}
 
 \def\version{1}
@@ -39,6 +39,8 @@
 
 
 \begin{document}
+	\foreach\version in {1,2,3}{
+		\setcounter{page}{1}
 	\noindent Math 341: Classical Number Theory\hfill Introduction to Number Theory\\
 	\mbox{}\hfill Day 2
 	
@@ -59,7 +61,7 @@
 			\item What is special about the odd prime numbers in this list?\vfill
 		\end{enumerate}
 	\newpage
-\ifx\version1
+\if\version1
 	\conjone
 \else
 \if\version2
@@ -74,7 +76,7 @@
 			\item Go online and find the current state of the art for the conjecture, what do we know?\vfill
 		\end{enumerate}
 \newpage
-\ifx\version1
+\if\version1
 \conjtwo\conjthree
 \else
 \if\version2
@@ -86,6 +88,11 @@
 	\item Brocard's Conjecture: There are at least four prime numbers between $(p_n)^2$ and $(p_{n+1})^2$, for all $n\geq 2$, where $p_n$ is the $n$th prime number.
 	\begin{enumerate}
 		\item Verify this conjecture for $n=2,3,\dots$.
+		\vfill 
+		\item Does anything surprise you about this conjecture?\vfill 
+		\item What can you find online about this conjecture?\vfill
 	\end{enumerate}
 \end{enumerate}
+\newpage
+}
 \end{document}
