@@ -13,6 +13,9 @@
 ..\Chapter_1\divisibility.slides
 ..\Chapter_1\Induction_ws.file
 
+..\Chapter_2\Day_1.page
+..\Chapter_2\Day_2.page
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\assignments\hw1.assignment
