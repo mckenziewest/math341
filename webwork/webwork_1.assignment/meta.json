@@ -12,6 +12,5 @@
         "new_tab": true
     },
   	"omit_from_final_grade":"False",
-    "modules": ["Week 2"],
-    "points_possible": 10
+    "modules": ["Week 2"]
 }
