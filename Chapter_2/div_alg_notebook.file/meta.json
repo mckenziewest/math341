@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🐍 Division Algorithm Notebook",
+	"filename":"Division_Algorithm_Sage.ipynb",
+	"modules":["Week 2"],
+	"destination": "notebooks"
+}
