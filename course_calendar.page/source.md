@@ -66,13 +66,13 @@
      Week 4
     </th>
     <td>
-     2/20 - Finishing Chapter 2
+     2/20 - Finishing Chapter 2 and Section 3.7 - Two facts from the gcd
     </td>
     <td>
      2/22 - Section 3.1 - Linear Diophantine Equations
     </td>
     <td>
-     2/24 - Section 3.4 - Pythagorean Triples
+     2/24 - Sections 3.2 and 3.3 - Another View of Linear Equations
     </td>
    </tr>
    <tr>
@@ -80,7 +80,7 @@
      Week 5
     </th>
     <td>
-     2/27 - Section 3.7 - Two facts from the gcd
+     2/27 - Sections 3.4 and 3.5 - Higher Degree Diophantine Equations
     </td>
     <td>
      3/1 - Section 4.1 - Introduction to Congruence
