@@ -1,0 +1,137 @@
+\documentclass[t]{beamer}
+
+\subtitle{Applications of the Division Algorithm}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% This time
+		\item Using Sage via BGSC
+		\item The Division Algorithm
+	}
+	{
+		\item Consequences of the Division Algorithm
+		\item Divisibility Rules
+	}
+
+\slide{
+	\exam{\textbf{Motivation from Historical Text.}
+		
+		From the \underline{Ganitasara Sangraha}, a text written by Mahaviracharya, a Jain mathematician in approximately 850 A.D.
+		
+		\begin{goldblock}
+			There were 63 heaps of plantain fruit put together and 7 single fruits. They were equally distributed among 23 travelers leaving no remainder. What is one possible number of fruits in each pile?
+		\end{goldblock}
+		\begin{center}
+			\includegraphics[width=1.5in]{plantains}
+		\end{center}
+	}
+}
+\slide{
+	\begin{block}{\textbf{Goal.}}
+		Really we're trying to find positive integers $x$ and $y$ such that 
+			\[63x+7=23y.\]
+			
+		Or, in the form we'll be using:
+			\[-63x+23y=7.\]
+	\end{block}
+	\begin{nb}
+		This is called a \emph{Diophantine equation} and we'll learn how to solve these next week.
+	\end{nb}
+}
+\slide{
+	\begin{statementblock}{The Division Algorithm}
+		Given integers $a$ and $b$ with $b>0$, there exist unique integers $q$ and $r$ satisfying
+			\[a=qb+r\quad 0\leq r<b.\]
+		We call $q$ the \emph{quotient} and $r$ the \emph{remainder} in the division of $a$ by $b$
+	\end{statementblock}
+	\begin{statementblock}{Corollary}
+		If $a$ and $b$ are integers with $b\neq 0$, then there exist unique integers $q$ and $r$ satisfying
+			\[a=qb+r\quad 0\leq r<|b|.\]
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		Let's take $b=-4$ and some $a$ values \blank{.25in}, \blank{.25in}, and \blank{.25in}.
+		
+		Then using the division algorithm, we have
+		
+		\[\blank{.25in}=\blank{.25in}\cdot(-4)+\blank{.25in}\]\vfill
+		\[\blank{.25in}=\blank{.25in}\cdot(-4)+\blank{.25in}\]\vfill	
+		\[\blank{.25in}=\blank{.25in}\cdot(-4)+\blank{.25in}\]
+	\end{exercise}
+}
+\slide{
+	\begin{nb}
+		The Division Algorithm allows us to classify integers into a finite number of cases for example \emph{even} ($2q+0$) and \emph{odd} ($2q+1$).
+	\end{nb}
+	\begin{exercise}
+		Show that for all integers $a$, we have $a^2$ is either a multiple of 4 or one more than a multiple of 4.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that for all integers $a$, if $a$ is odd then $a^2$ is of the form $8a+1$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that $\ds\frac{a(a^2+2)}{3}$ is an integer for all $a\in\Z$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that the cube of an integer is of the form $7k$ or $7k\pm 1$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that if an integer is simultaneously a square and a cube, then it must be of the form $7k$ or $7k+ 1$.
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		We say the integer $a$ is \emph{divisible} by the integer $b\neq 0$ if there is some integer $c$ such that $a=bc$. In this case, we write $b\mid a$.
+		
+		If $a$ is not divisible by $b$ then we write $b\nmid a$.
+	\end{defn}
+	\begin{exa}
+
+	\end{exa}\vskip 1in
+	\begin{nb}
+		Divisibility corresponds to checking if $r=0$ in the division algorithm.
+	\end{nb}
+}
+\slide{
+	\begin{exercise}
+		Show that in every sequence of 3 consecutive integers, one of the numbers is divisible by $3$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Fill in the divisibility rules: An integer $n$ is divisible
+		\bulletize{\setlength{\itemsep}{2em}
+			\item by 2 if:
+			\item by 3 if:
+			\item by 4 if:
+			\item by 5 if:
+			\item by 6 if:
+		}
+	\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Fill in the divisibility rules: An integer $n$ is divisible
+	\bulletize{\setlength{\itemsep}{3em}
+		\item by 8 if:
+		\item by 9 if:
+		\item by 10 if:
+		\item by 11 if:
+	}
+\end{exercise}
+}
+\end{document}
+
