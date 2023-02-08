@@ -16,6 +16,7 @@
 ..\Chapter_2\Day_1.page
 ..\Chapter_2\Day_2.page
 ..\Chapter_2\div_alg_notebook.file
+..\Chapter_2\div_alg.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
