@@ -7,6 +7,12 @@ dry_run = False
 
 import markdown2canvas as mc
 
+import tex_ready_docs
+
+tex_ready_docs.tex_if_needed(verbose=False)
+
+print("-------------\nTeX Check Complete\n-------------")
+
 # filename = 'ready_to_publish.txt'
 filename = 'publish_this_time.txt'
 force = True
