@@ -22,3 +22,7 @@
 ..\webwork\webwork_2.assignment
 ..\assignments\hw1.assignment
 ..\assignments\hw2.assignment
+
+..\BGSC Resources\openOnDemand.link
+..\BGSC Resources\notebook_cheatsheet.file
+..\BGSC Resources\VPN.link

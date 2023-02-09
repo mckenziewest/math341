@@ -1,0 +1,7 @@
+{
+	"name":"🔗 OpenOnDemand",
+	"type":"ExternalUrl",
+	"external_url":"https://ondemand.hpc.uwec.edu/",
+	"modules":["🖥BGSC Resources"],
+	"new_tab":1
+}
