@@ -11,4 +11,4 @@
 * ✍️ For \\(a\\in\\mathbb{Z}\\) with \\(a\\neq 0\\), compute \\(\\gcd(a,a)\\), \\(\\gcd(a,0)\\), and \\(\\gcd(a,1)\\).
 * 🎥 Here's a Youtube short. I include it because I haven't seen this way of finding a gcd before, and it looks cute.
 
-<iframe title="embedded content" src="https://youtube.com/shorts/-u-Ft6oSjpY?feature=share" width="560" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+  [Link, shorts don't embed?](https://www.youtube.com/shorts/-u-Ft6oSjpY)
