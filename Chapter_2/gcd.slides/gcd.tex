@@ -1,0 +1,129 @@
+\documentclass[t]{beamer}
+
+\subtitle{Divisibility and Statements}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item The Division Algorithm
+		\item Consequences of the Division Algorithm
+	}
+	{
+		% This time
+		\item Greatest Common Divisor
+		\item Bezout's Identity
+	}
+
+\slide{
+	\begin{defn}
+		Let $a$ and $b$ be given integers, with at least one of them different from zero. The \emph{greatest common divisor} of $a$ and $b$, denoted by $\gcd(a,b)$, is the positive integer $d$ satisfy the following:
+		\enumalph{
+			\item $d|a$ and $d|b$.
+			\item If $c|a$ and $c|b$, then $c\leq d$.
+		}
+	\end{defn}
+	\begin{exercise}
+		\enumalph{\setlength{\itemsep}{1.5em}
+			\item $\gcd(-12,30)$
+			\item $\gcd(-5,5)$
+			\item $\gcd(8,17)$
+			\item $\gcd(-8,-36)$
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Find the $\gcd$ of 81, 231, and 3465.
+		
+		Let's create a factor tree for each:
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		Let $a$ and $b$ be given integers. The \emph{least common multiple} of $a$ and $b$, denoted by $\lcm(a,b)$, is the positive integer $m$ satisfy the following:
+		\enumalph{
+			\item $a|m$ and $b|m$.
+			\item If $a|c$ and $b|c$, then $m\leq c$.
+		}
+	\end{defn}
+}
+\slide{
+\begin{exercise}
+	Find the $\lcm$ of 81, 231, and 3465.
+	
+	Recall:
+		\begin{quote}
+			$\begin{array}{rcl}
+		81&=&3\cdot3\cdot 3\cdot 3\\
+		231&=&3\cdot7\cdot11\\
+		3465&=&3\cdot3\cdot5\cdot7\cdot11
+		\end{array}$
+		\end{quote}
+\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that if $d=\gcd(a,a+n)$, then $d|n$.
+	\end{exercise}
+}
+\slide{
+	\exer{ 
+		What is $\gcd(0,0)$ according to this definition?
+	}
+}
+\slide{
+	\begin{statementblock}{GCD as linear combination}
+		Given integers $a$ and $b$, not both zero, there exist integers $x$ and $y$ such that
+			\[\gcd(a,b)=ax+by.\]
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		We call the two integers $a$ and $b$, not both zero, \emph{relatively prime} if $\gcd(a,b)=1$.
+	\end{defn}
+	\begin{statementblock}{Relative Prime Test}
+		Let $a$ and $b$  be integers, not both zero. If there exist integers $x$ and $y$ such that $1=ax+by$, then $a$ and $b$ are relatively prime.
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		Show that for all $a\in\Z$,
+			\[\gcd(2a+1,9a+4)=1.\]
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Corollary 1}
+		If $\gcd(a,b)=d$, then $\gcd(a/d,b/d)=1$.
+	\end{statementblock}\vskip 1in
+	\begin{statementblock}{Corollary 2}
+		If $a|c$ and $b|c$, with $\gcd(a,b)=1$, then $ab|c$.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Euclid's Lemma}
+		If $a|bc$, with $\gcd(a,b)=1$, then $a|c$.
+	\end{statementblock}
+	\begin{proof}
+		Let $a,b,c\in \Z$ such that $a|bc$ and $\gcd(a,b)=1$.
+	\end{proof}
+}
+\slide{
+	\begin{statementblock}{Equivalent Definition}
+		Let $a,b\in\Z$ not both zero and $d\in\N$.  We have
+		\[d=\gcd(a,b)\quad\Leftrightarrow\quad \begin{array}{ll}
+		\text{(a)}&d|a\text{ and }d|b.\\
+		\text{(b)}&\text{Whenever }c|a\text{ and }c|b,\text{ then }c|d.
+		\end{array}\]
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		Show that if $\gcd(a,b)=1$ and $\gcd(a,c)=1$, then $\gcd(a,bc)=1$.
+	\end{exercise}
+}
+\end{document}
+
