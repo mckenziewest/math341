@@ -47,4 +47,4 @@ Therefore, there is some assumption as to proof-writing abilities.
 * Day 2: Complete division algorithm content by proving facts using the division algorithm.
 * Day 3: Define GCD and cover related content, complete associated slides.
 * Day 4: Explain Euclidean Algorithm and how it is used for Aryabhata. (Worksheet)
-* Day 5: Wrap up Chapter.
+* Day 5: Wrap up Chapter with some more gcd facts.
