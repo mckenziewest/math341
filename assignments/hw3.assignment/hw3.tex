@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\lcm}{\operatorname{lcm}}
+
+\begin{document}
+	Math 341 Homework 3
+	\hfill
+	Name: \underline{\hspace*{2in}}
+\begin{enumerate}
+	\item (5 pts) Suppose $n$ is th product of 3 consecutive integers and that $n$ is divisible by 7.  	
+		Which of the following is not necessarily a divisor of $n$? Justify your reasoning for full credit.
+			\[6\quad 14\quad 21\quad 28\quad 42.\]
+		\vfill
+	\item(10 pts) Section 2.2 Exercise 8
+	
+		Prove that no integers in the following sequence is a perfect square:
+		\[11, 111, 1111, 11111,\dots\]
+		(Hint: Consider using the division algorithm with these terms when divided by 4. Also consider the possible remainders you get when you divide $n^2$ by 4.  Definitely test some examples.)
+		\vfill
+		\vfill
+	\newpage
+	\item (10 pts) Section 2.4 Exercise 4(a)
+	
+		Let $a,b\in\Z$ with $\gcd(a,b)=1$. Prove that $\gcd(a+b,a-b)$ equals 1 or 2. (There is a hint in the textbook.)
+		\vfill
+	\item (15 pts) 
+	\begin{enumerate}
+		\item Use the Euclidean algorithm to find integers $x$ and $y$ satisfying $\gcd(24,138)=24x+128y$.
+		\vfill
+		\newpage
+		\item Solve the Diophantine equation
+		\[24x+138y=18.\]
+		\vfill
+		\item Explain why $24x+138y=16$ has no integer solutions.
+		\vfill
+	\end{enumerate}
+	\newpage
+	\item (10 pts) 
+	\begin{enumerate} 
+		\item Find explicit integers $x,y,z$ satisfying 	
+		\[\gcd(198,288,512)=198x+288y+512z.\]
+		Hint: Let $d=\gcd(198,288)$. Because $\gcd(198,288,512)=\gcd(d,512)$ first find integers $u$ and $v$ such that $\gcd(d,512)=du+512v$.
+		\vfill
+		\item How would you extend this to find \textit{ALL} integers that satisfy $\gcd(198,288,512)=198x+288y+512z$?
+		\vfill
+	\end{enumerate}
+	\newpage
+	\item (10 pts) Section 2.5 Exercise 5 (a) and (b)
+	\begin{enumerate}
+		\item A person has \$4.55 in change composed entirely of dimes and quarters. What are the maximum and minimum number of coins they can have? Is it possible for the number of dimes to equal the number of quarters?
+		\vfill
+		\item The neighborhood theater charges \$1.80 for adult admission and \$.75 for children.  On a particular evening the total receipts were \$90.  Assuming that more adults than children were present, how many people attended?
+		\vfill
+	\end{enumerate}
+\end{enumerate}
+		
+\end{document}
