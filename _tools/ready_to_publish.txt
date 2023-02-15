@@ -23,6 +23,7 @@
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
+..\webwork\webwork_3.assignment
 ..\assignments\hw1.assignment
 ..\assignments\hw2.assignment
 ..\assignments\hw3.assignment

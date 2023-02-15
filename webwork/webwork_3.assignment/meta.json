@@ -1,0 +1,16 @@
+{
+    "link": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_3/",
+    "ww_name": "WeBWorK_3",
+    "name": "🐣 WeBWorK 3 - Division Algorithm and GCD",
+    "unlock_at": "2023-01-30T00:00:00",
+    "due_at": "2023-02-20T16:00:00",
+    "type": "assignment",
+    "points_possible": 12,
+    "submission_types": "external_tool",
+    "external_tool_tag_attributes": {
+        "url": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_3/",
+        "new_tab": true
+    },
+  	"omit_from_final_grade":"False",
+    "modules": ["Week 4"]
+}
