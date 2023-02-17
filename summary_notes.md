@@ -40,8 +40,7 @@ Therefore, there is some assumption as to proof-writing abilities.
     * Python Notebook: [Division_Algorithm_Sage](Chapter_2/div_alg_notebook.file/Division_Algorithm_Sage.ipynb)
     * Slides: [Proofs using division algorithm](Chapter_2/div_alg.slides/div_alg.tex)
     * Slides: [GCD and properties](Chapter_2/gcd.slides/gcd.tex)
-    * (TODO) Slides: Euclidean Algorithm
-    * (TODO) Worksheet: Aryabhata's Kuttaka Method
+    * Slides: [Euclidean Algorithm](Chapter_2/euclidean_algorithm.slides/euclideanalgorithm.tex)
     * (TODO) Slides/Worksheet...? for day 5?
 * Day 1: Teach students how to generate Sage notebooks and how to use them.
 * Day 2: Complete division algorithm content by proving facts using the division algorithm.
