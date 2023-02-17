@@ -20,6 +20,7 @@
 ..\Chapter_2\div_alg_notebook.file
 ..\Chapter_2\div_alg.slides
 ..\Chapter_2\gcd.slides
+..\Chapter_2\euclidean_algorithm.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment

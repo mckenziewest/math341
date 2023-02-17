@@ -1,0 +1,163 @@
+\documentclass[t]{beamer}
+
+\subtitle{Divisibility and Statements}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item GCD and LCM
+		\item properties of gcd
+	}
+	{
+		% This time
+		\item Euclidean Algorithm
+		\item Finding $x,y$ with $ax+by=\gcd(a,b)$
+	}
+\slide{
+	\begin{statementblock}{Linear Combination Theorem}
+		Given integers $a$ and $b$, not both zero, there exist integers $x$ and $y$ such that
+			\[\gcd(a,b)=ax+by.\]
+	\end{statementblock}
+}
+\slide{ 
+	\begin{statementblock}{GCD and Remainders}
+		For $a,b\in\Z$ not both zero.  If $a=bq+r$, then 
+			$$\gcd(a,b)=\gcd(b,r).$$
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		The \emph{Euclidean algorithm} is a method from computing $\gcd(a,b)$. Assume for simplicity that $a\geq b>0$ since $\gcd(|a|,|b|)=\gcd(a,b)$ and $\gcd(a,0)=a$ if $a>0$. By the division algorithm, we can write
+		
+			\[
+			\begin{array}{rcll}
+			a&=&q_0b+r_1 & 0<r_1<b\\
+			b&=&q_1r_1+r_2 & 0<r_2<r_1\\
+			r_1&=&q_2r_2+r_3 & 0<r_3<r_2\\
+			r_2&=&q_3r_3+r_4 & 0<r_4<r_3\\
+			&\vdots\\
+			r_{n-2}&=&q_{n-1}r_{n-1}+r_n & 0<r_n<r_{n-1}\\
+			r_{n-1}&=&q_nr_n+0.
+			\end{array}
+			\]
+		Then \fbox{$r_n=\gcd(a,b)$}.
+	\end{defn}
+}
+\slide{
+	\begin{nb}
+		\bulletize{
+			\item The Euclidean algorithm terminates because $$b>r_1>r_2>r_3>\cdots>r_n>0.$$ Thus the remainders, which form a set of positive numbers, is decreasing and thus has a smallest element which must appear within a finite number of steps.
+		
+			\item Moreover, 
+				\begin{multline*}
+				\gcd(a,b)=\gcd(b,r_1)=\gcd(r_1,r_2)=\cdots\\
+				=\gcd(r_{n-1},r_n)=\gcd(r_n,0)=r_n.
+				\end{multline*}
+			}
+	\end{nb}
+}
+\slide{
+	\begin{exercise}
+		Use the Euclidean algorithm to compute $\gcd(1767,11571)$:
+		\begin{eqnarray*}
+		11571&=&\blank{.25in}\cdot {\color{red}1767} + {\color{orange}969}\\\\
+		{\color{red}1767}&=&\blank{.25in}\cdot {\color{orange}969}+ {\color{yellow}798}\\\\
+		{\color{orange}969}&=&\blank{.25in}\cdot {\color{yellow}798}+ {\color{green}171}\\\\
+		{\color{yellow}798}&=&\blank{.25in}\cdot {\color{green}171}+ {\color{blue}114}\\\\
+		{\color{green}171}&=&\blank{.25in}\cdot {\color{blue}114}+ {\color{purple}57}\\\\
+		{\color{blue}114}&=&\blank{.25in}\cdot {\color{purple}57}+ 0
+		\end{eqnarray*}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Compute $\gcd(15,49)$ using the Euclidean algorithm.
+		
+		\begin{eqnarray*}
+			49&=&\blank{.25in}\cdot 15 + \blank{.25in}\\\\
+			15&=&\blank{.25in}\cdot\blank{.25in}+\blank{.25in}\\\\
+			\blank{.25in}&=&\blank{.25in}\cdot\blank{.25in}+\blank{.25in}\\\\
+			\blank{.25in}&=&\blank{.25in}\cdot\blank{.25in}+\blank{.25in}
+		\end{eqnarray*}
+		
+		Thus $\gcd(15,49)=1$.
+	\end{exercise}
+}
+\slide{
+	\begin{question}
+		This algorithm is annoying, yes, but good for a computer.  It also helps us find the $x$ and $y$ from B\'ezout's Identity.
+	\end{question}
+	\begin{exa}
+		If we want to find $x$ and $y$ such that $1=15x+49y$, we work backwards up the Euclidean algorithm:
+		
+		\begin{center}
+		\fbox{\begin{minipage}{.3\textwidth}
+			\begin{eqnarray*}
+			{\color{green}49}&=&3\cdot {\color{red}15}+{\color{orange}4}\\
+			{\color{red}15}&=&3\cdot {\color{orange}4} + {\color{blue}3}\\
+			{\color{orange}4}&=&1\cdot {\color{blue}3} + \textbf{1}\\
+			{\color{blue}3}&=&3\cdot \textbf{1} + 0\\
+			\end{eqnarray*}
+		\end{minipage}}
+		\quad
+		\begin{minipage}{.4\textwidth}
+			\begin{eqnarray*}
+				\textbf{1}&=&{\color{orange}4}-1\cdot {\color{blue}3}\\
+				&=&{\color{orange}4}-1\cdot ({\color{red}15}-3\cdot {\color{orange}4})\\
+				&=&4\cdot{\color{orange}4}-1\cdot{\color{red}15}\\
+				&=&4\cdot({\color{green}49}-3\cdot {\color{red}15})-1\cdot{\color{red}15}\\
+				&=&4\cdot {\color{green}49} - 13\cdot{\color{red}15}\\
+			\end{eqnarray*}
+		\end{minipage}
+		\end{center}
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		Use your Euclidean algorithm results to find $x$ and $y$ such that $57=11571x+1767y$.
+		\vskip .25in
+		$\begin{array}{rcl}
+			11571&=&6\cdot {\color{red}1767} + {\color{orange}969}\\
+			{\color{red}1767}&=&1\cdot {\color{orange}969}+ {\color{yellow}798}\\
+			{\color{orange}969}&=&1\cdot {\color{yellow}798}+ {\color{green}171}\\
+			{\color{yellow}798}&=&4\cdot {\color{green}171}+ {\color{blue}114}\\
+			{\color{green}171}&=&1\cdot {\color{blue}114}+ {\color{purple}57}\\
+			{\color{blue}114}&=&2\cdot {\color{purple}57}+ 0
+		\end{array}$
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Find integers $x$ and $y$ such that $\gcd(172,20)=172x+20y$.  (First find the gcd.)
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Find a different pair of integers $x$ and $y$ such that $\gcd(172,20)=172x+20y$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Find integers $x$ and $y$ such that $336=172x+20y$. 
+	\end{exercise}
+}
+\slide{
+\begin{statementblock}{Theorem 2.6}
+	Let $a,b\in\Z$ not both zero and $d\in\N$.  We have
+	\[d=\gcd(a,b)\quad\Leftrightarrow\quad \begin{array}{ll}
+	\text{(a)}&d|a\text{ and }d|b.\\
+	\text{(b)}&\text{Whenever }c|a\text{ and }c|b,\text{ then }c|d.
+	\end{array}\]
+\end{statementblock}
+	\begin{nb}
+		This gives us an alternate definition of $\gcd$.  Rather than being the biggest, it can be seen as the one divisible by all other divisors.
+	\end{nb}
+}
+
+
+\end{document}
+
