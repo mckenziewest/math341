@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🐍 GCD Facts Notebook",
+	"filename":"gcd_facts.ipynb",
+	"modules":["Week 4"],
+	"destination": "notebooks"
+}
