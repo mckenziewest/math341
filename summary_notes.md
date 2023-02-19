@@ -41,9 +41,9 @@ Therefore, there is some assumption as to proof-writing abilities.
     * Slides: [Proofs using division algorithm](Chapter_2/div_alg.slides/div_alg.tex)
     * Slides: [GCD and properties](Chapter_2/gcd.slides/gcd.tex)
     * Slides: [Euclidean Algorithm](Chapter_2/euclidean_algorithm.slides/euclideanalgorithm.tex)
-    * (TODO) Slides/Worksheet...? for day 5?
+    * Python Notebook: [GCD Facts](Chapter_2/div_alg_notebook.file/Division_Algorithm_Sage.ipynb)
 * Day 1: Teach students how to generate Sage notebooks and how to use them.
 * Day 2: Complete division algorithm content by proving facts using the division algorithm.
 * Day 3: Define GCD and cover related content, complete associated slides.
 * Day 4: Explain Euclidean Algorithm and how it is used for Aryabhata. (Worksheet)
-* Day 5: Wrap up Chapter with some more gcd facts.
+* Day 5: Wrap up Chapter with some more gcd facts. Have students prove some properties and add this to the homework.
