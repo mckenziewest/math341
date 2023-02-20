@@ -12,6 +12,7 @@ assignments/**/*.pdf
 
 ## Python
 *.pyc
+**/.ipynb_checkpoints/*
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
