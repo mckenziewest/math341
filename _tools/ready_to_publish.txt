@@ -23,6 +23,9 @@
 ..\Chapter_2\euclidean_algorithm.slides
 ..\Chapter_2\gcd_facts_notebook.file
 
+..\Chapter_3\Day_1.page
+..\Chapter_3\Day_2.page
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\webwork\webwork_3.assignment
