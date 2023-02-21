@@ -1,6 +1,6 @@
 \documentclass[t]{beamer}
 
-\subtitle{Divisibility and Statements}
+\subtitle{Euclidean Algorithm}
 
 \input{../../_tools/setup}
 
@@ -146,18 +146,23 @@
 	\end{exercise}
 }
 \slide{
-\begin{statementblock}{Theorem 2.6}
+\begin{thm}{2.6}
 	Let $a,b\in\Z$ not both zero and $d\in\N$.  We have
 	\[d=\gcd(a,b)\quad\Leftrightarrow\quad \begin{array}{ll}
 	\text{(a)}&d|a\text{ and }d|b.\\
 	\text{(b)}&\text{Whenever }c|a\text{ and }c|b,\text{ then }c|d.
 	\end{array}\]
-\end{statementblock}
+\end{thm}
 	\begin{nb}
 		This gives us an alternate definition of $\gcd$.  Rather than being the biggest, it can be seen as the one divisible by all other divisors.
 	\end{nb}
 }
-
+\slide{
+	\begin{thm}{}
+		If $a,b,k$ are integers then
+		$$\gcd(ka,kb)=k\gcd(a,b).$$
+	\end{thm}
+}
 
 \end{document}
 
