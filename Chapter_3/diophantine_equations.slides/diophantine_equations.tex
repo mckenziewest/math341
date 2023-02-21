@@ -1,0 +1,105 @@
+\documentclass[t]{beamer}
+
+\subtitle{Diophantine Equations}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item More with gcds
+		\item If $a^n|b^n$ then $a|b$
+	}
+	{
+		% This time
+		\item Diophantine Equations of the form $ax+by=c$
+		\item Solving Diophantine Equations
+	}
+
+\slide{
+	\begin{defn}
+		The \emph{Euclidean algorithm} is a method from computing $\gcd(a,b)$. Assume for simplicity that $a\geq b>0$ since $\gcd(|a|,|b|)=\gcd(a,b)$ and $\gcd(a,0)=a$ if $a>0$. By the division algorithm, we can write
+		
+			\[
+			\begin{array}{rcll}
+			a&=&q_0b+r_1 & 0<r_1<b\\
+			b&=&q_1r_1+r_2 & 0<r_2<r_1\\
+			r_1&=&q_2r_2+r_3 & 0<r_3<r_2\\
+			r_2&=&q_3r_3+r_4 & 0<r_4<r_3\\
+			&\vdots\\
+			r_{n-2}&=&q_{n-1}r_{n-1}+r_n & 0<r_n<r_{n-1}\\
+			r_{n-1}&q_nr_n+0.
+			\end{array}
+			\]
+		Then \fbox{$r_n=\gcd(a,b)$}.
+	\end{defn}
+}
+\slide{
+	\begin{statementblock}{Theorem 2.9}
+		The linear Diophantine equation  $ax+by=c$ has a solution if and only if $d|c$, where $d=\gcd(a,b)$. If $x_0,y_0$ is any particular solution of this equation ,then all other solutions are given by
+			\[x=x_0+\left(\frac{b}{d}\right)t,\quad y=y_0-\left(\frac{a}{d}\right)t,\]
+		where $t$ is an arbitrary integer.
+	\end{statementblock}
+	\begin{defn}
+		To \emph{solve} a Diophantine equation is to find all possible integer$^*$ values that satisfy the equation.
+	\end{defn}
+}
+\slide{
+	\begin{exercise}
+		Which of the following Diophantine equations can be solved?
+		\enumalph{
+			\item $900x+6y=36$
+			\item $300x+225y=4$
+			\item $100x+90y=30$
+			\item $36x+18y=50$
+	}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Solve the Diophantine equation
+		\[100x+90y=30.\]
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Solve the Diophantine equation
+		\[12012x+3575y=1859.\]
+		
+		\fbox{
+		$\begin{array}{rcll}
+		12012&=&3\cdot 3575+1287\\
+		3575&=&2\cdot 1287+1001\\
+		1287&=&1\cdot 1001 + 286\\
+		1001&=&3\cdot 286+143\\
+		286&=&2\cdot 143
+		\end{array}
+		$
+		}
+	\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Solve this problem posed by B\'ezout in 1766.
+	
+	You have a bag of silver coins, each coin weighing 17 ounces of silver. A merchant has a bag of silver coins, each weighing 11 ounces. You wish to pay the merchant 542 ounces of silver.  How many 17-ounce coins should you give the merchant, and how many 11-ounce coins should the merchant give you?
+	
+	What is the smallest number of coins that can be exchanged in this transaction?
+\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		A farmer purchased 100 head of livestock for a total cost of \$4000. Prices were as follows: calves, \$120 each; lambs \$50 each; piglets \$25 each. If the farmer obtained at least one animal of each type, how many of each did they buy? 
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Solve this problem posed by Euler in 1770.
+		
+		Divide 100 into two summands such that one is divisible by 7 and the other by 11.
+	\end{exercise}
+}
+\end{document}
+
