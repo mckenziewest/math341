@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🔭 Solving Diophantine Equations",
+	"filename":"diophantine_equations.pdf",
+	"modules":["Week 4","Empty Slides"],
+	"destination": "slides"
+}
