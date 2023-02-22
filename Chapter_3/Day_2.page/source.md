@@ -1,7 +1,8 @@
 ## Outcomes
 
 * After class time today you will be able to
-    * solve diophantine linear equations given restrictions on the solutions.
+    * solve diophantine linear equations given restrictions on the solutions, and
+    * higher order diophantine equations.
 
 ## Preparation
 

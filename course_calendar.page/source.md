@@ -72,7 +72,7 @@
      2/22 - Section 3.1 - Linear Diophantine Equations
     </td>
     <td>
-     2/24 - Sections 3.2 and 3.3 - Another View of Linear Equations
+     2/24 - Sections 3.4 and 3.5 - Higher Degree Diophantine Equations
     </td>
    </tr>
    <tr>
@@ -80,13 +80,13 @@
      Week 5
     </th>
     <td>
-     2/27 - Sections 3.4 and 3.5 - Higher Degree Diophantine Equations
+     2/27 - Section 4.1 - Introduction to Congruence
     </td>
     <td>
-     3/1 - Section 4.1 - Introduction to Congruence
+     3/1 - Section 4.2 - Going Modulo First
     </td>
     <td>
-     3/3 - Section 4.2 - Going Modulo First
+     3/3 - Section 4.3 - Properties of Congruence
     </td>
    </tr>
    <tr>
@@ -94,13 +94,13 @@
      Week 6
     </th>
     <td>
-     3/6 - Section 4.3 - Properties of Congruence
+     3/6 - Section 4.4 - Equivalence Classes
     </td>
     <td>
-     3/8 - Section 4.4 - Equivalence Classes
+     3/8 - Section 4.5 - Why modular arithmetic matters
     </td>
     <td>
-     3/10 - Section 4.5 - Why modular arithmetic matters
+     3/10 - Section 4.6 - Toward Congruence
     </td>
    </tr>
    <tr>
@@ -108,13 +108,13 @@
      Week 7
     </th>
     <td>
-     3/13 - Section 4.6 - Toward Congruence
+     3/13 - Section 5.1 - Solving Linear Congruences
     </td>
     <td>
-     3/15 - Finishing Chapter 4
+     3/15 - Section 5.2 - Strategies for Solving Congruences
     </td>
     <td>
-     3/17 - TBD
+     3/17 - Section 5.3 - Systems of Linear Congruences
     </td>
    </tr>
    <tr>
@@ -136,13 +136,13 @@
      Week 8
     </th>
     <td>
-     3/27 - Section 5.1 - Solving Linear Congruences
+     3/27 - Refresh on Chapter 5
     </td>
     <td>
-     3/29 - Section 5.2 - Strategies for Solving Congruences
+     3/29 - Section 5.4 - Using the Chinese Remainder Theorem
     </td>
     <td>
-     3/31 - Section 5.3 - Systems of Linear Congruences
+     3/31 - Finishing Chapter 5
     </td>
    </tr>
    <tr>
@@ -150,13 +150,13 @@
      Week 9
     </th>
     <td>
-     4/3 - Section 5.4 - Using the Chinese Remainder Theorem
+     4/3 - Section 6.1 - Introduction to Primes
     </td>
     <td>
-     4/5 - Finishing Chapter 5
+     4/5 - Section 6.2 - To Infinity and Beyond
     </td>
     <td>
-     4/7 - Section 6.1 - Introduction to Primes
+     4/7 - Section 6.3 - The Fundamental Theorem of Arithmetic
     </td>
    </tr>
    <tr>
@@ -164,10 +164,10 @@
      Week 10
     </th>
     <td>
-     4/10 - Section 6.2 - To Infinity and Beyond
+     4/10 - Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
     </td>
     <td>
-     4/12 - Section 6.3 - The Fundamental Theorem of Arithmetic
+     4/12 - Section 7.5 - Fermat and Wilson's Theorems
     </td>
     <td>
      4/14 - NCUR (No Class)
@@ -178,13 +178,13 @@
      Week 11
     </th>
     <td>
-     4/17 - Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
+     4/17 - Section 8.1 - The Integers modulo n
     </td>
     <td>
-     4/19 - Section 7.5 - Fermat and Wilson's Theorems
+     4/19 - Section 9.1 - Groups and Number Systems
     </td>
     <td>
-     4/21 - Section 8.1 - The Integers modulo n
+     4/21 - Math Placement Meeting (No Class)
     </td>
    </tr>
    <tr>
@@ -192,13 +192,13 @@
      Week 12
     </th>
     <td>
-     4/24 - Section 9.1 - Groups and Number Systems
+     4/24 - Section 9.2 - The Euler Phi Function
     </td>
     <td>
-     4/26 - Section 9.2 - The Euler Phi Function
+     4/26 - Section 9.3 - Using Euler's Theorem
     </td>
     <td>
-     4/28 - Section 9.3 - Using Euler's Theorem
+     4/28 - Section 10.1 - Primitive Roots
     </td>
    </tr>
    <tr>
@@ -206,13 +206,13 @@
      Week 13
     </th>
     <td>
-     5/1 - Section 10.1 - Primitive Roots
+     5/1 - Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
     </td>
     <td>
-     5/3 - Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
+     5/3 - Section 11.1 - What is Cryptography
     </td>
     <td>
-     5/5 - Section 11.1 - What is Cryptography
+     5/5 - Section 11.2
     </td>
    </tr>
    <tr>
@@ -220,7 +220,7 @@
      Week 14
     </th>
     <td>
-     5/8 - Section 11.2
+     5/8 - Presentations
     </td>
     <td>
      5/10 - Presentations
