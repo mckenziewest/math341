@@ -3,6 +3,7 @@
 \subtitle{Diophantine Equations}
 
 \input{../../_tools/setup}
+\usepackage{pgfplots}
 
 \begin{document} 
 	\startdoc
@@ -101,5 +102,90 @@
 		Divide 100 into two summands such that one is divisible by 7 and the other by 11.
 	\end{exercise}
 }
+\slide{
+	Diophantine equations as geometric objects.
+	
+	Assume $a,b,c>0$, then $ax+by=c$ is equivalent to
+		$$y=-\frac{a}{b}x+\frac{c}{b},$$
+	which is a line that has $y$-intercept $\frac{c}{b}$ and slope $-\frac{a}{b}$.
+	
+\begin{center}
+	\resizebox{0.5\textwidth}{!}{
+		\begin{tikzpicture}
+	\begin{axis}[
+	title={Plot of $4x+3y=10$},
+	axis x line=center,
+	axis y line=center,
+	xmin=-2, xmax=5,
+	ymin=-2, ymax=5,  
+	xtick={-2,-1,...,5},
+	ytick={-2,-1,...,5},
+	xlabel={$x$},
+	ylabel={$y$},
+	xlabel style={below right},
+	ylabel style={above left},
+	ymajorgrids=false,
+	xmajorgrids=false,
+	grid style=dashed,
+	]
+	\addplot [
+	domain=-10:10, 
+	samples=100, 
+	color=red,
+	very thick
+	]
+	{-4/3*x+10/3};
+	% points (1,2) and (2.5,0) => slope -4/3
+	\foreach \i in {-2,...,5}{
+		\foreach \j in {-2,...,5}{
+			\addplot[only marks,mark=*,] coordinates {
+				(\i,\j)};
+	}}
+	\end{axis}
+	\end{tikzpicture}
+}
+\end{center}
+}
+\slide{
+We can also consider other lattices, such as the half-integer lattice.
+
+\begin{center}
+	\resizebox{0.5\textwidth}{!}{
+		\begin{tikzpicture}
+		\begin{axis}[
+		title={Plot of $4x+3y=10$},
+		axis x line=center,
+		axis y line=center,
+		xmin=-2, xmax=5,
+		ymin=-2, ymax=5,  
+		xtick={-2,-1,...,5},
+		ytick={-2,-1,...,5},
+		xlabel={$x$},
+		ylabel={$y$},
+		xlabel style={below right},
+		ylabel style={above left},
+		ymajorgrids=false,
+		xmajorgrids=false,
+		grid style=dashed,
+		]
+		\addplot [
+		domain=-10:10, 
+		samples=100, 
+		color=red,
+		very thick
+		]
+		{-4/3*x+10/3};
+		% points (1,2) and (2.5,0) => slope -4/3
+		\foreach \i in {-4,...,10}{
+			\foreach \j in {-4,...,10}{
+				\addplot[only marks,mark=*,] coordinates {
+					(\i/2,\j/2)};
+		}}
+		\end{axis}
+		\end{tikzpicture}
+	}
+\end{center}
+}
+
 \end{document}
 
