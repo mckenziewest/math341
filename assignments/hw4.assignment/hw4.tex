@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\lcm}{\operatorname{lcm}}
+
+\begin{document}
+	Math 341 Homework 4
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	
+	\textbf{Instructions:} This assignment will work differently than the others that we have had so far. There are choices for you to make about what exercises you complete.
+	
+	Below there are 5 options, of which you must complete three, each of which are worth 20 total points.
+\begin{enumerate}
+	\item Complete part 1 of the Python worksheet we worked on in class on Monday, February 20.
+	\item Complete part 2 of the Python worksheet we worked on in class on Monday, February 20.
+	\item Write a function, preferably in Python/Sage, though other languages will do, with the following specifications:
+	
+		\fbox{\begin{minipage}{.9\textwidth}
+			\textbf{Description:} Solves the Diophantine equation $aX+bY=c$.
+			
+			\textbf{Input:} Three integers $a,b,c$.
+			
+			\textbf{Output:} Integers $x,y,m,n$ such that all solutions to the equation $aX+bY=c$ can be written as $(x+mt,y+nt)$.
+			
+			\textbf{Errors:} Error if \begin{itemize}
+				\item both $a$ and $b$ are 0, or
+				\item $\gcd(a,b)$ does not divide $c$.
+			\end{itemize}
+		\end{minipage}}
+	
+	\item Write a function, preferably in Python/Sage, though other languages will do, with the following specifications:
+	
+	\fbox{\begin{minipage}{.9\textwidth}
+			\textbf{Description:} Finds positive integer solutions to $aX+bY=c$.
+			
+			\textbf{Input:} Three integers $a,b,c$.
+			
+			\textbf{Output:} A list of all solutions to the Diophine equation $aX+bY=c$ with positive coordinates.
+			
+			\textbf{Errors:} Error if 
+				\begin{itemize}
+					\item any of $a$, $b$, or $c$ is not positive, or
+					\item $\gcd(a,b)$ does not divide $c$.
+				\end{itemize} 
+	\end{minipage}}
+	
+	
+\end{enumerate}
+		
+\end{document}
