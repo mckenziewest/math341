@@ -1,0 +1,116 @@
+\documentclass[t]{beamer}
+
+\subtitle{Higher Order Diophantine Equations}
+
+\input{../../_tools/setup}
+\usepackage{pgfplots}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item Diophantine Equations of the form $ax+by=c$
+		\item Solving Diophantine Equations
+	}
+	{
+		% This time
+		\item Elliptic Curves
+		\item Pythagorean Triples
+		\item Fermat's Last Theorem
+	}
+
+\slide{
+	\begin{defn}
+		An \emph{elliptic curve} is a curve given by an equation of the form $$y^2=x^3+ax+b$$ with the requirement that $4a^3+27b^2\neq 0$.
+	\end{defn}
+	\begin{nb}
+		The requirement of $4a^3+27b^2\neq 0$ results in:
+		\bulletize{
+			\item Geometrically: No cusps or self-intersections
+			\item Algebraically: No repeated roots of $x^3+ax+b$
+		}
+	\end{nb}
+}
+\slide{
+	\begin{defn}
+		A \emph{Mordell equation} is an elliptic curve specifically of the form $y^2=x^3+k$ for $k\in\Z$.
+	\end{defn}
+	\begin{thm}{(Mordell)}
+		There are finitely many pairs $x,y\in\Z$ that satisfy any given Mordell equation.
+	\end{thm}
+	\begin{exa}
+		Some $k$ values with no solutions: $7,-5,11,-6,45,6,46,-24$
+		
+		Some $k$ values with known solutions:
+		\begin{center}
+			\begin{tabular}{l|l}
+				$k$&Pairs\\\hline
+				$16$&$(0,4),(0,-4)$\\
+				$-1$&$(1,0)$\\
+				$-4$&$(2,2),(2,-2),(5,11),(5,-11)$\\
+				$-2$&$(3,5),(3,-5)$
+			\end{tabular}
+		\end{center}
+	\end{exa}
+}
+\slidec{
+	\begin{nb}
+		All of these values were proven by means specific to $k$.  The question remains whether there's a quick way to provably find all integral solutions.
+	\end{nb}
+	\begin{exa}
+		On this site you will find a table containing the number of \textit{known} solutions to the Mordell equation for the given $k$, with $x\leq 10^{10}$
+		\url{https://hr.userweb.mwn.de/numb/mordell.html}
+	\end{exa}
+}
+\slide{
+	\begin{statementblock}{Catalan Conjecture, Mih\u{a}ilescu's Theorem }
+		If $y^m=x^n+1$  for $x,y$ positive integers and $m,n>1$ then either $xy=0$ or the equation is of the form $3^2=2^3+1$.
+		\vskip 2em
+		That is the only integral solutions to the Mordell equation with $k=1$ are $(2,\pm 3), (0,\pm 1)$, $(-1,0)$.
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		A \emph{Pythagorean triple} is a set of three integers $(x,y,z)$ such that $x^2+y^2=z^2$.  The triple is \emph{primitive} if $\gcd(x,y,z)=1$.
+	\end{defn}
+}
+\slide{
+	\begin{statementblock}{Lemma}
+		If $(x,y,z)$ is a Pythagorean triple, then one of $x$ or $y$ is even while the other is odd.
+	\end{statementblock}
+}
+\slide{
+	\begin{thm}{12.1}
+		All of the primitive Pythagorean triples $(x,y,z)$ such that
+		\enumalph{
+			\item $x$ is even
+			\item $x,y,z>0$
+		}
+		can be described by
+			$$x=2st\quad y=s^2-t^2\quad z=s^2+t^2,$$
+		where $s>t>0$, $\gcd(s,t)=1$, and one of $s$ or $t$ is even.
+	\end{thm}
+}
+\slide{
+	\begin{statementblock}{Theorem}
+		If $(x,y,z)$ is a primitive Pythagorean triple, then both $x+y$ and $x-y$ are 1 more or 1 less than a multiple of 8.
+	\end{statementblock}
+}
+\slide{
+	\begin{thm}{12.3}
+		The Diophantine equation $x^4+y^4=z^2$ has no solution $(x,y,z)$ with $x,y,z>0$.
+	\end{thm}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		The Diophantine equation $x^4+y^4=z^4$ has no solution $(x,y,z)$ with $x,y,z>0$.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Fermat's Last Theorem}
+		For $n>\geq 3$, the Diophantine equation $x^n+y^n=z^n$ has no solution $(x,y,z)$ with $x,y,z>0$.
+	\end{statementblock}
+}
+\end{document}
+
