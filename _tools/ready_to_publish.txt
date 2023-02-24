@@ -29,6 +29,9 @@
 ..\Chapter_3\diophantine_equations.slides
 ..\Chapter_3\higher_diophantine.slides
 
+..\Chapter_4\Day_1.page
+..\Chapter_4\congruence.slides
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\webwork\webwork_3.assignment
