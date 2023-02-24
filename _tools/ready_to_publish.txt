@@ -27,6 +27,7 @@
 ..\Chapter_3\Day_1.page
 ..\Chapter_3\Day_2.page
 ..\Chapter_3\diophantine_equations.slides
+..\Chapter_3\higher_diophantine.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
@@ -35,6 +36,7 @@
 ..\assignments\hw1.assignment
 ..\assignments\hw2.assignment
 ..\assignments\hw3.assignment
+..\assignments\hw4.assignment
 
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file
