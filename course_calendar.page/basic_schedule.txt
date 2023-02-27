@@ -10,16 +10,16 @@ Sections 2.3 and 2.4 - The Euclidean Algorithm and Ahryabata's Method
 Finishing Chapter 2 and Section 3.7 - Two facts from the gcd
 Section 3.1 - Linear Diophantine Equations
 Sections 3.4 and 3.5 - Higher Degree Diophantine Equations
-Section 4.1 - Introduction to Congruence
-Section 4.2 - Going Modulo First
+Sections 4.1 and 4.2 - Introduction to Congruence and Going Modulo First
 Section 4.3 - Properties of Congruence
-Section 4.4 - Equivalence Classes
+Section 4.3 - Properties of Congruence (Part 2)
 Section 4.5 - Why modular arithmetic matters
 Section 4.6 - Toward Congruence
 Section 5.1 - Solving Linear Congruences
 Section 5.2 - Strategies for Solving Congruences
+Midterm Work Day
 Section 5.3 - Systems of Linear Congruences
-Refresh on Chapter 5
+Section 5.3 - Systems of Linear Congruences (Part 2)
 Section 5.4 - Using the Chinese Remainder Theorem
 Finishing Chapter 5
 Section 6.1 - Introduction to Primes

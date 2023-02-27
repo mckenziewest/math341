@@ -1,0 +1,79 @@
+\documentclass[t]{beamer}
+
+\subtitle{Properties of Congruence}
+
+\input{../../_tools/setup}
+\usepackage{pgfplots}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item Introduction to Congruence
+		\item Going Modulo First
+	}
+	{
+		% This time
+		\item Properties of Congruence
+	}
+
+\slide{
+	\begin{defn}
+		Let $n$ be a positive integer. We will say the integers $a$ and $b$ are \emph{congruent modulo $n$} if $n$ divides $a-b$.  We denote this by
+			\[a\equiv b\pmod n.\]
+	\end{defn}
+}
+\slide{
+	\begin{thm}{4.2 (Equivalence Relation)}
+		Let $n>1$ be fixed and $a, b, c$ be arbitrary integers.  Then the following properties hold:
+		\enumalph{
+			\item $a\equiv a\pmod n$
+			\item If $a\equiv b\pmod n$ then $b\equiv a\pmod n$.
+			\item If $a\equiv b\pmod n$ and $b\equiv c\pmod n$, then $a\equiv c\pmod n$.
+		}
+	\end{thm}
+}
+\slide{
+	\begin{thm}{4.2 (Algebraic properties)}
+		Let $n>1$ be fixed and $a, b, c, d$ be arbitrary integers.  Then the following properties hold:
+		\enumalph{
+			\item[(d)] If $a\equiv b\pmod n$ and $c\equiv d\pmod n$, then $a+c\equiv b+d\pmod n$ and $ac\equiv bd\pmod n$.
+			\item[(e)] If $a\equiv b\pmod n$, then $a+b\equiv b+c\pmod n$ and $ac\equiv bc\pmod n$.
+			\item[(f)] If $a\equiv b\pmod n$, then $a^k\equiv b^k\pmod n$ for all positive integers $k$.
+		}
+	\end{thm}
+}
+\slide{
+	\begin{statementblock}{Theorem 4.3}
+		If $ca\equiv cb\pmod n$, then $a\equiv b\pmod{n/d}$, where $d=\gcd(n,c)$.
+	\end{statementblock}
+	\begin{exa}
+		\enumalph{
+			\item $2\cdot 4\equiv 2\cdot 1\pmod 6$\vskip .25in
+			\item $-35\equiv 45\pmod 8$\vskip .25in
+		}
+	\end{exa}
+}
+\slide{
+	\begin{statementblock}{Corollary 1}
+		If $ca\equiv cb\pmod n$ and $\gcd(c,n)=1$, then $a\equiv b\pmod n$.
+	\end{statementblock}
+	\begin{exercise}
+		Find all $x$ such that $3498x\equiv 0\pmod{175}$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Find all $x$ such that $3498x\equiv 4\pmod{175}$.
+		
+		(It'll be helpful to note $3498\cdot 87\equiv 1\pmod{175}$.)
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Corollary 2}
+		If $ca\equiv cb\pmod p$ and $p\nmid c$, where $p$ is a prime number, then $a\equiv b\pmod p$.
+	\end{statementblock}
+}
+\end{document}
+

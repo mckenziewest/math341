@@ -1,6 +1,6 @@
 \documentclass[t]{beamer}
 
-\subtitle{Diophantine Equations}
+\subtitle{Introduction to Congruence and Going Modulo First}
 
 \input{../../_tools/setup}
 \usepackage{pgfplots}
@@ -45,25 +45,11 @@
 	\end{thm}
 }
 \slide{
-	\begin{thm}{4.2 (Equivalence Relation)}
-		Let $n>1$ be fixed and $a, b, c$ be arbitrary integers.  Then the following properties hold:
-		\enumalph{
-			\item $a\equiv a\pmod n$
-			\item If $a\equiv b\pmod n$ then $b\equiv a\pmod n$.
-			\item If $a\equiv b\pmod n$ and $b\equiv c\pmod n$, then $a\equiv c\pmod n$.
-		}
-	\end{thm}
+	\begin{statementblock}{Fact}
+		If $a\equiv b \pmod n$, then $a^m\equiv b^m\pmod n$ for all $m\in\N$.
+	\end{statementblock}
 }
-\slide{
-\begin{thm}{4.2 (Algebraic properties)}
-	Let $n>1$ be fixed and $a, b, c, d$ be arbitrary integers.  Then the following properties hold:
-	\enumalph{
-		\item[(d)] If $a\equiv b\pmod n$ and $c\equiv d\pmod n$, then $a+c\equiv b+d\pmod n$ and $ac\equiv bd\pmod n$.
-		\item[(e)] If $a\equiv b\pmod n$, then $a+b\equiv b+c\pmod n$ and $ac\equiv bc\pmod n$.
-		\item[(f)] If $a\equiv b\pmod n$, then $a^k\equiv b^k\pmod n$ for all positive integers $k$.
-	}
-\end{thm}
-}
+
 \slide{
 	\begin{exercise}
 		What is the remainder when dividing $9^{10}$ by $7$?
@@ -77,7 +63,7 @@
 \slide{
 	\begin{exercise}
 		Use congruence theory to show that for all $n\geq 1$
-			\[7|5^{2n}+3\cdot 2^{5n-2}\]
+		\[7|5^{2n}+3\cdot 2^{5n-2}\]
 	\end{exercise}
 }
 \slide{
@@ -85,47 +71,16 @@
 		If $2x\equiv 0\pmod{12}$ what are the possible values of $x$? (We'll just start with $0\leq x< 12$.)
 	\end{exercise}
 }
-\slide{
-	\begin{statementblock}{Theorem 4.3}
-		If $ca\equiv cb\pmod n$, then $a\equiv b\pmod{n/d}$, where $d=\gcd(n,c)$.
-	\end{statementblock}
-	\begin{exa}
-		\enumalph{
-			\item $2\cdot 4\equiv 2\cdot 1\pmod 6$\vskip .25in
-			\item $-35\equiv 45\pmod 8$\vskip .25in
-		}
-	\end{exa}
-}
-\slide{
-	\begin{statementblock}{Corollary 1}
-		If $ca\equiv cb\pmod n$ and $\gcd(c,n)=1$, then $a\equiv b\pmod n$.
-	\end{statementblock}
-	\begin{exercise}
-		Find all $x$ such that $3498x\equiv 0\pmod{175}$.
-	\end{exercise}
-}
-\slide{
-	\begin{exercise}
-		Find all $x$ such that $3498x\equiv 4\pmod{175}$.
-		
-		(It'll be helpful to note $3498\cdot 87\equiv 1\pmod{175}$.)
-	\end{exercise}
-}
-\slide{
-	\begin{statementblock}{Corollary 2}
-		If $ca\equiv cb\pmod p$ and $p\nmid c$, where $p$ is a prime number, then $a\equiv b\pmod p$.
-	\end{statementblock}
-}
-\slide{
-	\begin{defn}
-		Let $n$ be a positive integer.
-		We will call an integer $a$ a \emph{zero divisor modulo $n$} if there is some integer $b$ such that
-			\[a\not\equiv 0\pmod n, \quad b\not\equiv 0\pmod n,\quad\text{and}\quad ab\equiv 0\pmod n.\]
-	\end{defn}
-	\begin{exa}
-		What are the zero divisors modulo $12$ between 0 and 12? What are some zero divisors outside this range?
-	\end{exa}
-}
+%\slide{
+%	\begin{defn}
+%		Let $n$ be a positive integer.
+%		We will call an integer $a$ a \emph{zero divisor modulo $n$} if there is some integer $b$ such that
+%			\[a\not\equiv 0\pmod n, \quad b\not\equiv 0\pmod n,\quad\text{and}\quad ab\equiv 0\pmod n.\]
+%	\end{defn}
+%	\begin{exa}
+%		What are the zero divisors modulo $12$ between 0 and 12? What are some zero divisors outside this range?
+%	\end{exa}
+%}
 \slide{
 	\begin{thm}{4.5}
 		Let $N=a_m10^m+a_{m-1}10^{m-1}+\cdots+a_110+a_0$ be the decimal expansion of $N$.  (That is $a_m,a_{m-1},\dots,a_1,a_0$ are the digits of $N$.)  
