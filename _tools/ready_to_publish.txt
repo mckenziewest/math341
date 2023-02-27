@@ -30,7 +30,10 @@
 ..\Chapter_3\higher_diophantine.slides
 
 ..\Chapter_4\Day_1.page
+..\Chapter_4\Day_2.page
+..\Chapter_4\Day_3.page
 ..\Chapter_4\congruence.slides
+..\Chapter_4\properties_of_congruence.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
