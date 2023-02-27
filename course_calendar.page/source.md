@@ -80,13 +80,13 @@
      Week 5
     </th>
     <td>
-     2/27 - Section 4.1 - Introduction to Congruence
+     2/27 - Sections 4.1 and 4.2 - Introduction to Congruence and Going Modulo First
     </td>
     <td>
-     3/1 - Section 4.2 - Going Modulo First
+     3/1 - Section 4.3 - Properties of Congruence
     </td>
     <td>
-     3/3 - Section 4.3 - Properties of Congruence
+     3/3 - Section 4.3 - Properties of Congruence (Part 2)
     </td>
    </tr>
    <tr>
@@ -94,13 +94,13 @@
      Week 6
     </th>
     <td>
-     3/6 - Section 4.4 - Equivalence Classes
+     3/6 - Section 4.5 - Why modular arithmetic matters
     </td>
     <td>
-     3/8 - Section 4.5 - Why modular arithmetic matters
+     3/8 - Section 4.6 - Toward Congruence
     </td>
     <td>
-     3/10 - Section 4.6 - Toward Congruence
+     3/10 - Section 5.1 - Solving Linear Congruences
     </td>
    </tr>
    <tr>
@@ -108,10 +108,10 @@
      Week 7
     </th>
     <td>
-     3/13 - Section 5.1 - Solving Linear Congruences
+     3/13 - Section 5.2 - Strategies for Solving Congruences
     </td>
     <td>
-     3/15 - Section 5.2 - Strategies for Solving Congruences
+     3/15 - Midterm Work Day
     </td>
     <td>
      3/17 - Section 5.3 - Systems of Linear Congruences
@@ -136,7 +136,7 @@
      Week 8
     </th>
     <td>
-     3/27 - Refresh on Chapter 5
+     3/27 - Section 5.3 - Systems of Linear Congruences (Part 2)
     </td>
     <td>
      3/29 - Section 5.4 - Using the Chinese Remainder Theorem
