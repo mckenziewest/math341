@@ -1,0 +1,152 @@
+\documentclass[t]{beamer}
+
+\subtitle{Representations of Integers and Fast Exponentiation}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item Properties of Congruence
+	}
+	{
+		% This time
+		\item Zero Divisors
+		\item Representations of Integers beyond decimal
+		\item Fast exponentiation algorithm.
+	}
+
+\slide{
+	\begin{defn}
+		Let $n$ be a positive integer. We will say the integers $a$ and $b$ are \emph{congruent modulo $n$} if $n$ divides $a-b$.  We denote this by
+			\[a\equiv b\pmod n.\]
+	\end{defn}
+	\begin{statementblock}{Theorem 4.1}
+		For arbitrary integers $a$ and $b$, $a\equiv b\pmod n$ if and only if $a$ and $b$ leave the same remainder when divided by $n$.
+	\end{statementblock}
+}
+
+\slide{
+	\begin{defn}
+		Let $n$ be a positive integer.
+		We will call an integer $a$ a \emph{zero divisor modulo $n$} if there is some integer $b$ such that
+			\[a\not\equiv 0\pmod n, \quad b\not\equiv 0\pmod n,\quad\text{and}\quad ab\equiv 0\pmod n.\]
+	\end{defn}
+	\begin{exa}
+		If $n=6$, then $2,3\not\equiv 0\pmod 6$ but $2\cdot3\equiv 0\pmod 6$.
+	\end{exa}
+	\begin{exercise}
+		What are the zero divisors modulo $12$ between 0 and 12? What are some zero divisors outside this range?
+	\end{exercise}
+}
+
+\slide{
+	\begin{nb}
+		Similar to our decimal system where every digit represents how many of a given power of 10 goes into a number, there are other numerical systems.  For example, in the binary system:
+		
+		\[(100111)_2= 1\cdot 2^5+0\cdot 2^4+0\cdot 2^3+1\cdot 2^2+1\cdot 2^1+1\cdot 2^0=39.\]
+		
+		If $b$ is the base, in this example $b=2$, then the digits $a_i$ must satisfy $0\leq a_i <b$. This should match up with what we know about decimal aka base 10 integers.
+	\end{nb}
+}
+\slide{	
+	\begin{exercise}
+		What decimal integer is represented by
+		\enumalph{
+			\item $(11011)_2$\vskip .5in
+			\item $(1000)_2$\vskip .5in
+			\item $(1212)_3$\vskip .5in
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		If $b\geq 2$ is an integer and $N\geq 0$ is an integer, the \emph{base $b$} representation of $N$ is
+			\[(a_ra_{r-1}\dots a_2a_1a_0)_b,\]
+		where $0\leq a_i< b$ for all $0\leq i< r$ and $0< a_r<b$ and in decimal form,
+			\[N=a_rb^r+a_{r-1}b^{r-1}+\cdots+a_2 b^2+a_1 b+a_0.\]
+	\end{defn}
+	\begin{statementblock}{Theorem}
+		Let $b\geq 2$ be an integer. Every non-negative integer $N$ has a \textit{unique} representation with respect to the basis $b$. 
+	\end{statementblock}
+}
+\slide{
+	\begin{exa}
+		Consider $b=4$ and $N=328$.  We see that $4^4$ is the largest power of 4 that is less than or equal to 328, thus $328=(a_4a_3a_2a_1a_0)_4$. Now to find the digits:
+			$$\begin{array}{rcl}
+				{\color{red}328} &=& \textbf{1}\cdot 4^4 + {\color{orange}72}\\
+				{\color{orange}72} &=& \textbf{1}\cdot 4^3 + {\color{yellow}8}\\
+				{\color{yellow}8}&=& \textbf{0}\cdot 4^2 + {\color{green} 8}\\
+				{\color{green} 8}&=& \textbf{2}\cdot 4^1 + {\color{blue}0}\\
+				{\color{blue}0}&=& \textbf{0}\cdot 4^0
+			\end{array}$$
+		Therefore,
+			\[344 = (\textbf{11020})_4.\]
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		Determine the base $b$ representation of $N$,
+		\enumalph{
+			\item $N=110$, $b=2$\vskip .5in
+			\item $N=282$, $b=3$\vskip .5in
+			\item $N=345$, $b=5$\vskip .5in
+			\item $N=498$, $b=8$\vskip .5in
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{exa}
+		What's the point? Well hopefully it helps us compute integers modulo $n$ more quickly.  For example, on the last slide you found
+			\[110=64+32+8+4+2=(1101110)_2.\]
+		Thus if we wanted to know
+			\[5^{110}\pmod n,\]
+		then we could instead compute
+			\[5^{64}\cdot5^{32}\cdot 5^8\cdot 5^4\cdot 5^2\pmod n.\]
+			
+		(Continued on next slide.)
+		\end{exa}
+}
+\slide{ \begin{exa}
+		Though in actuality each individual one of these is going to be easy to compute because
+			\[5^2\equiv 25\pmod n\]
+			\[5^4\equiv (5^2)^2\pmod n\]
+			\[5^8\equiv (5^4)^2\pmod n\]
+			\[5^{16}\equiv (5^{8})^2\pmod n\]
+			\[5^{32}\equiv (5^{16})^2\pmod n\]
+			\[5^{64}\equiv (5^{32})^2\pmod n\]
+		and squaring is way easier and quicker than raising to higher powers.
+	\end{exa}	
+}
+\slide{
+	\begin{exercise}
+		Use the method from the example to compute $5^{110}\pmod{16}$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Compute
+		\enumalph{
+			\item $7^{47}\pmod{412}$\vskip 1in
+			\item $23^{36}\pmod{1001}$
+		}
+	\end{exercise}
+}
+
+\slide{
+	\begin{nb}
+		The following is true for all $n>0$:
+		$$x^n=\begin{cases}
+			(x^2)^{n/2}&\text{if }n\text{ even}\\
+			x(x^2)^{(n-1)/2}&\text{if }n\text{odd}
+		\end{cases}$$
+		And this is really the fact that we're using in this computation.
+	\end{nb}
+	\begin{exercise}
+		Use this formula to compute $5^{110}\pmod{16}$, writing out each step sequentially.
+	\end{exercise}
+}
+\end{document}
+

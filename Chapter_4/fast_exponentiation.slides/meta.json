@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🔭 Fast Exponentiation (Why Modular Arithmetic Matters)",
+	"filename":"fast_exponentiation.pdf",
+	"modules":["Week 6","Empty Slides"],
+	"destination": "slides"
+}
