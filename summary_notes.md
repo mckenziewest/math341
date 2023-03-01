@@ -54,13 +54,30 @@ Therefore, there is some assumption as to proof-writing abilities.
   * Day 4: Explain Euclidean Algorithm and how it is used for Aryabhata. (Worksheet)
   * Day 5: Wrap up Chapter with some more gcd facts. Have students prove some properties and add this to the homework.
 
-### Chapter 3 (3 days)
+### Chapter 3 (2 days)
 * Solutions to Diophantine Equations
 * Materials
-    * (TODO) Slides: Solving linear Diophantine equations
-    * (TODO) Object: Solving linear Diophantine equations with restrictions
-    * (TODO) Worksheet: Fermat's Last Theorem and Higher Order Diophantine Equations
+    * Slides: [Solving linear Diophantine equations](Chapter_3/diophantine_equations.slides/diophantine_equations.tex)
+    * Slides: [Higher diophantine equations](Chapter_3/higher_diophantine.slides/higher_diophantine.tex)
 * Content by Day
     * Day 1: Teach students how to use the solution produced by the Kuttaka method to find all solutions to a linear Diophantine equation.
-    * Day 2: 
-    * Day 3:
+    * Day 2: Finish up any slides not hit in the linear examples, then talk about elliptic curves and Mordell equations for a bit.
+    
+### Chapter 4 (5 days)
+* Congruence
+* Materials
+    * Slides: [Introduction to Congruence](Chapter_4/congruence.slides/congruence.tex)
+    * Slides: [Properties of Congruence](Chapter_4/properties_of_congruence/properties_of_congruence.tex)
+    * TODO Slides: Fast exponentiation
+    * TODO Slides: The Basics of Congruence Equations
+    * TODO Notebook: The basics of congruence equations
+    
+* Content by Day
+    * Day 1: Introduce congruence and computing powers mod n
+    * Day 2: Prove arithmetic is well-defined
+    * Day 3: Prove other properties of congruence 
+    * Day 4: Fast exponentiation
+    * Day 5: Congruence equations, basic examples
+
+### Chapter 5 (5-6 days)
+* Primes 
