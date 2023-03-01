@@ -1,0 +1,15 @@
+{
+    "link": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_5/",
+    "ww_name": "WeBWorK_5",
+    "name": "🐣 WeBWorK 5 - Congruence",
+    "unlock_at": "2023-01-30T00:00:00",
+    "due_at": "2023-02-27T16:00:00",
+    "type": "assignment",
+    "points_possible": 10,
+    "submission_types": "external_tool",
+    "external_tool_tag_attributes": {
+        "url": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_5/",
+        "new_tab": true
+    },
+    "modules": ["Week 6"]
+}
