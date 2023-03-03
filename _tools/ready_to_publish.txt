@@ -37,6 +37,7 @@
 ..\Chapter_4\congruence.slides
 ..\Chapter_4\properties_of_congruence.slides
 ..\Chapter_4\fast_exponentiation.slides
+..\Chapter_4\congruence_equations_notebook.file
 
 ..\Chapter_5\Day_1.page
 
