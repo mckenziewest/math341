@@ -49,6 +49,7 @@
 ..\assignments\hw2.assignment
 ..\assignments\hw3.assignment
 ..\assignments\hw4.assignment
+..\assignments\hw5.assignment
 
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file
