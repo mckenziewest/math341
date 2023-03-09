@@ -1,0 +1,8 @@
+{
+  "name": "🏘 Midterm Exam", 
+  "type": "assignment",
+  "submission_types": ["online_upload"],
+  "modules": ["Week 7"],
+  "due_at": "2023-03-17T16:00:00",
+  "points_possible": 80
+}
