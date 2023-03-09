@@ -68,16 +68,27 @@ Therefore, there is some assumption as to proof-writing abilities.
 * Materials
     * Slides: [Introduction to Congruence](Chapter_4/congruence.slides/congruence.tex)
     * Slides: [Properties of Congruence](Chapter_4/properties_of_congruence/properties_of_congruence.tex)
-    * TODO Slides: Fast exponentiation
-    * TODO Slides: The Basics of Congruence Equations
-    * TODO Notebook: The basics of congruence equations
+    * Slides: [Fast exponentiation](Chapter_4/fast_exponentiation.slides/fast_exponentiation.tex)
+    * Notebook:[The basics of congruence equations](Chapter_4/congruence_equations_notebook.file/Congruence_Equations.ipynb)
     
 * Content by Day
     * Day 1: Introduce congruence and computing powers mod n
     * Day 2: Prove arithmetic is well-defined
     * Day 3: Prove other properties of congruence 
     * Day 4: Fast exponentiation
-    * Day 5: Congruence equations, basic examples
+    * Day 5: Congruence equations experiments, sums of squares and of cubes
 
-### Chapter 5 (5-6 days)
-* Primes 
+### Chapter 5 (3-4 days)
+* Solving systems of congruence equations  
+* Materials
+  * Slides: [Linear Congruence and CRT](Chapter_5/linear_congruence.slides/linear_congruence.tex)
+* Content by Day
+  * Day 1: What is a congruence equation, what does it mean to solve a congruence equation, inverses mod $n$
+  * Day 2: Basic Chinese Remainder Theorem and lots of examples.
+  * Day 3: CRT Extended with non-coprime moduli, equations with coefficients, multiple variables
+  
+### Chapter 6 (n days)
+* Primes and the Fundamental Theorem of Arithmetic
+* Materials
+  * (TODO) Slides [Primes, Shapes, and Infinite Possibilities]()
+  * (TODO) Slides [Fundamental Theorem of Arithmetic]()
