@@ -55,6 +55,8 @@
 ..\assignments\hw4.assignment
 ..\assignments\hw5.assignment
 
+..\assignments\midterm_exam.assignment
+
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file
 ..\BGSC Resources\VPN.link
