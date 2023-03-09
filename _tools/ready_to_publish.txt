@@ -40,6 +40,9 @@
 ..\Chapter_4\congruence_equations_notebook.file
 
 ..\Chapter_5\Day_1.page
+..\Chapter_5\Day_2.page
+..\Chapter_5\Day_3.page
+..\Chapter_5\linear_congruence.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
