@@ -108,13 +108,13 @@
      Week 7
     </th>
     <td>
-     3/13 - Section 5.2 - Strategies for Solving Congruences
+     3/13 - Section 5.3 - Systems of Linear Congruences
     </td>
     <td>
-     3/15 - Midterm Work Day
+     3/15 - Section 5.4 - Using the Chinese Remainder Theorem
     </td>
     <td>
-     3/17 - Section 5.3 - Systems of Linear Congruences
+     3/17 - Finish Chapter 5, work on Midterm
     </td>
    </tr>
    <tr>
@@ -136,13 +136,13 @@
      Week 8
     </th>
     <td>
-     3/27 - Section 5.3 - Systems of Linear Congruences (Part 2)
+     3/27 - Section 6.1 - Introduction to Primes
     </td>
     <td>
-     3/29 - Section 5.4 - Using the Chinese Remainder Theorem
+     3/29 - Section 6.2 - To Infinity and Beyond
     </td>
     <td>
-     3/31 - Finishing Chapter 5
+     3/31 - Section 6.3 - The Fundamental Theorem of Arithmetic
     </td>
    </tr>
    <tr>
@@ -150,13 +150,13 @@
      Week 9
     </th>
     <td>
-     4/3 - Section 6.1 - Introduction to Primes
+     4/3 - Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
     </td>
     <td>
-     4/5 - Section 6.2 - To Infinity and Beyond
+     4/5 - Section 7.2 - Hensel's Lemma
     </td>
     <td>
-     4/7 - Section 6.3 - The Fundamental Theorem of Arithmetic
+     4/7 - Section 7.4 - Roots of Polynomials Mod n
     </td>
    </tr>
    <tr>
@@ -164,10 +164,10 @@
      Week 10
     </th>
     <td>
-     4/10 - Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
+     4/10 - Section 7.5 - Fermat and Wilson's Theorems
     </td>
     <td>
-     4/12 - Section 7.5 - Fermat and Wilson's Theorems
+     4/12 - Section 8.1 - The Integers modulo n
     </td>
     <td>
      4/14 - NCUR (No Class)
@@ -178,7 +178,7 @@
      Week 11
     </th>
     <td>
-     4/17 - Section 8.1 - The Integers modulo n
+     4/17 - Section 8.3 - Group Facts for Number Theory
     </td>
     <td>
      4/19 - Section 9.1 - Groups and Number Systems

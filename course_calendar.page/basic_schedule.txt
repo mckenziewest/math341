@@ -16,19 +16,19 @@ Section 4.3 - Properties of Congruence (Part 2)
 Section 4.5 - Why modular arithmetic matters
 Section 4.6 - Toward Congruence
 Section 5.1 - Solving Linear Congruences
-Section 5.2 - Strategies for Solving Congruences
-Midterm Work Day
 Section 5.3 - Systems of Linear Congruences
-Section 5.3 - Systems of Linear Congruences (Part 2)
 Section 5.4 - Using the Chinese Remainder Theorem
-Finishing Chapter 5
+Finish Chapter 5, work on Midterm
 Section 6.1 - Introduction to Primes
 Section 6.2 - To Infinity and Beyond
 Section 6.3 - The Fundamental Theorem of Arithmetic
 Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
+Section 7.2 - Hensel's Lemma
+Section 7.4 - Roots of Polynomials Mod n
 Section 7.5 - Fermat and Wilson's Theorems
-NCUR (No Class)
 Section 8.1 - The Integers modulo n
+NCUR (No Class)
+Section 8.3 - Group Facts for Number Theory
 Section 9.1 - Groups and Number Systems
 Math Placement Meeting (No Class)
 Section 9.2 - The Euler Phi Function
