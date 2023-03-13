@@ -55,7 +55,7 @@
 ..\assignments\hw4.assignment
 ..\assignments\hw5.assignment
 
-..\assignments\midterm_exam.assignment
+..\assignments\midterm.assignment
 
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file
