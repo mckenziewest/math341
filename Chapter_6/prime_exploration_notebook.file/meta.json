@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🐍 Prime Exploration Notebook",
+	"filename":"prime_exploration.ipynb",
+	"modules":["Week 8"],
+	"destination": "notebooks"
+}

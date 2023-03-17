@@ -44,6 +44,9 @@
 ..\Chapter_5\Day_3.page
 ..\Chapter_5\linear_congruence.slides
 
+..\Chapter_6\Day_1.page
+..\Chapter_6\prime_exploration_notebook.file
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\webwork\webwork_3.assignment
