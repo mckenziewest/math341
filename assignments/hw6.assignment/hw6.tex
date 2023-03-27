@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+	Math 341 Homework 6
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	
+	\textbf{Instructions:} For this assignment you may complete any number of items, the maximum number of points you will receive is 50. A partially incomplete question will not be considered.
+\begin{enumerate}
+	\item (20 pts) Complete Day 13 of Advent of Code 2020 here:
+			 \begin{center}
+			 	\url{https://adventofcode.com/2020/day/13}
+			 \end{center}
+		Advent of Code is an annual event that provides a new coding challenge every day December 1-25. The challenges involve some text processing and always have two parts.
+		Many were unable to complete the second part of this particular challenge because it was unobtainable by brute force, only through the Chinese Remainder Theorem.
+		
+		You will need to sign up/create an account to complete this exercise. Please submit any code used to complete this challenge to Canvas.
+		
+	\item (5 pts) Solve the linear congruence $17x\equiv 3\pmod 2\cdot3\cdot 5\cdot 7$ by solving the system
+		\begin{eqnarray*}
+			17x&\equiv& 3\pmod 2\\
+			17x&\equiv& 3\pmod 3\\
+			17x&\equiv& 3\pmod 5\\
+			17x&\equiv& 3\pmod 7
+		\end{eqnarray*}
+		Show your complete work. You must use the Chinese Remainder Theorem to earn credit. If you use Sage or a calculator, make note where.
+		\vfill
+		\newpage
+	\item (10 pts) If $x\equiv a\pmod n$, prove that either $x\equiv a \pmod{2n}$ or $x\equiv a+n\pmod{2n}$.
+		\vfill
+	\item (10 pts) Obtain the two incongruent solutions modulo 210 of the system
+	\begin{eqnarray*}
+		2x\equiv 3\pmod 5\\4x\equiv 2\pmod 6\\3x\equiv 2\pmod 7
+	\end{eqnarray*}
+		Show your complete work. You must use the Chinese Remainder Theorem to earn credit. If you use Sage or a calculator, make note where.
+		\vfill
+		\newpage
+	\item (10 pts) When eggs in a basket are removed two, three, four, five, or six at a time, there remain, respectively, one, two, three, four, or five eggs. When they are taken out seven at a time, none are left over. Find the smallest number of eggs that could have been contained in the basket. (Brahmagupta, 7th century AD – and many other variations in other cultures)
+	
+		Show your complete work. You must use the Chinese Remainder Theorem to earn credit. If you use Sage or a calculator, make note where.
+		\vfill
+	\item (5 pts) Find three consecutive integers each of which is divisible by a square.
+		(Hint: Find an integer $a$ such that $2^2\mid a$, $3^2\mid a+1$, and $5^2\mid a+2$.)
+		\vfill
+		\newpage
+	\item (5 pts) Find three consecutive integers such that the first is divisible by a square, the second by a cube, and the third by a fourth power.
+		\vfill
+	\item (5 pts) Find the solution to the following system of congruences:
+			\begin{eqnarray*}11x+5y&\equiv& 7\pmod{20}\\6x+3y&\equiv& 8\pmod{20}\end{eqnarray*}
+		
+		Show your complete work. You must reference a Theorem to earn credit. If you use Sage or a calculator, make note where.
+		\vfill
+\end{enumerate}
+		
+\end{document}
