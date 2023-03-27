@@ -45,6 +45,8 @@
 ..\Chapter_5\linear_congruence.slides
 
 ..\Chapter_6\Day_1.page
+..\Chapter_6\Day_2.page
+..\Chapter_6\Day_3.page
 ..\Chapter_6\prime_exploration_notebook.file
 
 ..\webwork\webwork_1.assignment
@@ -57,6 +59,7 @@
 ..\assignments\hw3.assignment
 ..\assignments\hw4.assignment
 ..\assignments\hw5.assignment
+..\assignments\hw6.assignment
 
 ..\assignments\midterm.assignment
 
