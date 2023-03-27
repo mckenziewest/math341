@@ -48,7 +48,7 @@
 ..\Chapter_6\Day_2.page
 ..\Chapter_6\Day_3.page
 ..\Chapter_6\prime_exploration_notebook.file
-..\Chapter_6\FTA.slides\fund_thm_arithmetic.tex
+..\Chapter_6\FTA.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
