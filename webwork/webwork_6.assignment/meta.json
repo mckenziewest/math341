@@ -5,7 +5,7 @@
     "unlock_at": "2023-01-30T00:00:00",
     "due_at": "2023-04-03T16:00:00",
     "type": "assignment",
-    "points_possible": 15,
+    "points_possible": 12,
     "submission_types": "external_tool",
     "external_tool_tag_attributes": {
         "url": "https://webwork.uwec.edu/webwork2/341_West/WeBWorK_6/",
