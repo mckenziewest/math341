@@ -65,6 +65,9 @@
 
 ..\assignments\midterm.assignment
 
+..\project\project_description.page
+..\project\possible_topics.page
+
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file
 ..\BGSC Resources\VPN.link
