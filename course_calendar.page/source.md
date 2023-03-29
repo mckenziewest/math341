@@ -153,10 +153,10 @@
      4/3 - Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
     </td>
     <td>
-     4/5 - Section 7.2 - Hensel's Lemma
+     4/5 - Section 7.2 - Hensel's Lemma and Polynomials Mod n
     </td>
     <td>
-     4/7 - Section 7.4 - Roots of Polynomials Mod n
+     4/7 - Local Solubility of Polynomials
     </td>
    </tr>
    <tr>

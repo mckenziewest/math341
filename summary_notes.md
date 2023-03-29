@@ -87,8 +87,21 @@ Therefore, there is some assumption as to proof-writing abilities.
   * Day 2: Basic Chinese Remainder Theorem and lots of examples.
   * Day 3: CRT Extended with non-coprime moduli, equations with coefficients, multiple variables
   
-### Chapter 6 (n days)
+### Chapter 6 (4 days)
 * Primes and the Fundamental Theorem of Arithmetic
 * Materials
-  * (TODO) Slides [Primes, Shapes, and Infinite Possibilities]()
-  * (TODO) Slides [Fundamental Theorem of Arithmetic]()
+  * Notebook [Prime Exploration](Chapter_6/prime_exploration_notebook.file/prime_exploration.ipynb)
+  * Slides [Fundamental Theorem of Arithmetic](Chapter_6/FTA.slides/fund_thm_arithmetic.tex) 
+  * (TODO) Slides [Applications of FTA]
+* Content by Day
+  * Day 1: Students work through the prime exploration notebook. This introduces some prime tools available in Sage.
+  * Day 2: Prove the Fundamental Theorem of Arithmetic.
+  * Day 3: Proof of infinitely many primes and infinitely many of the form $4k+3$.
+  * Day 4: Prime factorizations leading to gcd and lcm, and congruence modulo prime powers.
+  
+### Chapter 7 (n days)
+* Congruence and prime powers
+* Materials
+  * (TODO) Slides [Hensel's Lemma]
+  * (TODO) Notebook [Local Solubility of Polynomials]
+  * (TODO) Slides [Wilson's and Fermat's Theorems]
