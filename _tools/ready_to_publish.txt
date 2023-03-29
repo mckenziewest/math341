@@ -55,6 +55,7 @@
 ..\webwork\webwork_3.assignment
 ..\webwork\webwork_4.assignment
 ..\webwork\webwork_5.assignment
+..\webwork\webwork_6.assignment
 ..\assignments\hw1.assignment
 ..\assignments\hw2.assignment
 ..\assignments\hw3.assignment
