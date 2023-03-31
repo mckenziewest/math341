@@ -1,0 +1,5 @@
+{
+    "files.exclude": {
+        "**/results.html": true
+    }
+}
