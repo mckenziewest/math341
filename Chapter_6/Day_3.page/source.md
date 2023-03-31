@@ -1,7 +1,7 @@
 ## Outcomes
 
 * After class time today you will be able to
-    * state and prove the fundamental theorem of arithmetic.
+    * state and prove some results about infinitely many primes.
 
 ## Preparation
 
