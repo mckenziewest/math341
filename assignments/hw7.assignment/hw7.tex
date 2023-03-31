@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+	Math 341 Homework 7
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	
+	\textbf{Instructions:} We're doing them all this time. The assignment has more points to it than any of the others. If you find yourself needing more time, let me know. There will be no assignment due the week of NCUR.
+\begin{enumerate}
+	\item (5 pts) Use Sage to find 3 different primes in the sequence $11,111,1111,11111,\dots$.\vskip 2in
+	\item (10 pts) Use an argument similar to the one that proves there are infinitely many primes that are 3 modulo 4 to show that there are infinitely many primes that are 5 modulo 6.
+		\vfill
+		\newpage
+	\item (15 pts) It has been conjectured that there are infinitely many primes of the form $n^2-2$.
+
+	Here is a function that computes the number of primes less $x$ of the form $n^2-2$, it will be useful for parts (b) and (c).
+		\begin{verbatim}
+			def num_primes_square_minus_2(x):
+			    max_val = ceil(sqrt(x+2))
+			    return len([a for a in range(max_val) if is_prime(a^2-2)]) 
+		\end{verbatim}
+		\begin{enumerate}
+			\item Find one prime of this form greater than 100000.\vskip 2in
+			\item How many primes are there of this form less than 100000?\vskip 2in
+			\item For $X>0$, define $N(X)=\#\{n\in\Z\ |\ n^2-2 < X \text{ and } n^2-2 \text{ is prime}\}$. Use the following to plot $y=N(x)$ for integers $x$ from 2 and 100.
+			\begin{verbatim}
+				P = point([(x,num_primes_suqare_minus_2(x)) for x in range(2,101)])
+				P.show()
+			\end{verbatim}
+				Adjust the upper bound for the plot, maybe compare it to $\pi(x)$. Explore and let me know what you do.
+		\end{enumerate}
+	\newpage
+	\item (10 pts) Prove that the only prime that is of the form $n^2-4$ is 5.
+	\vfill
+	\item (5 pts) Find all primes that divide $50!$.
+	\vskip 2in
+	\item (10 pts) If $n>4$ is not prime, prove that $n$ divides $(n-1)!$.
+	\vfill
+	\newpage
+	\item (10 pts) Assume that $p$ and $q=p+2$ are both prime. Prove that $p+q$ is divisible by 12 if $p>3$.
+	\vfill
+	\item (10 pts) Prove that for all $n>2$,
+		$$(n+1)!-2, (n+1)!-3,\dots,(n+1)!-(n+1)$$
+		is a sequence of consecutive composite number of length $n$, thus proving that there are arbitrarily large gaps between primes. 
+	\vfill
+\end{enumerate}
+\end{document}
