@@ -1,0 +1,160 @@
+\documentclass[t]{beamer}
+
+\subtitle{Applications of the Fundamental Theorem of Arithmetic}
+
+\input{../../_tools/setup}
+
+\begin{document}
+	
+\startdoc
+\begin{frame}[c]{\insertframenumber}
+	\begin{block}{\textbf{Previously.}}
+	\begin{itemize}[label=--]
+        \item Prime factorization
+        \item The Fundamental Theorem of Arithmetic
+	\end{itemize}
+	\end{block}
+	\begin{block}{\textbf{Today.}}
+		\begin{itemize}[label=--]
+            \item Common Divisors and Common Multiples with FTA 
+            \item Divisors of Factorials
+            \item CRT and FTA 
+            \item Prime power solution lifting
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\slide{
+	\begin{statementblock}{Fundamental Theorem of Arithmetic}
+		Ever positive integer $n>1$ is either a prime or a product of primes.  Moreover, this representation as a product of primes is unique up to the ordering.
+	\end{statementblock}
+	\begin{defn}
+		The \emph{canonical form} for an integer with respect to its prime factorization is
+			\[n=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}\]
+		where $1<p_1<p_2<\cdots<p_r$ are the unique prime factors and each $k_i$ is a positive integer.
+	\end{defn}
+}
+\slide{
+    \begin{exercise}
+        Compute the prime factorizations of
+    \end{exercise}
+    (a) $a=1789348484 $\vfill
+    (b) $b=798932750$\vfill 
+    (c) $\gcd(a,b)$\vfill
+    (d) $\lcm(a,b)$\vfill
+}
+\slide{
+    \begin{thm}{}
+        Let $a,b\in\Z$ with 
+        $$a=(-1)^{e_0}p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}\quad\text{and}\quad 
+        b=(-1)^{f_0}p_1^{f_1}p_2^{f_2}\cdots p_r^{f_r}$$
+        are factorizations of $a$ and $b$ where $p_1,\dots,p_r$ are distinct primes and $e_i,f_j$ are non-negative integers.
+        Then 
+        $$\gcd(a,b)=p_1^{\min(e_1,f_1)}p_2^{\min(e_2,f_2)}\cdots p_r^{\min(e_r,f_r)},$$
+        and
+        $$\lcm(a,b)=p_1^{\max(e_1,f_1)}p_2^{\max(e_2,f_2)}\cdots p_r^{\max(e_r,f_r)}.$$
+    \end{thm}
+}
+\slide{
+    \begin{exercise}
+        Let $d=\gcd(a,b)$. Let $1\leq i\leq r$ show that $p_i^{\min(e_i,f_i)}$ divides $d$.
+    \end{exercise}
+    \vfill
+    \begin{exercise}
+        Show that $p_i^{\min(e_i,f_i)+1}$ does not divide $d$.
+    \end{exercise}
+    \vfill
+}
+\slide{
+    \begin{exercise}
+        Show that if $q$ is prime and $q\neq p_i$ for all $i$, then $q\nmid d$.
+    \end{exercise}
+    \vfill
+    \begin{exercise}
+        Explain why $d=p_1^{\min(e_1,f_1)}p_2^{\min(e_2,f_2)}\cdots p_r^{\min(e_r,f_r)}$.
+    \end{exercise}
+    \vfill
+}
+\slide{
+    \exer{
+        Compute the prime factorizations:
+        $$\begin{array}{|l|l|}
+            \hline 
+            n&\text{prime factorization of }n\\
+            \hline 
+            &\\
+            4!&\\&\\
+            5!&\\&\\
+            6!&\\&\\
+            7!&\\&\\
+            8!&\\&\\
+            \hline
+        \end{array}$$
+    }
+}
+\slide{
+    \begin{defn}
+        For a prime $p$ and an integer $n$ define $p^r\| n$ to mean $p^r$ divides $n$ but $p^{r+1}\nmid n$.
+
+        Define the \emph{valuation} of $n$ at $p$ by $v_p(n)=r$ where $p^r\| n$.
+    \end{defn}
+    \exer{
+        What is $v_2(3!)$, $v_2(4!)$, $v_2(5!)$?
+    }
+}
+\slide{
+    \exer{
+        For a positive integer $n$, let $f_k(n)$ be the number of positive integers $m<n$ such that $k$ divides $m$.
+        Find a formula for  $f_2(n)$, $f_4(n)$, $f_8(n)$. 
+    }
+    \vfill 
+    \exer{
+        Conjecture a formula for $v_2(n!)$ in terms of $f_2(n)$, $f_4(n)$, $f_8(n)$, etc.
+    }
+}
+\slide{
+    Recall from the CRT:
+
+    Let $n_1,\dots, n_r$ be positive integers and $a_1,\dots,a_r$ be integers with $\gcd(a_i,n_i)=1$ for all $i$.
+    Then for any $b_1,\dots,b_r\in \Z$, a solution to a system of congruences:
+    $$a_1x\equiv b_1\!\pmod{n_1},\dots
+    ,a_rx\equiv b_r\!\pmod{n_r}$$
+    has a single solution modulo $n_1\cdots n_r$ if the $n_1,\dots,n_r$ are coprime.
+    \vskip .25in
+    Moreover, one thing we talked about was that if $N=mn$ with $\gcd(m,n)=1$, then
+    a solution to $ax\equiv b\pmod N$ can be found using
+    $$ax\equiv b\pmod m,\text{ and }ax\equiv b\pmod n.$$
+}
+\slide{
+    \exer{
+        Discuss the implications of this idea alongside the Fundamental Theorem of Arithmetic.
+    }
+}
+\slide{
+    \begin{nb}
+        The ability to solve $ax\equiv b\pmod{p^r}$ will give us all the power we need. Bwahahahahaha!
+    \end{nb}
+    \exer{
+        Solve $3x\equiv 2\pmod 5$. 
+    }
+}
+\slide{
+    \exer{
+        We just found $x=4$ is a solution to $3x\equiv 2\pmod 5$. 
+        \vskip 2em
+        Any solution to $3x\equiv 2\pmod{25}$ reduces to a solution to $3x\equiv 2\pmod 5$.  Thus the solution to $3x\equiv 2\pmod{25}$ is of the form 
+        $$x=4+5k$$
+        for some $0\leq k<5$. For what $k$ is this true?
+    }
+}
+\slide{
+    \exer{
+        We found that $x=9$ is a solution to $3x\equiv 2\pmod{25}$.  
+        \vskip 2em
+        Next we look for solutions to $3x\equiv 2\pmod{125}$. Similar to the last exercise, solutions will be of the form $$x=9+25k$$
+        for some $0\leq k<5$. For what $k$ is this true?
+    }
+}
+
+\end{document}
+
