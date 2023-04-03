@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/**/*.aux": true,
+        "**/**/*.nav": true,
+        "**/**/*.out": true,
+        "**/**/*.snm": true,
+        "**/**/*.toc": true,
+        "**/**/result.html": true
+    }
+}

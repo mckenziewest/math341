@@ -1,0 +1,9 @@
+{
+    "name": "🌟 Pre-Presentation Slides", 
+    "type": "assignment",
+    "allowed_extensions": ["pdf","ipynb"],
+    "submission_types": ["online_upload"],
+    "modules": ["🌟 Project"],
+    "due_at": "2023-05-03T16:00:00",
+    "points_possible": 15
+  }

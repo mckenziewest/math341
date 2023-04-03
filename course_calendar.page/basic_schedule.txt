@@ -23,8 +23,8 @@ Section 6.1 - Introduction to Primes
 Section 6.2 - To Infinity and Beyond
 Section 6.3 - The Fundamental Theorem of Arithmetic
 Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
-Section 7.2 - Hensel's Lemma
-Section 7.4 - Roots of Polynomials Mod n
+Section 7.2 - Hensel's Lemma and Polynomials Mod n
+Local Solubility of Polynomials
 Section 7.5 - Fermat and Wilson's Theorems
 Section 8.1 - The Integers modulo n
 NCUR (No Class)

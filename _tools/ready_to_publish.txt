@@ -44,18 +44,41 @@
 ..\Chapter_5\Day_3.page
 ..\Chapter_5\linear_congruence.slides
 
+..\Chapter_6\Day_1.page
+..\Chapter_6\Day_2.page
+..\Chapter_6\Day_3.page
+..\Chapter_6\Day_4.page
+..\Chapter_6\prime_exploration_notebook.file
+..\Chapter_6\FTA.slides
+..\Chapter_6\FTA_applications.slides
+
+..\Chapter_7\Day_1.page
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\webwork\webwork_3.assignment
 ..\webwork\webwork_4.assignment
 ..\webwork\webwork_5.assignment
+..\webwork\webwork_6.assignment
 ..\assignments\hw1.assignment
 ..\assignments\hw2.assignment
 ..\assignments\hw3.assignment
 ..\assignments\hw4.assignment
 ..\assignments\hw5.assignment
+..\assignments\hw6.assignment
+..\assignments\hw7.assignment
 
-..\assignments\midterm_exam.assignment
+..\assignments\midterm.assignment
+
+..\project\project_description.page
+..\project\possible_topics.page
+..\project\topic_preference.assignment
+..\project\resource_list.assignment
+..\project\slides_for_review.assignment
+..\project\peer_review.assignment
+..\project\presentation.assignment
+..\project\reflections.assignment
+..\project\paper.assignment
 
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file

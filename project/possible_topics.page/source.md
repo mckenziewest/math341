@@ -1,0 +1,34 @@
+<link href="https://media.uwex.edu/app/droplets_v3/css/droplets.css" rel="stylesheet"/>
+<script href="https://media.uwex.edu/app/droplets_v3/script/droplets.js" type="test/javascript">
+</script>
+<div id="uws-droplets-page">
+    <h4>Suggested Topics</h4>
+    <p>What follows are several possible topics for you to explore. Of course there are many many other topics beyond this list. Feel free to suggest a topic not on the list. Here&rsquo;s a link that has a variety of other possible presentation topics:</p>
+    <div style="text-align: center;">
+        <a href="https://en.wikipedia.org/wiki/List_of_number_theory_topics">https://en.wikipedia.org/wiki/List_of_number_theory_topics</a>
+    </div>
+    <p>The only real limitation is that you do not present on something we fully fleshed out in class.</p>
+    <ul>
+        <li><span style="color: #10a2b5;">Different types of primes</span> &ndash; We got started talking about primes in class but didn&rsquo;t even talk about some of the most famous kinds of primes, such as Mersenne, Fermat, or Sophie Germain primes.</li>
+        <li><span style="color: #10a2b5;">Fibonacci Sequence</span> &ndash; A sequence where every number is the sum of the previous two. Turns out there are a lot of cool divisibility properties and other facts about such numbers.</li>
+        <li><span style="color: #10a2b5;">Sums of Two Squares</span> &ndash; Take a look at how we know whether an integer is the sum of two squares. This topic comes up in Abstract Algebra too, but has a very number theoretic explanation.</li>
+        <li><span style="color: #10a2b5;">Continued Fractions</span> &ndash; We touched on these the first week of class. Maybe you can find and learn more about them!</li>
+        <li><span style="color: #10a2b5;">Riemann Hypothesis</span> &ndash; Take this opportunity to learn about this famous problem and teach your peers what you learn.</li>
+        <li><span style="color: #10a2b5;">Primality Testing</span> &ndash; How are prime numbers found?</li>
+        <li><span style="color: #10a2b5;">Perfect Numbers</span> &ndash; What a cool name?! A perfect number is one that is a sum of its positive proper divisors (6 = 1+2+3). How many are there and what do we know about them?</li>
+        <li><span style="color: #10a2b5;">Farey Sequences</span> &ndash; Just take a look at the Wikipedia. At a minimum, there are cool pictures.</li>
+        <li><span style="color: #10a2b5;">Skewes Number</span> &ndash; Skewes, a student of John Littlewood, proved there&rsquo;s an unknown, very large number where the number theoretic functions &pi;(x), the prime counting function, and "li"(x), the logarithmic integral function, cross.</li>
+        <li><span style="color: #10a2b5;">Computable Numbers</span> &ndash; A computable number is any real number that can be computed to any desired precision. For example &pi;, while we can never know all digits at once, can be computed to any desired decimal amount. It turns out that almost all real numbers are not computable. Wild!</li>
+        <li><span style="color: #10a2b5;">Nonlinear Diophantine Equations</span> &ndash; We studied very easy linear Diophantine equations where we could quickly decide if they had an answer. Fermat&rsquo;s Last Theorem also refers to a class of Diophantine equations: a^n+b^n=c^n. If n=2 then this equation has infinitely many coprime solutions (gcd(a,b)=gcd(a,c)=gcd(b,c)=1). If n&ge;3, then the only solutions to this equation are of the form abc=0. Can you say more about this particular Diophantine equation or other nonlinear ones?</li>
+        <li><span style="color: #10a2b5;">Fast Integer Multiplication</span> &ndash; In elementary school, we learn how to multiply large numbers. As it turns out the way we do this is pretty slow. Other algorithms, such as Karatsuba algorithm, exist and are implemented in computer software.</li>
+        <li><span style="color: #10a2b5;">Local to Global Principle</span> &ndash; If we have a polynomial equation with integer solutions, then we also have solutions modulo n. That is if p(x,y)=0 for integers x,y, then p(x,y)&equiv;0 (mod n) for all n&ge;2. This is called a global to local property. The question is whether the revers holds. Does a solution mod every n guarantee a solution in the integers? Generally the answer is &ldquo;no&rdquo; but it is true for quadratic polynomials.</li>
+        <li><span style="color: #10a2b5;">Cryptography</span> &ndash; specifically RSA encryption</li>
+        <li><span style="color: #10a2b5;">Number Theory and Music</span> &ndash; A friend of mine in grad school, Robert Schneider, found some really neat note scales based on prime numbers. Consider looking up his work from his undergraduate time, or something along these lines.</li>
+        <li><span style="color: #10a2b5;">Infinitude of Primes</span> &ndash; There are at least 183 different proofs of the infinitude of primes. You should consult the book called Proofs From The Book, which attempts to compile the greatest of proofs of fundamental results such as the infinitude of primes among many other. The great mathematician Paul Erdős said that God keeps a book with the most beautiful proofs of theorems, and that it is our job here on Earth to reveal these proofs. The book I reference gives six different proofs of the infinitude of primes from a variety of mathematical areas. This might a fun thing to present to those who only are familiar with the standard Euclid&rsquo;s proof.</li>
+        <li><span style="color: #10a2b5;">The Chicken McNugget Theorem</span> &ndash; This is a VERY real thing. And yes, it would make a great topic for a presentation. Look it up. You will be delighted with this number-theortic exploration in McDonald&rsquo;s McNuggets, even if you&rsquo;re a vegetarian or a fast-food hater!</li>
+        <li><span style="color: #10a2b5;">Nontotients</span> &ndash; In the integers, it is known that the Euler phi function ϕ takes on only even values. The even values n such that ϕ(x)=n has no solution x are called nontotients. The first few nontotients are:
+            <div style="text-align: center;">14,26,34,38,50,62,68,74,76,86,90,94,98,114,&hellip;</div>
+            <p>Since 1965 in a paper by Schinzel and Spyropoulos, attempts have been made to find criteria for when n is a nontotient. So far only sufficiency criteria were found generally. In a specific case of n, necessary and sufficient conditions were shown (Bateman and Selfridge, 1963). Most recently in 1993, Mingzhi gave necessary and sufficient criteria for n to be a nontotient when n is divisible by only one factor of 2. A good presentation idea is to explore this topic of nontotient.</p>
+        </li>
+    </ul>
+</div>
