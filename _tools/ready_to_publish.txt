@@ -72,6 +72,13 @@
 
 ..\project\project_description.page
 ..\project\possible_topics.page
+..\project\topic_preference.assignment
+..\project\resource_list.assignment
+..\project\slides_for_review.assignment
+..\project\peer_review.assignment
+..\project\presentation.assignment
+..\project\reflections.assignment
+..\project\paper.assignment
 
 ..\BGSC Resources\openOnDemand.link
 ..\BGSC Resources\notebook_cheatsheet.file

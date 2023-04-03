@@ -29,16 +29,16 @@
     <ul>
         <li>
           Submit a list of 3 topics that interest you. 
-          <a href="page:🌟 Suggested Topics">Suggested topics list</a>.
+          <a href="page:🌟 Suggested Topics">Suggested topics list</a> by April 10.
         </li>
         <li>
-          Submit several resources related to your topic that you have found.
+          Submit several resources related to your topic that you have found for <a href="assignment:🌟 Resource List">🌟 Resource List</a> by April 17.
         </li>
         <li>
-          Submit the slides or whatever you intend to use for your presentation to Canvas. Feedback will be provided on these by your classmates.
+          Submit the slides or whatever you intend to use for your presentation to Canvas by May 1. Feedback will be provided on these by your classmates by May 5.
         </li>
         <li>
-          Attend class for your classmates' presentations and turn in the associated worksheets.
+          Attend class for your classmates' presentations and turn in the associated worksheets on May 8, 10, and 12.
         </li>
     </ul>
 </div>
@@ -50,24 +50,31 @@
     <ul>
         <li>5 pts - On time initial topic submission.
           <a href="assignment:🌟 Topic Preferences">🌟 Topic Preferences</a>
+          (Due April 10)
         </li>
         <li>5 pts - On time submission of current resources.
           <a href="assignment:🌟 Resource List">🌟 Resource List</a>
+          (Due April 19)
         </li>
         <li>15 pts - On time submission of slides
-          <a href="assignment:🌟 Resource List">🌟 Resource List</a>
+          <a href="assignment:🌟 Pre-Presentation Slides">🌟 Pre-Presentation Slides</a>
+          (Due May 3)
         </li>
         <li>5 pts - Peer review completed
           <a href="assignment:🌟 Peer Review">🌟 Peer Review</a>
+          (Due May 5)
         </li>
         <li>40 pts - Presentation
-          <a href="assignment:🌟 Presentation">🌟 Presentation</a>
+          <a href="assignment:🌟 In Class Presentation">🌟 In Class Presentation</a>
+          (One of May 8,10,12)
         </li>
         <li>10 pts - Attendance and reflection of peer presentations
           <a href="assignment:🌟 Presentation Reflections">🌟 Presentation Reflections</a>
+          (All of May 8,10,12)
         </li>
         <li>20 pts - Written summary on your topic.
           <a href="assignment:🌟 Written Summary">🌟 Written Summary</a>
+          (Due May 12)
         </li>
     </ul>
 </div>

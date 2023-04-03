@@ -5,6 +5,6 @@
         "**/**/*.out": true,
         "**/**/*.snm": true,
         "**/**/*.toc": true,
-        "**/**/results.html": true
+        "**/**/result.html": true
     }
 }

@@ -1,0 +1,1 @@
+Submit the visual aids you intend to use for your presentation. They should be in a semi-final form with the expectation that both I, Dr. West, and a peer from the class will make comments on and return to you. It will be expected that you make changes to the item before your in-class presentation.
