@@ -1,9 +1,10 @@
-See the document here ([pdf](hw6.pdf)) ([tex](hw6.tex))
+See the document here ([pdf](hw7.pdf)) ([tex](hw7.tex))
 
 ## Purpose
 
   * Practice content from number theory, namely
-      * systems of congruence.
+      * primes, and
+      * properties of primes.
   * Build a strong foundation of creative critical thinking and proof-writing techniques.
 
 ## Task
