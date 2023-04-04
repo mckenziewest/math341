@@ -25,16 +25,45 @@
 \end{frame}
 
 \slide{
-	\begin{recall}
-		Last time, we discussed how a solution to 
-		$$3x\equiv 2\pmod 5$$
-		led to a solution to 
-		$$3x\equiv 2\pmod{25}$$
-		led to a solution to 
-		$$ 3x\equiv 2\pmod{125}.$$
-
-		Today we generalize this idea.
-	\end{recall}
+	\begin{statementblock}{Chinese Remainder Theorem (Rephrased)}
+		Take distinct primes $p_1,p_2,\dots ,p_r$.
+		
+		Let $a,b,n\in\Z$ such that
+		$\gcd(a,n)=1$, and $n$ has prime factorization $$n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}.$$ 
+		Then for all $x\in\Z$ the congruence  $ax\equiv b\pmod n$ holds if and only if all of the following hold
+		\begin{eqnarray*}
+			ax&\equiv& b\pmod{p_1^{e_1}}\\
+			ax&\equiv& b\pmod{p_2^{e_2}}\\
+			&\vdots&\\
+			ax&\equiv& b\pmod{p_r^{e_r}}.
+		\end{eqnarray*}
+		Moreover this $x$ is unique up to congruence modulo $n$.
+	\end{statementblock}
+}
+\slide{
+	\begin{nb}
+		The ability to solve $ax\equiv b\pmod{p^r}$ will give us all the power we need. Bwahahahahaha!
+	\end{nb}
+	\exer{
+		Solve $3x\equiv 2\pmod 5$. 
+	}
+}
+\slide{
+	\exer{
+		We just found $x=4$ is a solution to $3x\equiv 2\pmod 5$. 
+		\vskip 2em
+		Any solution to $3x\equiv 2\pmod{25}$ reduces to a solution to $3x\equiv 2\pmod 5$.  Thus the solution to $3x\equiv 2\pmod{25}$ is of the form 
+		$$x=4+5k$$
+		for some $0\leq k<5$. For what $k$ is this true?
+	}
+}
+\slide{
+	\exer{
+		We found that $x=9$ is a solution to $3x\equiv 2\pmod{25}$.  
+		\vskip 2em
+		Next we look for solutions to $3x\equiv 2\pmod{125}$. Similar to the last exercise, solutions will be of the form $$x=9+25k$$
+		for some $0\leq k<5$. For what $k$ is this true?
+	}
 }
 
 \slide{
@@ -48,5 +77,26 @@
 	\end{statementblock}
 }
 
+\slide{
+\begin{exercise}
+	Apply Hensel's lemma to $f(x)=3x^2+2$ with $p=5$ to find solutions to $f(x)\equiv 0\pmod{13^2}$ and $f(x)\equiv 0\pmod{13^3}$.
+\end{exercise}
+}
+
+\slide{
+	\begin{exercise}
+		Apply Hensel's lemma to $f(x)=x^2+1$ with $p=13$ to find solutions to $f(x)\equiv 0\pmod{13^2}$ and $f(x)\equiv 0\pmod{13^3}$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Explore Hensel's Lemma with respect to $f(x)=2x^2+x+2$ modulo 5.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Explore Hensel's Lemma with respect to $f(x)=2x^4 + 2x^3 + x^2 + 2x + 2$ modulo $3$.
+	\end{exercise}
+}
 \end{document}
 
