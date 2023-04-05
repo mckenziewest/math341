@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🔭 Hensel's Lemma",
+	"filename":"hensels_lemma.pdf",
+	"modules":["Week 9","Empty Slides"],
+	"destination": "slides"
+}

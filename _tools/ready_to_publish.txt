@@ -53,6 +53,8 @@
 ..\Chapter_6\FTA_applications.slides
 
 ..\Chapter_7\Day_1.page
+..\Chapter_7\Day_2.page
+..\Chapter_7\hensel.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment

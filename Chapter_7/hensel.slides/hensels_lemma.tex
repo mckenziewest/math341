@@ -2,6 +2,36 @@
 
 \subtitle{Hensel's Lemma}
 
+\usepackage{listings}
+\usepackage{caption, floatrow, makecell}%
+\captionsetup{labelfont = sc}
+\setcellgapes{3pt}
+
+\definecolor{backcolour}{RGB}{237,236,230}
+\definecolor{myblue}{RGB}{42,157,189}
+
+\lstdefinestyle{mystyle}{
+	language=Python,
+	keywords=[2]{sage:},
+	alsodigit={:,.,<,>},
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{myblue},
+	keywordstyle=\bfseries\color{Blu},
+	keywordstyle=[2]\color{purple},
+	numberstyle=\tiny\color{gray},
+	stringstyle=\color{orange},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                   
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
 \input{../../_tools/setup}
 
 \begin{document}
@@ -90,13 +120,104 @@
 }
 \slide{
 	\begin{exercise}
+		Explore Hensel's Lemma with respect to $f(x)=x^3+1$ modulo 3.
+	\end{exercise}
+}
+\begin{frame}[fragile]{\fn}
+	\begin{lstlisting}
+sage: p = 3
+sage: R.<x> = PolynomialRing(Integers(p))
+sage: f = x^3+1
+	
+sage: for i in range(1,7):
+sage: 	T.<z> = PolynomialRing(Integers(p^i))
+sage: 	print(T(f).roots(multiplicities=False))	\end{lstlisting}
+
+\begin{lstlisting}
+[1]
+[2, 5, 8]
+[8, 17, 26]
+[26, 53, 80]
+[80, 161, 242]
+[242, 485, 728]
+\end{lstlisting}
+\end{frame}
+\slide{
+	\begin{exercise}
 		Explore Hensel's Lemma with respect to $f(x)=2x^2+x+2$ modulo 5.
 	\end{exercise}
 }
+\begin{frame}[fragile]{\fn}
+\begin{lstlisting}
+sage: p = 3
+sage: R.<x> = PolynomialRing(Integers(p))
+sage: f = 2*x^2+x+2
+
+sage: for i in [1,2]:
+sage: 	T.<z> = PolynomialRing(Integers(p^i))
+sage: 	print(T(f).roots(multiplicities=False))	\end{lstlisting}
+
+\begin{lstlisting}
+[1]
+[]
+\end{lstlisting}
+\end{frame}
 \slide{
 	\begin{exercise}
 		Explore Hensel's Lemma with respect to $f(x)=2x^4 + 2x^3 + x^2 + 2x + 2$ modulo $3$.
 	\end{exercise}
 }
+\begin{frame}[fragile]{\fn}
+\begin{lstlisting}
+	sage: p = 3
+	sage: R.<x> = PolynomialRing(Integers(p))
+	sage: 2*x^4 + 2*x^3 + x^2 + 2*x + 2
+	
+	sage: for i in range(1,4):
+	sage: 	T.<z> = PolynomialRing(Integers(p^i))
+	sage: 	print(T(f).roots(multiplicities=False))	\end{lstlisting}
+
+\begin{lstlisting}
+	[1]
+	[1, 4, 7]
+	[]
+\end{lstlisting}
+\end{frame}
+\slide{
+\begin{exercise}
+	Explore Hensel's Lemma with respect to $f(x)=x^2+2x+1$ with $p=3$.
+\end{exercise}
+}
+\begin{frame}[fragile]{\fn}
+\begin{lstlisting}
+	sage: p = 3
+	sage: R.<x> = PolynomialRing(Integers(p))
+	sage: x^2+2*x+1
+	
+	sage: for i in range(1,4):
+	sage: 	T.<z> = PolynomialRing(Integers(p^i))
+	sage: 	print(T(f).roots(multiplicities=False))	\end{lstlisting}
+
+\begin{lstlisting}
+	[2]
+	[2, 5, 8]
+	[8, 17, 26]
+	[8, 17, 26, 35, 44, 53, 62, 71, 80]
+\end{lstlisting}
+\end{frame}
 \end{document}
 
+%p = 3
+%d = 4
+%
+%R.<x> = PolynomialRing(Integers(p))
+%S.<t> = PolynomialRing(Integers(p^2))
+%T.<z> = PolynomialRing(Integers(p^3))
+%f = R.random_element(degree=d)
+%while len(f.roots())<1 or len(S(f).roots(multiplicities=False))<1 or len(T(f).roots(multiplicities=False))>0:
+%f = R.random_element(degree=d)
+%print(f)
+%print(f.roots())
+%print(S(f).roots(multiplicities=False))
+%print(T(f).roots(multiplicities=False))
+%
