@@ -55,6 +55,7 @@
 ..\Chapter_7\Day_1.page
 ..\Chapter_7\Day_2.page
 ..\Chapter_7\hensel.slides
+..\Chapter_7\Hensel_notebook.file
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment

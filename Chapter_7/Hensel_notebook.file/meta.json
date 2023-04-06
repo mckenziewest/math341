@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🐍 Hensel's Lemma Notebook",
+	"filename":"Hensels_exploration.ipynb",
+	"modules":["Week 9"],
+	"destination": "notebooks"
+}
