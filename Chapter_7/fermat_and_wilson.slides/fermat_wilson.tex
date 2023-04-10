@@ -1,0 +1,256 @@
+\documentclass[t]{beamer}
+
+\subtitle{Fermat's Little Theorem and Wilson's Theorem}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		% Last Time
+		\item Hensel's Lemma
+		\item p-adic numbers
+	}
+	{
+		% This time
+		\item Fermat's Little Theorem
+		\item Wilson's Theorem
+	}
+
+\slide{
+	\begin{thm}{5.1 (Fermat's [Little] Theorem)}
+		Let $p$ be a prime and suppose $p\nmid a$.  Then 
+			\[a^{p-1}\equiv 1\pmod p.\]
+	\end{thm}
+}
+\slide{
+\begin{exercise}
+	Use Fermat's Little Theorem to compute $9^{794}\pmod{73}$.
+\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Use Fermat's Little Theorem to solve the congruence $x^{86}\equiv 6\pmod{29}$.
+	\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Use Fermat's Little Theorem to solve the congruence $x^{39}\equiv 3\pmod{13}$.
+\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Use Fermat's Little Theorem to show that $x^6+y^{12}=700003$ has no integer solutions.  (Hint look modulo 7.)
+	\end{exercise}
+}
+\slide{
+	To prove Ferma't Little Theorem, we use the second Corollary to Theorem 4.3:  
+	\begin{statementblock}{Corollary 2}
+		If $p$ is a prime not dividing $c$ and $ac\equiv bc\pmod p$, then $a\equiv b\pmod p$.  That is, we have ``cancellation modulo $p$'' of non-zero integers.
+	\end{statementblock}
+	
+	We also remind ourselves of the fact that $a\equiv b\pmod p$ if and only if $a$ and $b$ have the same remainder when divided by $p$.
+	
+	Therefore, no two numbers $0\leq r<p$ are equivalent modulo $p$.
+}
+\slide{ \vskip -.25in
+	\begin{proof}
+		Let $p$ be a prime and $a$ and integer not divisible by $p$.
+		\bulletize{
+			\item Consider the integers $a,2a,3a,4a,\dots,(p-1)a$. \textbf{Claim:} None of these are congruent modulo $p$.\vskip .5in
+			\item \textbf{Claim:} Thus the integers $a,2a,3a,4a,\dots,(p-1)a$ correspond to the integers $1,2,3,\dots,p-1$ modulo $p$, possibly in a different order.\vskip .5in
+			\item \textbf{Claim:} $a\cdot 2a\cdot 3a\cdots (p-1)a\equiv (p-1)!\pmod p$\vskip .5in
+			\item \textbf{Claim:} $a^{p-1}\equiv 1\pmod p$ 
+		}
+	\end{proof}
+}
+\slide{
+	\begin{exa}
+		For verification, let $p=5$ and $a=7$.
+		\enumalph{
+			\item $a$, $2a$, $3a$, $4a$?\vskip .5in
+			\item Correspondence with $1,2,3,4$?\vskip .5in
+			\item $a\cdot 2a\cdot 3a\cdot 4a$ vs $4!$?\vskip .5in
+			\item $7^4\equiv 1\pmod 5$?
+		}
+	\end{exa}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		If $p$ is prime, then $a^p\equiv a\pmod p$ for all $a\in\Z$.
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		The congruence $7^{1734250}\equiv1660565\pmod{1734251}$ is true. Can we conclude 1734251 is composite?
+	\end{exercise}\vskip 1in
+	\begin{exercise}
+		The congruence $2^{52632}\equiv 1\pmod{52633}$ is true. Can we conclude that 52633 is a prime number?
+	\end{exercise}
+}
+\slide{
+	Since $a^{p-1}\equiv 1\pmod p$ for all $p\nmid a$ if $p$ is prime, it might be natural to use this as a primality test:
+	
+	\begin{statementblock}{A Contrapositive of Fermat's Little Theorem}
+		If there is some $a$ for which $n\nmid a$ and $a^{n-1}\not\equiv 1\pmod n$ then $n$ is necessarily composite.
+	\end{statementblock}
+	\begin{exercise}
+		Show that $117$ is composite by simplifying $2^{116}\pmod{117}$.  
+		
+		(Hint: $2^{7}\equiv 11\pmod{117}$.)
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		Here we call 2 a \emph{witness} to the non-primality of 117.  That is,  if $n$ is a positive integer not dividing $a$ and $a^{n-1}\not\equiv 1\pmod{n}$ then we say $a$ \emph{witnesses} the non-primality of $n$.
+	\end{defn}
+	\begin{exercise}
+		Does $2$ witness the non-primality of 91?
+	\end{exercise}
+	\vskip .5in
+	\begin{exercise}
+		Does $3$ witness the non-primality of 91?
+	\end{exercise}
+}
+\slide{
+	One related quick check on primality of an integer $n$ is whether $2^{n}\equiv 2\pmod n$.  Equivalently, does $n| 2^n-2$? If not, then $n$ can't be prime.
+	\vskip .05in
+	
+	It was believed, for centuries that $n$ is prime if and only if $n|2^n-2$. This was debunked in 1819 when finally it was found that $341|2^{341}-2$.
+	\vskip .05in
+	
+	\begin{defn}
+		An composite integer $n$ is called a \emph{pseudoprime} if $n|2^n-2$.
+	\end{defn}
+	
+	\begin{exa}
+		The four smallest Pseudoprimes are 341, 561, 645, 1105.
+		
+		Notice that these are spaced decently far apart and rare.  So this really is a \textit{decent} way to check.
+	\end{exa}
+}
+\slide{
+	\begin{statementblock}{Theorem 5.2}
+		If $n$ is an odd pseudoprime, then $M_n=2^n-1$ is a larger one.
+	\end{statementblock}
+	\begin{question}
+		How many pseudoprimes are there?
+	\end{question}
+}
+\slide{
+	\begin{nb}
+		In 1994, it was shown that there are infinitely many composite integer $n$ for which $a^n\equiv a\pmod n$ for all integers $a$.
+		
+		Such integers are called \emph{absolute pseudoprimes} or \emph{Carmichael numbers}.
+	\end{nb}
+	\begin{statementblock}{Theorem 5.3}
+		Let $n$ be a composite square-free integer, say $n=p_1p_2\cdots p_r$ where the $p_i$ are distinct primes.  If $p_i-1|n-1$ for $i=1,2,\dots,r$, then $n$ is an absolute pseudoprime.
+	\end{statementblock}
+	\begin{exercise}
+		Use this theorem to show that $6601=7\cdot 23\cdot 41$ is an absolute pseudoprime.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Wilson's Theorem (Theorem 5.4)}
+		If $p$ is prime then $(p-1)!\equiv -1\pmod p$.
+	\end{statementblock}
+}
+\slide{\vskip -.25in
+	\begin{exercise}
+		Rather than going through the entire proof of Wilson's Theorem, we will illustrate it for the case $p=11$.  For the full proof, see page 94 of the textbook.
+		
+		Theorem 4.7 says that for all $a=1,2,\dots, 10$, there is some $a'$ such that
+		\[aa'\equiv 1\pmod{11}.\]
+		Find this $a'$ for the $a$ values:
+		$$\begin{array}{|c|c|}
+			\hline
+			\textbf{a}&\textbf{a'}\\\hline\hline
+			1&{\color{white}answer}\\\hline
+			2&\\\hline
+			3&\\\hline
+			4&\\ \hline
+			5&\\\hline
+		\end{array}\quad
+		\begin{array}{|c|c|}
+			\hline
+			\textbf{a}&\textbf{a'}\\\hline\hline
+			6&{\color{white}answer}\\\hline
+			7&\\\hline
+			8&\\\hline
+			9&\\\hline
+			10&\\\hline
+		\end{array}$$
+		Now compute $10!\pmod{11}$ by grouping up/canceling all possible pairs $a,a'$. 
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 5.5 (v1)}
+		Let $p$ be a prime of the form $4k+1$ ($k\in\Z$).  Then 
+		\[x=\left(\frac{p-1}{2}\right)!\]
+		is a solution to the quadratic congruence equation
+		\[x^2+1\equiv 0\pmod p.\]
+	\end{statementblock}
+	\begin{exercise}
+		Verify this statement for $p=13$.\vskip .5in
+	\end{exercise}
+	\begin{exercise}
+		Show that if $p=11$ then $x^2+1\equiv 0\pmod p$ has no solutions.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		As you might expect, the proof of this Theorem uses Wilson's Theorem.
+		
+		First note that for example 
+		\begin{eqnarray}
+			(13-1)!&=&1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10\cdot11\cdot12\\
+			&\equiv&1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot(-6)\cdot(-5)\cdot(-4)\cdot\\
+			&&(-3)\cdot(-2)\cdot(-1)\pmod{13}\\
+			&=&(-1)^{(13-1)/2}(6!)^2\pmod{13}
+		\end{eqnarray}
+		Therefore by Wilson's Theorem $(6!)^2\equiv -1\pmod{13}$.
+		
+		\enumalph{
+			\item Discuss why this proves the theorem for the case $p=13$.
+			\item How does this generalize for other primes of the form $p=4k+1$.
+			\item Why does this not work for primes of the form $p=4k+3$?
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{nb}
+		If $n=ab$ is odd, then
+		\[n=\left(\frac{a+b}{2}\right)^2-\left(\frac{a-b}{2}\right)^2.\]
+		Conversely if $n=x^2-y^2$, then $n=(x-y)(x+y)$. 
+		
+		Therefore, one way to factor the integer $n$, would be to compute
+		\[k^2-n,(k+1)^2-n,(k+2)^2-n,\dots\]
+		starting with the smallest integer $k\geq \sqrt n$ until $x=\frac{n+1}{2}$, which would produce the trivial factorization $n=1\cdot n$.
+	\end{nb}
+}
+\slide{
+	\begin{exa}
+		Let $n=119143$.  We start with $k=346$:
+		\[
+		\begin{array}{ll}
+			346^2-119143=573&\text{not a square}\\
+			347^2-119143=1266&\text{not a square}\\
+			348^2-119143=1961&\text{not a square}\\
+			349^2-119143=2658&\text{not a square}\\
+			350^2-119143=3357&\text{not a square}\\
+			351^2-119143=4058&\text{not a square}\\
+			352^2-119143=4761=69^2&\text{a square!}\\
+		\end{array}
+		\]
+		Therefore,
+		\[119143 = 352^2-69^2=(352-69)(352+69)=421\cdot283\]
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		Use Fermat's method to factor 2279.
+	\end{exercise}
+}
+\end{document}
+

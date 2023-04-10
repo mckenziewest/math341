@@ -54,8 +54,11 @@
 
 ..\Chapter_7\Day_1.page
 ..\Chapter_7\Day_2.page
+..\Chapter_7\Day_3.page
+..\Chapter_7\Day_4.page
 ..\Chapter_7\hensel.slides
 ..\Chapter_7\Hensel_notebook.file
+..\Chapter_7\fermat_and_wilson.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
