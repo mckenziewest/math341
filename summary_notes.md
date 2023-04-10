@@ -92,16 +92,24 @@ Therefore, there is some assumption as to proof-writing abilities.
 * Materials
   * Notebook [Prime Exploration](Chapter_6/prime_exploration_notebook.file/prime_exploration.ipynb)
   * Slides [Fundamental Theorem of Arithmetic](Chapter_6/FTA.slides/fund_thm_arithmetic.tex) 
-  * (TODO) Slides [Applications of FTA]
+  * Slides [Applications of FTA](Chapter_6/FTA_applications.slides/fta_applications.tex)
 * Content by Day
   * Day 1: Students work through the prime exploration notebook. This introduces some prime tools available in Sage.
   * Day 2: Prove the Fundamental Theorem of Arithmetic.
   * Day 3: Proof of infinitely many primes and infinitely many of the form $4k+3$.
   * Day 4: Prime factorizations leading to gcd and lcm, and congruence modulo prime powers.
   
-### Chapter 7 (n days)
+### Chapter 7 (4 days)
 * Congruence and prime powers
 * Materials
-  * (TODO) Slides [Hensel's Lemma]
-  * (TODO) Notebook [Local Solubility of Polynomials]
-  * (TODO) Slides [Wilson's and Fermat's Theorems]
+  * Slides [Hensel's Lemma](Chapter_7/hensel.slides/hensels_lemma.tex)
+  * Notebook [Hensel Exploration Notebook](Chapter_7/Hensel_notebook.file/Hensels_exploration.ipynb)
+  * Slides [Wilson's and Fermat's Theorems](Chapter_7/fermat_and_wilson.slides/fermat_wilson.tex)
+* Content by Day
+  * Day 1: Introduce Hensel's lemma, prove it, and go through some examples using it.
+  * Day 2: Let students work on Hensel's Lemma notebook, exploring how to use Sage to solve Hensel's lemma questions.
+  * Day 3: Introduce Fermat's Little Theorem and do many examples. Finish by discussing pseudoprimes.
+  * Day 4: Discuss Wilson's Theorem.
+
+### Chapter 8 (n days)
+* Integers mod $n$

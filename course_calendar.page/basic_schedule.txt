@@ -25,18 +25,18 @@ Section 6.3 - The Fundamental Theorem of Arithmetic
 Sections 6.4 and 6.5 - Consequences of FTA and Applications to Congruences
 Section 7.2 - Hensel's Lemma and Polynomials Mod n
 Local Solubility of Polynomials
-Section 7.5 - Fermat and Wilson's Theorems
-Section 8.1 - The Integers modulo n
+Section 7.5 - Fermat Theorems
+Section 7.5 - Wilson's Theorem
 NCUR (No Class)
+Section 8.1 - The Integers modulo n
 Section 8.3 - Group Facts for Number Theory
-Section 9.1 - Groups and Number Systems
 Math Placement Meeting (No Class)
+Section 9.1 - Groups and Number Systems
 Section 9.2 - The Euler Phi Function
 Section 9.3 - Using Euler's Theorem
 Section 10.1 - Primitive Roots
 Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
 Section 11.1 - What is Cryptography
 Section 11.2
-Presentations
 Presentations
 Presentations

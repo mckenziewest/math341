@@ -164,10 +164,10 @@
      Week 10
     </th>
     <td>
-     4/10 - Section 7.5 - Fermat and Wilson's Theorems
+     4/10 - Section 7.5 - Fermat Theorems
     </td>
     <td>
-     4/12 - Section 8.1 - The Integers modulo n
+     4/12 - Section 7.5 - Wilson's Theorem
     </td>
     <td>
      4/14 - NCUR (No Class)
@@ -178,10 +178,10 @@
      Week 11
     </th>
     <td>
-     4/17 - Section 8.3 - Group Facts for Number Theory
+     4/17 - Section 8.1 - The Integers modulo n
     </td>
     <td>
-     4/19 - Section 9.1 - Groups and Number Systems
+     4/19 - Section 8.3 - Group Facts for Number Theory
     </td>
     <td>
      4/21 - Math Placement Meeting (No Class)
@@ -192,13 +192,13 @@
      Week 12
     </th>
     <td>
-     4/24 - Section 9.2 - The Euler Phi Function
+     4/24 - Section 9.1 - Groups and Number Systems
     </td>
     <td>
-     4/26 - Section 9.3 - Using Euler's Theorem
+     4/26 - Section 9.2 - The Euler Phi Function
     </td>
     <td>
-     4/28 - Section 10.1 - Primitive Roots
+     4/28 - Section 9.3 - Using Euler's Theorem
     </td>
    </tr>
    <tr>
@@ -206,13 +206,13 @@
      Week 13
     </th>
     <td>
-     5/1 - Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
+     5/1 - Section 10.1 - Primitive Roots
     </td>
     <td>
-     5/3 - Section 11.1 - What is Cryptography
+     5/3 - Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
     </td>
     <td>
-     5/5 - Section 11.2
+     5/5 - Section 11.1 - What is Cryptography
     </td>
    </tr>
    <tr>
@@ -220,7 +220,7 @@
      Week 14
     </th>
     <td>
-     5/8 - Presentations
+     5/8 - Section 11.2
     </td>
     <td>
      5/10 - Presentations
