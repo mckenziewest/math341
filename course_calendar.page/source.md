@@ -181,7 +181,7 @@
      4/17 - Section 8.1 - The Integers modulo n
     </td>
     <td>
-     4/19 - Section 8.3 - Group Facts for Number Theory
+     4/19 - Sections 9.1 and 9.2 - Units and the Euler Phi Function
     </td>
     <td>
      4/21 - Math Placement Meeting (No Class)
@@ -192,13 +192,13 @@
      Week 12
     </th>
     <td>
-     4/24 - Section 9.1 - Groups and Number Systems
+     4/24 - More on Euler's Theorem
     </td>
     <td>
-     4/26 - Section 9.2 - The Euler Phi Function
+     4/26 - Section 10.1 - Primitive Roots
     </td>
     <td>
-     4/28 - Section 9.3 - Using Euler's Theorem
+     4/28 - More on Primitive Roots
     </td>
    </tr>
    <tr>
@@ -206,10 +206,10 @@
      Week 13
     </th>
     <td>
-     5/1 - Section 10.1 - Primitive Roots
+     5/1 - Quadratic Residues and the Legendre Symbol
     </td>
     <td>
-     5/3 - Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
+     5/3 - Quadratic Reciprocity
     </td>
     <td>
      5/5 - Section 11.1 - What is Cryptography

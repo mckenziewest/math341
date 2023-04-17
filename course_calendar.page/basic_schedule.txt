@@ -29,13 +29,13 @@ Section 7.5 - Fermat Theorems
 Section 7.5 - Wilson's Theorem
 NCUR (No Class)
 Section 8.1 - The Integers modulo n
-Section 8.3 - Group Facts for Number Theory
+Sections 9.1 and 9.2 - Units and the Euler Phi Function
 Math Placement Meeting (No Class)
-Section 9.1 - Groups and Number Systems
-Section 9.2 - The Euler Phi Function
-Section 9.3 - Using Euler's Theorem
+More on Euler's Theorem
 Section 10.1 - Primitive Roots
-Sections 10.3 and 10.4 - When Does a Primitive Root Exist? Prime Numbers Have Primitive Roots
+More on Primitive Roots
+Quadratic Residues and the Legendre Symbol
+Quadratic Reciprocity
 Section 11.1 - What is Cryptography
 Section 11.2
 Presentations
