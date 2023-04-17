@@ -60,6 +60,8 @@
 ..\Chapter_7\Hensel_notebook.file
 ..\Chapter_7\fermat_and_wilson.slides
 
+..\Chapter_8\integers_mod_n.slides
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\webwork\webwork_3.assignment
@@ -73,6 +75,7 @@
 ..\assignments\hw5.assignment
 ..\assignments\hw6.assignment
 ..\assignments\hw7.assignment
+..\assignments\hw8.assignment
 
 ..\assignments\midterm.assignment
 
