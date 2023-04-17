@@ -60,6 +60,7 @@
 ..\Chapter_7\Hensel_notebook.file
 ..\Chapter_7\fermat_and_wilson.slides
 
+..\Chapter_8\Day_1.page
 ..\Chapter_8\integers_mod_n.slides
 
 ..\webwork\webwork_1.assignment
