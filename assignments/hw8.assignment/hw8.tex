@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+	Math 341 Homework 8
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	
+	\textbf{Instructions:} This assignment is on material from portions of Chapters 6 and 7: the Fundamental Theorem of Arithmetic, Hensel's Lemma, Fermat's Little Theorem, and Wilson's Theorem.
+\begin{enumerate}
+	\item 
+		\begin{enumerate}
+			\item (10 pts) Show that if $a$ and $b$ are positive integers such that $a^3|b^2$, then $a|b$.\vfill
+			\item (5 pts) Show that it is possible for $a^2|b^3$ but $a\nmid b$ by finding possible $a$ and $b$ values.\vskip 2in
+		\end{enumerate}
+	\newpage
+	\item  For parts of this problem, 			
+			it may or may not be helpful to use the formula from class, that for any prime $p$, the valuation at $p$ of $n!$ is $$v_p(n!)=\left\lfloor\frac{n}{p}\right\rfloor+\left\lfloor\frac{n}{p^2}\right\rfloor+\left\lfloor\frac{n}{p^3}\right\rfloor+\cdots.$$
+		  Note that in all parts of this problem, the number of zeros at the end of the decimal representation equals the largest power of $10$ that divides the number.
+		\begin{enumerate}
+			\item (5 pts) What integers $n$ satisfy the property that $n!$ has exactly $6$ zeros at the end of its decimal representation?
+			\vskip 1in
+			\item (5 pts) How many zeros are there at the end of the decimal representation of $5^k!$?
+			\vskip 1in
+			\item (10 pts) 
+			Show that the number of zeros at the end of the decimal representation of $n!$ is less than the number of zeros at the end of the decimal representation of $(n+5)!$.
+
+			\vfill
+			
+		\end{enumerate}
+	\newpage
+	\item \begin{enumerate}
+		\item(5 pts) Use Hensel's lemma to show that $x^2+2x+5\equiv 0\pmod p^k$ has a solution for $p=5,13,17$ and all positive integers $k$.\vfill
+		\item(10 pts) Use the Chinese Remainder Theorem to show that $x^2+2x+5\equiv 0\pmod n$ has a solution if the prime factorization of $n$ is $5^a13^b17^c$.\vfill
+	\end{enumerate}
+	\newpage
+	\item (10 pts) Let $p$ be a prime and $\gcd(a,p)=1$. Use Fermat's theorem to verify that $x=a^{p-2}b$ is a solution to the congruence equation $ax\equiv b\pmod p$.\vfill
+	\item (10 pts) If $p$ is prime, show that $M_p=2^p-1$ is either prime or a pseudoprime.
+	\vfill
+	\newpage
+	\item (10 pts) Prove that $n>1$ is prime if and only if $(n-2)!\equiv 1\pmod n$.
+\end{enumerate}
+\end{document}
