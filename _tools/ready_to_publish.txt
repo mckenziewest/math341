@@ -63,6 +63,12 @@
 ..\Chapter_8\Day_1.page
 ..\Chapter_8\integers_mod_n.slides
 
+..\Chapter_9\Day_1.page
+..\Chapter_9\Day_2.page
+
+..\Chapter_10\Day_1.page
+..\Chapter_10\Day_2.page
+
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
 ..\webwork\webwork_3.assignment
