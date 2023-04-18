@@ -1,0 +1,147 @@
+\documentclass[t]{beamer}
+
+\subtitle{Euler's Phi Function and Multiplicative Functions}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	\topics{
+		\item Integers and Arithmetic modulo $n$
+		\item Inverses Modulo $n$
+	}{
+		\item Units mod $n$
+		\item Euler's phi function
+	}
+
+\slide{
+	\begin{defn}
+		We call a class $[a]\in\Z_n$ \emph{invertible} or a \emph{unit} if there is some $[b]\in\Z_n$ such that $[a][b]=[1]$.
+	\end{defn}
+	\begin{recall}
+		A class $[a]\in\Z_n$ is invertible if and only if $\gcd(a,n)=1$.
+	\end{recall}
+}
+\slide{
+	\begin{defn}
+		The \emph{unit group modulo $n$} is the set of classes
+			$$U_n=\{[a]\in\Z_n \ :\ \gcd(a,n)=1\}.$$
+	\end{defn}
+	\begin{exercise}
+		What are $U_4$, $U_5$, $U_6$, and $U_7$?
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		The \emph{Euler Phi-Function} is defined by	
+			\[\varphi(n)=|\{a\in\N\ |\ \gcd(a,n)=1\text{ and }a\leq n\}|.\]
+		That is $\varphi(n)$ is the number of positive integers less than or equal to $n$ that are relatively prime to $n$.
+	\end{defn}
+	\begin{statementblock}{Number of Units}
+		For positive integers $n$, we have $|U_n|=\varphi(n)$.
+	\end{statementblock}
+	\begin{exercise}
+		Compute $\varphi(n)$ for $n=1,2,3,4,5,6,7$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		If $p$ is prime, what is $\varphi(p)$?\vskip .5in
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Consider $n=125=5^3$, how might you compute $\varphi(5^3)$?  
+		
+		(Hint: It will be easier to count all integers $a$ with $\gcd(5^3,a)>1$ and subtract that value from 125.)
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		If $p$ is prime and $k\geq1$, what is $\varphi(p^k)$?
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 7.1}
+		If $p$ is prime and $k>0$, then	
+			\[\varphi(p^k)=p^k-p^{k-1}=p^k\left(1-\frac{1}{p}\right).\]
+	\end{statementblock}
+	\begin{exercise}
+		Compute $\varphi(n)$ for $n=27, 49, 243, 343, 625$.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 7.2}
+		The function $\varphi$ is multiplicative. That is, for all positive integers $m,n$ with $\gcd(m,n)=1$, we have $\varphi(mn)=\varphi(m)\varphi(n)$.
+	\end{statementblock}
+	\begin{exercise}
+		Use this Theorem and the previous one to compute $\varphi(n)$ for $n=24,36,100000$. 
+	\end{exercise}
+}
+\slide{
+	\begin{thm}{7.3}
+		If $n=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}$ is the prime factorization of $n>1$, then 
+		$\varphi(n)=n\left(1-\frac{1}{p_1}\right)\left(1-\frac{1}{p_2}\right)\cdots\left(1-\frac{1}{p_r}\right)$.
+	\end{thm}
+}
+\slide{
+	\begin{thm}{7.4}
+		For $n>2$, we have $\varphi(n)$ is an even integer.
+	\end{thm}
+}
+\slide{
+	\begin{defn}
+		Any function who's domain is the set of positive integers is called a \emph{number theoretic function}
+	\end{defn}
+	\exam{
+		\bulletize{
+			\item $\varphi(n)$
+			\item $\tau(n)=$ number of positive divisors of $n$
+			\item $\sigma(n)=$ sum of positive divisors of $n$
+			\item $\mu(n)=\begin{cases}
+				1&\text{if }n=1\\
+				0&\text{if }p^2|n\text{ for some prime } p\\
+				(-1)^r&\text{if }n=p_1p_2\cdots p_r\text{ where the }p_i\text{ are distinct primes}
+			\end{cases}$
+		}
+	}
+}
+\slide{
+	\begin{thm}{6.2}
+		If $n=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}$ is the prime factorization of $n>1$, then 
+		\vskip .25in
+		\enumalph{
+			\item $\tau(n)=(k_1+1)(k_2+1)\cdots(k_r+1)$\vskip .25in
+			\item $\sigma(n)=\frac{p_1^{k_1+1}-1}{p_1-1}\frac{p_2^{k_2+1}-1}{p_2-1}\cdots \frac{p_r^{k_r+1}-1}{p_r-1}$
+		}
+	\end{thm}
+	\begin{thm}{6.3}
+		The functions $\sigma$ and $\tau$ are multiplicative.
+	\end{thm}
+	\begin{thm}{6.5}
+		The function $\mu$ is multiplicative.
+	\end{thm}
+}
+\slide{
+	\begin{exercise}
+		Liouville's lambda function $\lambda(n)$ is defined by factoring $n$ into products of primes $n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}$ and setting
+			\[\lambda(n)=(-1)^{e_1+e_2+\cdots +e_r}.\]
+		(Let $\lambda(1)=1$.)
+		\enumalph{
+			\item Compute $\lambda(n)$ for $n=30,504,60750$.\vskip .5in
+			\item Verify that if $\gcd(m,n)=1$, then $\lambda(mn)=\lambda(m)\lambda(n)$.
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		\enumalph{
+			\item[(c)] Define
+				\[G(n)=\sum_{d|n}\lambda(d).\]
+				Compute the values of $G(n)$ for $n=1,2,3\dots,18$.\vskip 1in
+			\item[(d)] Make a conjecture about the value of $G(n)$.
+		}
+	\end{exercise}
+}
+\end{document}
+

@@ -65,6 +65,7 @@
 
 ..\Chapter_9\Day_1.page
 ..\Chapter_9\Day_2.page
+..\Chapter_9\euler_phi.slides
 
 ..\Chapter_10\Day_1.page
 ..\Chapter_10\Day_2.page
