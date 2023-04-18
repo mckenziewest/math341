@@ -1,0 +1,125 @@
+\documentclass[t]{beamer}
+
+\subtitle{Euler's Theorem and Properties of $\varphi(n)$}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	\topics{
+		\item Euler's phi function
+		\item Multiplicative functions
+	}{
+		\item Euler's theorem
+		\item Properties of Euler's phi function
+	}
+
+\slide{
+	\begin{recall}
+	\begin{defn}
+		The \emph{Euler Phi-Function} is defined by	
+			\[\varphi(n)=|\{a\in\N\ |\ \gcd(a,n)=1,\text{ and }a\leq n\}|.\]
+	\end{defn}
+	\begin{thm}{7.3}
+		If the integer $n>1$ has the prime factorization $n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}$, then
+			\begin{eqnarray*}
+				\varphi(n)&=&(p_1^{e_1}-p_1^{e_1-1})(p_2^{e_2}-p_2^{e_2-1})\cdots(p_r^{e_r}-p_r^{e_r-1})\\
+				&=&n\left(1-\frac{1}{p_1}\right)\left(1-\frac{1}{p_2}\right)\cdots\left(1-\frac{1}{p_r}\right).
+			\end{eqnarray*}
+	\end{thm}
+	\end{recall}
+}
+\slide{
+	\begin{recall}
+		\textbf{Fermat's Little Theorem:} If $p$ is prime and $p\nmid a$, then $$a^{p-1}\equiv 1\pmod p.$$
+	\end{recall}
+	\begin{thm}{7.5 (Euler's Theorem)}
+		If $n\geq 1$ and $\gcd(a,n)=1$, then $a^{\varphi(n)}\equiv 1\pmod n$. 
+	\end{thm}
+	\begin{proof}[Proof in a Specific Case.]
+		Let $a=33$ and $n=14$.\vskip 3in
+	\end{proof}
+}
+\slide{
+	\begin{exercise}
+		Use Euler's Theorem to find the last two digits of $3^{3243}$.  
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that if $n$ is an odd integer not divisible by 5, then $n$ divides some number for which every digit is 1.
+	\end{exercise}
+}
+\slide{
+\begin{statementblock}{Theorem 7.6}
+		For every positive integer $n\geq 1$,
+		\[n=\sum_{d|n}\varphi(d)\]
+	\end{statementblock}
+	\begin{exercise}
+		Consider the case $n=12$. 
+		
+		Sort the numbers $\{1,2,3,4,5,6,7,8,9,10,11,12\}$ according to $\gcd(a,12)$.
+	\end{exercise}
+}
+\slide{\vskip -.45in
+	\begin{block}{Proof 1 of Theorem 7.6.}
+		Let $n\geq1$ be an integer. If $d|n$ consider the set
+		\[S_d = \{a | \gcd(a,n)=d\}.\]
+		\textbf{Claim:} $\ds |S_d| = \varphi\left(\frac{n}{d}\right)$\vskip .8in
+		\textbf{Claim:} $\ds n=\sum_{d|n}|S_d|$\vskip .8in
+		Therefore $\ds n=\sum_{d|n}\varphi\left(\frac{n}{d}\right)=\sum_{d|n}\varphi(d)$.
+	\end{block}
+}
+\slide{\vskip -.45in
+	\begin{block}{Proof 2 of Theorem 7.6.}
+		Let $n>1$ be an integer. Assume $n$ has prime factorization $n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}$.  
+		
+		\textbf{Claim:} For all $i$, $\ds\sum_{d|{p_i^{e_i}}}\phi(d)=p_i^{e_i}$.\vskip .8in
+		\textbf{Claim:} $\ds \sum_{d|n}\varphi(d)=\left(\sum_{d|{p_1^{e_1}}}\varphi(d)\right)\left(\sum_{d|{p_2^{e_2}}}\varphi(d)\right)\cdots\left(\sum_{d|{p_r^{e_r}}}\varphi(d)\right)$\vskip .8in
+		Therefore $\ds\sum_{d|n}\varphi(d)=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}=n$.
+	\end{block}
+}
+\slide{
+	\begin{statementblock}{Theorem 7.7}
+		For $n>1$, the sum of the positive integers less than $n$ and relatively prime to $n$ is $\frac{1}{2}n\varphi(n)$.
+	\end{statementblock}
+	\begin{exercise}
+		Consider $n=15$.  The $\varphi(15)=8$ numbers in particular are
+		\[1,2,4,7,8,11,13,14.\]
+		Pair these values up as $a,n-a$.  How many pairs are there?
+	\end{exercise}
+}
+\slide{
+	\begin{block}{Proof of Theorem 7.7}
+		Let $n>1$ and let $a_1,a_2,\dots,a_{\varphi(n)}$ be the integers less than or equal to $n$ and relatively prime to $n$.
+		
+		\textbf{Claim:} $\gcd(a,n)=1$ if and only if $\gcd(n-a,n)=1$.\vskip .4in
+		\textbf{Claim:} $n-a_1,n-a_2,\dots,n-a_{\varphi(n)}$ is the same list as $a_1,a_2,\dots,a_{\varphi(n)}$ in a different order\vskip .4in
+		Thus $a_1+a_2+\cdots+a_{\varphi(n)}=(n-a_1)+(n-a_2)+\cdots+(n-a_{\varphi(n)})$. Simplify and complete the proof.
+	\end{block}
+}
+\slide{
+	\vskip -.45in
+	\begin{statementblock}{Theorem 7.8}
+		For any positive integer $n$,
+		\[\varphi(n)=n\sum_{d|n}\frac{\mu(d)}{d}.\]
+	\end{statementblock}
+	\begin{block}{Proof of Theorem 7.8.}
+		Let $n$ be a positive integer.  Let 
+		\[F(n)=\sum_{d|n}\varphi(d).\]
+		We now use the M\"obius inversion formula,
+		\[\phi(n)=\sum_{d|n}\mu(d)F\left(\frac{n}{d}\right),\]
+	\end{block}
+}
+\slide{
+	\begin{exercise}
+		Use Euler's Theorem to find the last two digits of $3^{3243}$.  
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Show that if $n$ is an odd integer not divisible by 5, then $n$ divides some number for which every digit is 1.
+	\end{exercise}
+}
+\end{document}
+
