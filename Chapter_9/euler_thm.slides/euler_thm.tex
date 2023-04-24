@@ -36,9 +36,6 @@
 	\begin{thm}{7.5 (Euler's Theorem)}
 		If $n\geq 1$ and $\gcd(a,n)=1$, then $a^{\varphi(n)}\equiv 1\pmod n$. 
 	\end{thm}
-	\begin{proof}[Proof in a Specific Case.]
-		Let $a=33$ and $n=14$.\vskip 3in
-	\end{proof}
 }
 \slide{
 	\begin{exercise}
@@ -57,27 +54,7 @@
 	\end{statementblock}
 	\begin{exercise}
 		Consider the case $n=12$. 
-		
-		Sort the numbers $\{1,2,3,4,5,6,7,8,9,10,11,12\}$ according to $\gcd(a,12)$.
 	\end{exercise}
-}
-\slide{\vskip -.45in
-	\begin{block}{Proof 1 of Theorem 7.6.}
-		Let $n\geq1$ be an integer. If $d|n$ consider the set
-		\[S_d = \{a | \gcd(a,n)=d\}.\]
-		\textbf{Claim:} $\ds |S_d| = \varphi\left(\frac{n}{d}\right)$\vskip .8in
-		\textbf{Claim:} $\ds n=\sum_{d|n}|S_d|$\vskip .8in
-		Therefore $\ds n=\sum_{d|n}\varphi\left(\frac{n}{d}\right)=\sum_{d|n}\varphi(d)$.
-	\end{block}
-}
-\slide{\vskip -.45in
-	\begin{block}{Proof 2 of Theorem 7.6.}
-		Let $n>1$ be an integer. Assume $n$ has prime factorization $n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}$.  
-		
-		\textbf{Claim:} For all $i$, $\ds\sum_{d|{p_i^{e_i}}}\phi(d)=p_i^{e_i}$.\vskip .8in
-		\textbf{Claim:} $\ds \sum_{d|n}\varphi(d)=\left(\sum_{d|{p_1^{e_1}}}\varphi(d)\right)\left(\sum_{d|{p_2^{e_2}}}\varphi(d)\right)\cdots\left(\sum_{d|{p_r^{e_r}}}\varphi(d)\right)$\vskip .8in
-		Therefore $\ds\sum_{d|n}\varphi(d)=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}=n$.
-	\end{block}
 }
 \slide{
 	\begin{statementblock}{Theorem 7.7}
@@ -90,36 +67,19 @@
 	\end{exercise}
 }
 \slide{
-	\begin{block}{Proof of Theorem 7.7}
-		Let $n>1$ and let $a_1,a_2,\dots,a_{\varphi(n)}$ be the integers less than or equal to $n$ and relatively prime to $n$.
-		
-		\textbf{Claim:} $\gcd(a,n)=1$ if and only if $\gcd(n-a,n)=1$.\vskip .4in
-		\textbf{Claim:} $n-a_1,n-a_2,\dots,n-a_{\varphi(n)}$ is the same list as $a_1,a_2,\dots,a_{\varphi(n)}$ in a different order\vskip .4in
-		Thus $a_1+a_2+\cdots+a_{\varphi(n)}=(n-a_1)+(n-a_2)+\cdots+(n-a_{\varphi(n)})$. Simplify and complete the proof.
-	\end{block}
-}
-\slide{
-	\vskip -.45in
 	\begin{statementblock}{Theorem 7.8}
 		For any positive integer $n$,
-		\[\varphi(n)=n\sum_{d|n}\frac{\mu(d)}{d}.\]
+		\[\varphi(n)=n\sum_{d|n}\frac{\mu(d)}{d},\]
+		where $\mu$ is the M\"obius $\mu$-function:
+		$$
+		\mu(d)=
+		\begin{cases}
+			1&\text{if }d=1\\
+			0&\text{if }p^2\mid d \text{ for some prime }p\\
+			(-1)^r&\text{if }d=p_1p_2\cdots p_r\text{ for distinct primes }p_1,\dots,p_r
+		\end{cases}
+		$$
 	\end{statementblock}
-	\begin{block}{Proof of Theorem 7.8.}
-		Let $n$ be a positive integer.  Let 
-		\[F(n)=\sum_{d|n}\varphi(d).\]
-		We now use the M\"obius inversion formula,
-		\[\phi(n)=\sum_{d|n}\mu(d)F\left(\frac{n}{d}\right),\]
-	\end{block}
-}
-\slide{
-	\begin{exercise}
-		Use Euler's Theorem to find the last two digits of $3^{3243}$.  
-	\end{exercise}
-}
-\slide{
-	\begin{exercise}
-		Show that if $n$ is an odd integer not divisible by 5, then $n$ divides some number for which every digit is 1.
-	\end{exercise}
 }
 \end{document}
 

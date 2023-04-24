@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🔭 Euler's Theorem",
+	"filename":"euler_thm.pdf",
+	"modules":["Week 12","Empty Slides"],
+	"destination": "slides"
+}
