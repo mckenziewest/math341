@@ -70,6 +70,7 @@
 
 ..\Chapter_10\Day_1.page
 ..\Chapter_10\Day_2.page
+..\Chapter_10\prim_roots.slides
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
@@ -85,6 +86,7 @@
 ..\assignments\hw6.assignment
 ..\assignments\hw7.assignment
 ..\assignments\hw8.assignment
+..\assignments\hw9.assignment
 
 ..\assignments\midterm.assignment
 

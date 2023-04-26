@@ -1,0 +1,304 @@
+\documentclass[t]{beamer}
+
+\subtitle{Order of Integers and Primitive Roots}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	\topics{
+		\item Euler's theorem
+		\item Properties of Euler's phi function
+	}{
+		\item Order of an integer mod $n$
+		\item Primitive Roots
+		\item Primitive Roots mod $p$
+	}
+
+
+\slide{
+	\begin{recall}
+		\textbf{Euler's Theorem} If $\gcd(a,n)=1$, then $a^{\phi(n)}\equiv 1\pmod n$.
+		
+		\begin{exa}
+			This does not have to be the smallest such power. 
+			For example consider the powers of 3 modulo 11:
+			\[3^1\equiv 3,\quad 3^2\equiv 9,\quad3^3\equiv 5,\quad3^4\equiv 4,\quad3^5\equiv 1\pmod{11}\]
+			\[3^6\equiv 3,\quad 3^7\equiv 9,\quad3^8\equiv 5,\quad3^9\equiv 4,\quad3^{10}\equiv 1\pmod{11}\]
+			Similarly 
+			\[10^1\equiv 10,\quad 10^2\equiv 1,\quad10^3\equiv 10,\quad 10^4\equiv 1,\quad10^5\equiv 10\pmod{11}\]
+		\end{exa}
+	\end{recall}
+}
+\slide{
+	\begin{defn}
+		Let $n>1$ and $\gcd(a,n)=1$.  The \emph{order of $a$ modulo $n$} is the smallest positive integer $k$ for which $a^k\equiv 1\pmod n$.
+	
+		Denote this value by $\ord_n(a)$.
+	\end{defn}
+	\begin{exa}
+		$$\ord_{11}(3)=5\quad\text{and}\quad\ord_{11}(10)=2$$
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		For all other remainders modulo $11$, $a=1,2,4,5,6,7,8,9$, compute $\ord_{11}(a)$.
+		$$\begin{array}{|c|c|}
+		\hline
+		\mathbf{a}&\mathbf{\ord_{11}(a)}\\\hline
+		1&\\\hline
+		2&\\\hline
+		3&5\\\hline
+		4&\\\hline
+		5&\\\hline
+		\end{array}
+		\quad\begin{array}{|c|c|}
+		\hline
+		\mathbf{a}&\mathbf{\ord_{11}(a)}\\\hline
+		6&\\\hline
+		7&\\\hline
+		8&\\\hline
+		9&\\\hline
+		10&2\\\hline
+		\end{array}$$
+	\end{exercise}
+	\begin{question}
+		Do you notice any patterns? Which of these do you think are specific to $n=11$ and what might be true for more values of $n$?
+	\end{question}
+}
+\slide{
+	\begin{exercise}
+		Below are the powers of $2$ modulo $11$.
+		$$\begin{array}{|c|c|c|}
+		\hline
+		\mathbf{k}&\mathbf{2^k\ (\text{mod}\ 11)}&\mathbf{\ord_{11}(2^k)}\\\hline
+		1&2&10\\\hline
+		2&4&5\\\hline
+		3&8&10\\\hline
+		4&5&5\\\hline
+		5&10&2\\\hline
+		6&9&5\\\hline
+		7&7&10\\\hline
+		8&3&5\\\hline
+		9&6&10\\\hline
+		10&1&1\\\hline
+		\end{array}$$
+		
+		Do you notice any patterns here? Which of these do you think are specific to $n=11$ and what might be true for more values of $n$?
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 8.1}
+		Let $a$ and $n$ be positive integers with $\gcd(a,n)=1$. Let $k=\ord_n(a)$ be the order of $a$ modulo $n$.  Then $a^j\equiv 1\pmod n$ if and only if $k|j$.  In particular $k|\phi(n)$.
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		\enumalph{
+			\item According to Theorem 8.1, what are possible values for $\ord_{17}(a)$?\vskip .5in
+			\item How can you use this information to more quickly determine $\ord_{17}(a)$?\vskip .5in
+			\item Determine $\ord_{17}(a)$ for $a=2,4,10$. (You can use a calculator but also use the above answers to do it quicker.)
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 8.2}
+		If the integer $\ord_n(a)=k$, then $a^i\equiv a^j\pmod n$ if and only if $i\equiv j\pmod k$.
+	\end{statementblock}
+	\begin{exercise}
+		Let's explore this theorem using  $a=3$ and $n=11$.
+		\[3^1\equiv 3,\quad 3^2\equiv 9,\quad3^3\equiv 5,\quad3^4\equiv 4,\quad3^5\equiv 1\pmod{11}\]
+		\[3^6\equiv 3,\quad 3^7\equiv 9,\quad3^8\equiv 5,\quad3^9\equiv 4,\quad3^{10}\equiv 1\pmod{11}\]
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		If $a$ has order $k$ modulo $n$, then the integers $a,a^2,\dots,a^k$ are incongruent modulo $n$.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Theorem 8.3}
+		If $\ord_n(a)=k$, then
+			\[\ord_n(a^j)=\frac{k}{\gcd(j,k)}.\]
+	\end{statementblock}
+	\begin{exercise}
+		If $\ord_{43}(2)=14$, compute
+			\enumalph{\setlength{\itemsep}{1.75em}
+				\item $\ord_{43}(4)$
+				\item $\ord_{43}(8)$
+				\item $\ord_{43}(16)$
+				\item $\ord_{43}(128)$
+			}
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		Let $\ord_n(a)=k$.  Then $\ord_n(a^j)=k$ if and only if $\gcd(j,k)=1$.
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		We call $a$ a \emph{primitive root} modulo $n$ if $\ord_n(a)=\phi(n)$.
+	\end{defn}
+	\begin{exercise}
+		Modulo 11, one primitive root is $a=2$, verify this.
+	\end{exercise}\vfill
+	\begin{exercise}
+		Use the corollary from the last slide to find all primitive roots modulo 11.
+	\end{exercise}\vfill
+}
+\slide{
+	\begin{nb}
+		Next time we will prove that if $p$ is prime there will for sure be a primitive root modulo $p$.  
+		
+		This is not guaranteed if $n$ is not prime.
+	\end{nb}
+	\begin{exercise}
+		\enumalph{
+			\item Verify that $2$ is a primitive root modulo $9$.\vskip .5in
+			\item Show that there are no primitive roots modulo $8$.
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{nb}
+		Example 8.2 in the textbook gives an example where if $n=2^{2^m}+1$ is prime, then $2$ is not a primitive root modulo $n$.
+		
+		Therefore it's possible for 2 to not be a primitive root.
+	\end{nb}
+	\begin{exercise}
+		Show that $2$ is not a primitive root modulo 7.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 8.4}
+		Let $\gcd(a,n)=1$ and let $b_1,b_2,\dots,b_{\phi(n)}$ be the positive integers less than or equal to $n$ that are relatively prime to $n$.
+		
+		If $a$ is a primitive root modulo $n$, then
+			\[a^1,a^2,\dots,a^{\phi(n)}\]
+		are congruent modulo $n$ to $b_1,b_2,\dots,b_{\phi(n)}$ in some order.
+	\end{statementblock}
+	\begin{statementblock}{Corollary}
+		If $n$ has a primitive root, then it has exactly $\phi(\phi(n))$ of them.
+	\end{statementblock}
+	\begin{exercise}
+		Verify this corollary for $n=11$.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 8.6}
+		If $p$ is a prime number and $d|p-1$, then there are exactly $\phi(d)$ incongruent integers having order $d$ modulo $p$.
+	\end{statementblock}
+	\begin{proof}[Proof (Sketch with $p=13$ and $d=4$)]
+		\vskip 3in
+	\end{proof}
+}
+\slide{
+	\begin{statementblock}{Theorem 8.5}
+		If $p$ is prime and 
+		\[f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0\quad a_n\not\equiv0\pmod p\]
+		is a polynomial of degree $n\geq1$ with integral coefficients, then the congruence
+		\[f(x)\equiv0\pmod p\]
+		has at most $n$ incongruent solutions modulo $p$.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		If $p$ is prime and $d|p-1$, then
+		\[x^d-1\equiv 0\pmod p\]
+		has exactly $d$ incongruent solutions.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		If $p$ is prime then there are $\phi(p-1)$ incongruent primitive roots modulo $p$.
+	\end{statementblock}
+}
+\slide{
+	\begin{nb}
+		This proof is not \textit{constructive}.  That is, it doesn't tell use how to find the primitive roots.
+		
+		Here's a table of the smallest primitive roots mod $p$ for $2\leq p\leq 197$.
+		$$
+		\begin{array}{|c|c|}
+			\hline
+			2 & 1 \\\hline
+			3 & 2 \\\hline
+			5 & 2 \\\hline
+			7 & 3 \\\hline
+			11 & 2 \\\hline
+			13 & 2 \\\hline
+			17 & 3 \\\hline
+			19 & 2 \\\hline
+			23 & 5 \\\hline
+		\end{array}
+		\quad
+		\begin{array}{|c|c|}
+			\hline
+			29 & 2 \\\hline
+			31 & 3 \\\hline
+			37 & 2 \\\hline
+			41 & 6 \\\hline
+			43 & 3 \\\hline
+			47 & 5 \\\hline
+			53 & 2 \\\hline
+			59 & 2 \\\hline
+			61 & 2 \\\hline
+		\end{array}
+		\quad
+		\begin{array}{|c|c|}
+			\hline
+			67 & 2 \\\hline
+			71 & 7 \\\hline
+			73 & 5 \\\hline
+			79 & 3 \\\hline
+			83 & 2 \\\hline
+			89 & 3 \\\hline
+			97 & 5 \\\hline
+			101 & 2 \\\hline
+			103 & 5 \\\hline
+		\end{array}
+		\quad
+		\begin{array}{|c|c|}
+			\hline
+			107 & 2 \\\hline
+			109 & 6 \\\hline
+			113 & 3 \\\hline
+			127 & 3 \\\hline
+			131 & 2 \\\hline
+			137 & 3 \\\hline
+			139 & 2 \\\hline
+			149 & 2 \\\hline
+			151 & 6 \\\hline
+		\end{array}
+		\quad
+		\begin{array}{|c|c|}
+			\hline
+			157 & 5 \\\hline
+			163 & 2 \\\hline
+			167 & 5 \\\hline
+			173 & 2 \\\hline
+			179 & 2 \\\hline
+			181 & 2 \\\hline
+			191 & 19 \\\hline
+			193 & 5 \\\hline
+			197 & 2 \\\hline
+		\end{array}
+		$$
+	\end{nb}
+}
+\slide{
+	\begin{statementblock}{Conjecture [Gauss]}
+		There are infinitely many primes $p$ having 10 as a primitive root.
+	\end{statementblock}
+	\begin{statementblock}{Conjecture [Artin]}
+		Let $a$ be an integer with $a\neq 1,-1$ or a perfect square. There are infinitely many primes $p$ having $a$ as a primitive root.
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		Find all of the primitive roots modulo 31.
+	\end{exercise}
+}
+\end{document}
+

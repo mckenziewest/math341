@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+	Math 341 Homework 9
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	
+	\textbf{Instructions:} This assignment is on material from portions of Chapters 8-10: the groups $\Z_n$ and $U_n$, Euler's $\varphi$-function, and primitive roots.
+\begin{enumerate}
+	\item (5 pts) Compute the unit group $U_n$ for $n=10,11,12$.
+	\vfill
+	\item (5 pts) For each $n=10,11,12$ and $a\in U_{n}$, compute the order of $a$ and determine the multiplicative inverse $a^{-1}$ in $U_n$.
+	
+	(I expect you to use Sage here, tell me how you do.)
+	\vfill
+	\item (5 pts) For each $n=10,11,12$, what are the primitive roots mod $n$?
+	\vfill 
+	\newpage
+	\item (10 pts) In class, we pondered whether it would be possible for $\varphi(n)=2$ to happen for some $n>6$.  Show that this is not possible by proving that for all integers $n$, 
+	
+		$$\frac{1}{2}\sqrt n\leq \phi(n)\leq n.$$
+		
+	There are some hints in the book for this - it is Section 7.2 exercise 7a.
+	\vfill
+	\item (10 pts) If every prime that divides $n$ also divides $m$, establish that $\phi(nm)=n\phi(m)$.  A corollary to this result is the fact that $\phi(n^2)=n\phi(n)$ for all  positive integers $n$.
+	\vfill
+	\newpage
+	\item (10 pts) For any integer $a$, show that $a$ and $a^{4n+1}$ have the same last digit.
+	\vfill
+	\item (10 pts) If $m$ and $n$ are relatively prime positive integers, prove that $m^{\varphi(n)}+n^{\varphi(m)}\equiv 1\pmod{mn}$. 
+	
+	Hint: Consider the relationship between $a\pmod m$, $a\pmod n$, and $a\pmod{mn}$.
+	\vfill
+	\newpage
+	\item (15 pts) Read the 2-page paper here \url{https://www.ams.org/journals/bull/1922-28-03/S0002-9904-1922-03504-5/S0002-9904-1922-03504-5.pdf}
+		\begin{enumerate}
+			\item Re-state Theorem 1 in your own words.  Is this Theorem true?
+			\vfill
+			\item Re-state Theorem 2 in your own words. Is this Theorem true?
+			\vfill
+			\item Re-state Theorem 3 in your own words. Is this Theorem true?
+			\vfill
+			\item What is the difference between the statements about $x$ having at least 38 and digits and about $x$ having at least 41 digits?
+			\vfill
+			\item Computationally, 38 and 41 digits are not that large. Search around for \textit{Carmichael's Totient Conjecutre} to see what has been proven. Tell me what you find.
+			\vfill
+		\end{enumerate}
+\end{enumerate}
+		
+\end{document}
