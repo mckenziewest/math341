@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🐍 Primitive Roots and Quadratic Residues Notebook",
+	"filename":"Primitive_Elements_and_Quadratic_Residues.ipynb",
+	"modules":["Week 13"],
+	"destination": "notebooks"
+}

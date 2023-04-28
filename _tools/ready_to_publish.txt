@@ -71,6 +71,7 @@
 ..\Chapter_10\Day_1.page
 ..\Chapter_10\Day_2.page
 ..\Chapter_10\prim_roots.slides
+..\Chapter_10\prim_root_notebook.file
 
 ..\webwork\webwork_1.assignment
 ..\webwork\webwork_2.assignment
