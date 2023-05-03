@@ -1,0 +1,475 @@
+\documentclass[t]{beamer}
+
+\subtitle{Order of Integers and Primitive Roots}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	\topics{
+		\item Order of an integer mod $n$
+		\item Primitive Roots
+		\item Primitive Roots mod $p$
+	}{
+		\item Quadratic residues
+		\item The Legendre Symbol
+		\item Quadratic Reciprocity
+	}
+
+
+\begin{frame}[fragile]
+	\frametitle{\fn}
+	\begin{defn}
+		Let $p$ be an odd prime and $\gcd(a,p)=1$.  If the quadratic congruence $x^2\equiv a\pmod p$ has a solution then $a$ is said to be a \emph{quadratic residue of $p$}.  Otherwise $a$ is called a \emph{quadratic nonresidue of $p$}.
+	\end{defn}
+	\begin{recall}
+		We can use Sage to find quadratic residues:
+		\begin{lstlisting}
+sage: quadratic_residues(11)
+[0, 1, 3, 4, 5, 9]\end{lstlisting}
+	\end{recall}
+\end{frame}
+\slide{
+	\begin{exercise}
+		How do quadratic residues fit into the discussion of solving congruence equations of the form\[ax^2+bx+c\equiv 0\pmod p?\]\vskip 1in
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Euler's Criterion (Theorem 9.1)}
+		Let $p$ be an odd prime and $\gcd(a,p)=1$.  Then $a$ is a quadratic residue of $p$ if and only if 	
+		\[a^{(p-1)/2}\equiv 1\pmod p.\]
+	\end{statementblock}
+	\begin{exercise}
+		Show that 3 is a quadratic residue of 23 but a nonresidue mod 31.
+	\end{exercise}
+}
+%\slide{
+%	\begin{statementblock}{Euler's Criterion (Theorem 9.1)}
+%		Let $p$ be an odd prime and $\gcd(a,b)=1$.  Then $a$ is a quadratic residue of $p$ if and only if 	
+%		\[a^{(p-1)/2}\equiv 1\pmod p.\]
+%	\end{statementblock}
+%	\begin{exercise}
+%		Let's talk about the proof
+%		
+%		($\Rightarrow$) Let $a$ be a quadratic residue of $p$.  Let $x_1$ be an integer satisfying $x_1^2\equiv a \pmod p$. Use Fermat's Little Theorem to compute
+%		\[a^{(p-1)/2}\equiv\hspace*{2in}\equiv 1\pmod p.\]
+%		
+%		\vskip .5in
+%		Continued on next slide
+%	\end{exercise}
+%}
+%\slide{
+%	\begin{exercise}		
+%		($\Leftarrow$) Assume $a$ satisfies $a^{(p-1)/2}\equiv 1\pmod p$.  Let $r$ be a primitive root of $p$.  Thus we can write $a\equiv r^k\pmod p$ for some integer $1\leq k\leq p-1$. \fbox{WHY}  Then
+%		\[r^{k(p-1)/2}\equiv\hspace*{2in}\equiv 1\pmod p.\]
+%		Recall that $\ord_p(r)=\blank{.25in}$, and by Theorem 8.1, $\ord_p(r)$ must then divide $k(p-1)/2$. \fbox{WHY}
+%		
+%		Thus $k$ must be even \fbox{WHY}.  Write $k=2j$.  Then 
+%		\[(\blank{.25in})^2\equiv a\pmod p.\]
+%	\end{exercise}
+%}
+\slide{
+	\begin{statementblock}{Corollary}
+		Let $p$ be an odd prime and $\gcd(a,p)=1$.  Then $a$ is a quadratic residue or nonresidue of $p$ according to whether
+		\[a^{(p-1)/2}\equiv 1\pmod p\quad\text{or}\quad a^{(p-1)/2}\equiv -1\pmod p.\]
+	\end{statementblock}
+	\begin{exercise}
+		Is $2$ a quadratic residue of 13?\vskip .5in
+		Is $3$ a quadratic residue of 13?
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Prove the following:
+		
+		\begin{statementblock}{Proposition}
+			 If $a$ is a quadratic residue of the odd prime $p$, then $a$ is not a primitive root of $p$.
+		\end{statementblock}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Prove that if $p=2^k+1$ is prime then every quadratic nonresidue of $p$ is a primitive root of $p$.
+	\end{exercise}
+}
+
+\slide{
+	\vskip -.25in
+	\begin{defn}
+		Let $p$ be an odd prime and let $\gcd(a,p)=1$. The \emph{Legendre symbol $(a/p)$} is defined by
+		\[\left(a/p\right)=\begin{cases}
+			1&\text{if $a$ is a quadratic residue of $p$}\\
+			-1&\text{if $a$ is a quadratic nonresidue of $p$}\\
+		\end{cases}\]
+	\end{defn}
+	\begin{nb}
+		You may also see this in the following forms
+		\[(a/p)=\left(\frac{a}{p}\right)=(a|p).\]
+	\end{nb}
+	\begin{exercise}
+		Compute
+		\enumalph{
+			\item $(1/5)$
+			\item $(9/23)$
+			\item $(-23/59)$
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		What is $(1/p)$?
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Consider $(-1/p)$ for $p=3,5,7,11,13$. Conjecture a rule
+		
+		$(-1/p)=1$ if and only if \underline{\hspace*{1in}}.
+		
+		$$\begin{array}{r|r}
+			p&\left(\frac{-1}{p}\right)\\\hline
+			3&-1\ \mbox{}\\
+			5&1\ \mbox{}\\ 
+			7&-1\ \mbox{}\\
+			11&-1\ \mbox{}\\
+			13&1\ \mbox{}
+		\end{array}$$
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		If $a\equiv b\pmod p$, how do $(a/p)$ and $(b/p)$ compare?
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Let $a$ be an integer with $p\nmid a$.  What is $(a^2/p)$?
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Go back to the Corollary to Euler's Criterion to answer this question.
+		
+		How do $(a/p)$ and $a^{(p-1)/2}$ compare?
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		How do you propose $(a/b)$, $(b/p)$ and $(ab/p)$ compare?
+		
+		Here are some values from which to draw conclusions.
+		\enumalph{
+			\item $(2/7)=1$, $(3/7)=-1$, $(6/7)=-1$
+			\item $(2/7)=1$, $(4/7)=1$, $(8/7)=1$
+			\item $(3/7)=-1$, $(6/7)=-1$, $(18/7)=1$
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Use the fact that
+		\[(a/p) \equiv (a)^{(p-1)/2}\pmod p\]
+		to show that 
+		\[(ab/p) = (a/p)(b/p)\]
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 9.2}
+		Let $p$ be an odd prime and let $a$ and $b$ be integers that are relatively prime to $p$. Then the Legendre symbol has the following properties
+		\enumalph{
+			\item If $a\equiv b\pmod p$, then $(a/p)=(b/p)$.
+			\item $(a^2/p)=1$.
+			\item $(a/p)\equiv a^{(p-1)/2}\pmod p$.
+			\item $(ab/p)=(a/p)(b/p)$.
+			\item $(1/p)=1$ and $(-1/p)=(-1)^{(p-1)/2}$.
+		}
+	\end{statementblock}
+	\begin{statementblock}{Corollary}
+		If $p$ is an odd prime, then 	
+		\[(-1/p)=\begin{cases}
+			1&\text{if }p\equiv 1\pmod 4\\
+			-1&\text{if }p\equiv 3\pmod 4\\
+		\end{cases}\]
+	\end{statementblock}
+}
+\slide{
+	\begin{exa}
+		This theorem is actually quite useful when computing $(a/p)$.
+		
+		Let's compute $(-112/23)$.
+		
+		\bulletize{
+			\item By part (d): $(-112/23)=(-1/23)(112/23)$
+			\item By part (e): $(-112/23)=-(112/23)$
+			\item By part (a): $(-112/23)=-(20/23)$
+			\item By part (d): $(-112/23)=-(4/23)(5/23)$
+			\item By part (b): $(-112/23)=-1\cdot(5/23)$
+		}
+	\end{exa}
+	\begin{exercise}
+		What is $(5/23)$?  What is $(-112/23)$?
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 9.4}
+		If $p$ is an odd prime, then
+		\[\sum_{a=1}^{p-1} (a/p)=0.\]
+		Hence, there are precisely $(p-1)/2$ quadratic residues and $(p-1)/2$ quadratic nonresidues, $1\leq a\leq p-1$, of $p$.
+	\end{statementblock}
+	\begin{exercise}
+		Discuss this Theorem. Why does the first sentence imply the second?
+		
+		No, it's not as obvious as the theorem makes it sound.  But think for a bit what the summation is and what the terms are.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		The quadratic residues of an odd prime $p$ are congruent modulo $p$ to the even powers of a primitive root $r$ of $p$; the quadratic nonresidues are congruent to the odd powers of $r$.
+	\end{statementblock}
+	\begin{exercise}
+		Recall that 2 is a primitive root of 11.  Use this Corollary to classify all of the integers $1\leq a\leq 10$ as quadratic (non)residues of 11.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Gauss's Lemma (Theorem 9.5)}
+		Let $p$ be an odd prime and $\gcd(a,p)=1$.  Let
+		\[S=\left\{a,2a,3a,\dots,\frac{p-1}{2}\cdot a\right\}.\]
+		Let $n$ denote the number of integers in $S$ whose remainder when divided by $p$ is larger than $p/2$.  Then
+		\[(a/p)=(-1)^n.\]
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		I find this Theorem to be very hard to understand as is.  So let's do an example. Let $p=13$ and $a=5$.
+		\enumalph{
+			\item What is $S$?\vskip .5in
+			\item What are the remainders when dividing the integers in $S$ by $p$?
+			\vskip .5in
+			\item How many of these remainders are below $(p-1)/2$?
+			(Find $n$.)\vskip .25in
+			\item What is $(-1)^n$?\vskip .25in
+			\item What is $(5/13)$?
+		}
+	\end{exercise}
+}
+
+\slide{
+	Below is the table of $(p/q)$ values for $3\leq p,q\leq 31$ prime.
+	$$\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		p&3&5&7&11&13&17&19&23&29&31\\\hline
+		3
+		& \cellcolor{white!25}0 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		\\\hline
+		5
+		& \cellcolor{red!25}-1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		\\\hline
+		7
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		\\\hline
+		11
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		\\\hline
+		13
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		\\\hline
+		17
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		\\\hline
+		19
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		\\\hline
+		23
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		\\\hline
+		29
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{white!25}0 
+		& \cellcolor{red!25}-1 
+		\\\hline
+		31
+		& \cellcolor{blue!25}1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{blue!25}1 
+		& \cellcolor{red!25}-1 
+		& \cellcolor{white!25}0 
+		\\\hline
+	\end{array}$$
+}
+%def get_color(p,q):
+%    if kronecker(p,q)==1:
+%        return 'blue'
+%    elif kronecker(p,q)==-1:
+%        return 'red'
+%    else:
+%        return 'white'
+%print("&".join(["p"]+[str(x) for x in range(3,32) if is_prime(x)]+["\\\\\\hline"]))
+%for p in [x for x in range(3,32) if is_prime(x)]:
+%    print(p)
+%    for q in [x for x in range(3,32) if is_prime(x)]:
+%        print(f"& \\cellcolor{{{get_color(p,q)}!25}}{kronecker(p,q)} ")
+%    print("\\\\\\hline")
+
+\slide{
+	\begin{statementblock}{Quadratic Reciprocity}
+		If $p$ and $q$ are distinct odd primes, then
+		\[(p/q)(q/p) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}\]
+	\end{statementblock}
+	\begin{exercise}
+		Re-write this Theorem using $p,q\pmod 4$ to classify $(p/q)(q/p)$.
+	\end{exercise}
+}
+
+
+\slide{\vskip-.35in
+	\begin{block}{\textbf{Why is this true?}}
+		\begin{statementblock}{Gauss's Lemma (Theorem 9.5)}
+			Let $p$ be an odd prime and $\gcd(a,p)=1$.  Let
+			\[S=\left\{a,2a,3a,\dots,\frac{p-1}{2}\cdot a\right\}.\]
+			Let $n$ denote the number of integers in $S$ whose remainder when divided by $p$ is larger than $p/2$.  Then
+			\[(a/p)=(-1)^n.\]
+		\end{statementblock}
+		\begin{center}
+			%\includegraphics[width=1.25in]{images/quad_rec_proof}
+		\end{center}
+	\end{block}
+}
+
+\slide{
+	\begin{statementblock}{Lemma}
+		If $p$ and $q$ are distinct odd primes, then
+		\[(q/p) = (-1)^{\sum_{k=1}^{(p-1)/2}\lfloor ka/p\rfloor}.\]
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Theorem 9.6}
+		If $p$ is an odd prime, then
+		\[(2/p)-\begin{cases}
+			1&\text{if }p\equiv 1\pmod 8\text{ or }p\equiv7\pmod8\\
+			-1&\text{if }p\equiv 3\pmod 8\text{ or }p\equiv5\pmod8\\
+		\end{cases}\]
+	\end{statementblock}
+%	\begin{proof}
+%		Here we notice
+%		\[S = \{1\cdot 2,2\cdot2,3\cdot2,\dots,\frac{p-1}{2}\cdot 2\}.\]
+%		Then
+%		\[n=\frac{p-1}{2}-\left\lfloor\frac{p}{4}\right\rfloor.\]
+%		\begin{exercise}
+%			Compute $\frac{p-1}{2}-\left\lfloor \frac{p}{4}\right\rfloor$ for $p=8k+j$ for $j$ in $\{1,3,5,7\}$.
+%		\end{exercise}
+%	\end{proof}
+}
+\slide{
+	\begin{statementblock}{Theorem 9.7}
+		If $p$ and $2p+1$ are both odd primes, then the integer $(-1)^{(p-1)/2}\cdot 2$ is a primitive root of $2p+1$.
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		Compute $(53/59)$.\vskip .75in\mbox{}
+	\end{exercise}
+	\begin{exercise}
+		Compute $(-23/127)$.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 9.10}
+		If $p\neq 3$ is an odd prime, then
+		\[(3/p)=\begin{cases}
+			1&\text{if }p\equiv \pm 1\pmod{12}\\
+			-1&\text{if }p\equiv \pm 5\pmod{12}
+		\end{cases}\]
+	\end{statementblock}
+}
+%\slide{
+%	\begin{exercise}
+%		Solve the quadratic congruence
+%		\[x^2\equiv 196\pmod{1357}\]
+%	\end{exercise}
+%}
+\end{document}
+

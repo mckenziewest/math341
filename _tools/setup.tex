@@ -1,5 +1,6 @@
 \usepackage{amsthm,amsmath,amsfonts,hyperref,graphicx,color,multicol,soul}
 \usepackage{enumitem,tikz,tikz-cd,setspace,mathtools}
+\usepackage{colortbl}
 
 %%%%%%%%%%
 %Beamer Template Customization
@@ -46,6 +47,40 @@
 		line width = 2pt
 	}
 }
+
+%%%%%%%%%%
+%Listing Setup
+%%%%%%%%%%
+\usepackage{listings}
+\usepackage{caption, floatrow, makecell}%
+\captionsetup{labelfont = sc}
+\setcellgapes{3pt}
+
+\definecolor{backcolour}{RGB}{237,236,230}
+\definecolor{myblue}{RGB}{42,157,189}
+
+\lstdefinestyle{mystyle}{
+	language=Python,
+	keywords=[2]{sage:},
+	alsodigit={:,.,<,>},
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{myblue},
+	keywordstyle=\bfseries\color{Green},
+	keywordstyle=[2]\color{purple},
+	numberstyle=\tiny\color{Gray},
+	stringstyle=\color{Orange},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                   
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
 
 
 %%%%%%%%%%

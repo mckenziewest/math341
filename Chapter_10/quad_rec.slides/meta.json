@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"🔭 Quadratic Residues and Quadratic Reciprocity",
+	"filename":"quadratic_reciprocity.pdf",
+	"modules":["Week 13","Empty Slides"],
+	"destination": "slides"
+}
