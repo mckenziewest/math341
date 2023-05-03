@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\ord}{ord}
+
+\begin{document}
+	Math 341 Homework 10
+	\hfill
+	Name: \underline{\hspace*{2in}}
+	
+	\textbf{Instructions:} This assignment is related to primitive roots, quadratic residues, and quadratic reciprocity.
+\begin{enumerate}
+	\item \begin{enumerate}
+		\item (10 pts) Prove that if $p$ and $q$ are odd primes and $q\mid a^p-1$, then either $q\mid a-1$ or $q=2kp+1$ for some integer $k$.
+		
+			(Hint: $q\mid a^p-1$ if and only if $a^p\equiv 1\pmod q$. What does this say about the $\ord_q(a)$?)
+			\vfill
+		\item (10 pts) Use part (a) to show that if $p$ is an odd prime, then the prime divisors of $2^p-1$ are of the form $2kp+1$.
+			\vfill
+		\item (5 pts) Find the smallest prime divisors of the integers $2^{17}-1$ and $2^{19}-1$.
+			\vskip 1in
+	\end{enumerate}
+	\newpage
+	\item (10 pts) Without using Sage or any other calculator, complete the following. Given that 3 is a primitive root of 43, find
+		\begin{enumerate}
+			\item All positive integers less than 43 having order 6 modulo 43.\vskip 1in
+			\item All positive integers less than 43 having order 21 modulo 43.\vskip 1in
+		\end{enumerate}
+	\item (10 pts) For primes $p>3$, prove that if $r$ is a primitive root, then given $r'$ satisfying $rr'\equiv 1\pmod p$ this value $r'$ is also a primitive root.
+		\vfill 
+	\newpage
+	\item (10 pts) Prove that the quadratic congruence $6x^2+5x+1\equiv 0\pmod p$ has a solution for every prime $p$ even though the equation $6x^2+5x+1=0$ has no solution in the integers.
+	\vfill
+	\item\begin{enumerate}
+		\item  (10 pts) If $p$ is an odd prime and $\gcd(ab,p)=1$, prove that at least one of $a$, $b$, or $ab$ is a quadratic residue of $p$.
+		\vfill
+		\item (5 pts) Let $p$ be any prime. Given $a=2$ and $b=3$, use part (a) to show that there is some $n$ for which $p$ divides $(n^2-2)(n^2-3)(n^2-6)$.\vskip 1in
+	\end{enumerate}
+\end{enumerate}
+		
+\end{document}
