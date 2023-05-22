@@ -92,6 +92,7 @@
 ..\assignments\hw10.assignment
 
 ..\assignments\midterm.assignment
+..\assignments\final.assignment
 
 ..\project\project_description.page
 ..\project\possible_topics.page

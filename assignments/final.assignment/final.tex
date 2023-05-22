@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,color}
+\usepackage[margin=.75in]{geometry}
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\ord}{\operatorname{ord}}
+
+\begin{document}
+	\noindent{\bf Math 341 Final Exam}\hfill Name: \underline{\hspace*{2in}}
+	\section*{Purpose}
+		\begin{itemize}
+			\item Summative assessment on the course.
+			\item Show a strong foundation of creative critical thinking and proof-writing techniques.
+			\item Show an ability to read and understand the basics of a mathematical text.
+		\end{itemize}
+	\section*{Task}
+		\begin{itemize}
+			\item Answer the questions to the best of your ability.
+			\item There is no time limit on the exam other than that it must be submitted by the deadline as listed on CampS, Thursday, May 18 at 11:50 am.
+		\end{itemize}
+	\section*{Criteria}
+		\begin{itemize}
+			\item Full credit will be given to very thoughtful answers where the mathematics is described correctly. You should absolutely be using vocabulary from our course.
+			\item Responses should match your current level within the math program.
+			\item Points will be deducted if you do not use full sentences or proper grammar.
+			\item The computational and proof exercises will be graded using the same scale used for the homework this semester.
+		\end{itemize}
+	\newpage
+	\begin{enumerate}
+		\item This exercise requires you to complete a RSA Decryption with public key $(N,e)=(3233,2299)$.  Do not worry about what these words mean, I will walk you through the steps. Please show all work for this problem.
+		\begin{enumerate}
+			\item (5 pts) Compute $\varphi(N)$, where $\varphi$ represents the Euler-phi function.
+			\vfill
+			\item (5 pts) Use the Euclidean Algorithm to find the values $x$ and $y$ such that
+			\[1 = e\cdot x+\varphi(N)\cdot y.\]
+			(It is a requirement that $\gcd(e,\phi(N))=1$.)
+			\vfill 
+			\item (5 pts) Deduce a value $d$ such that $e\cdot d\equiv 1\pmod{\varphi(N)}$.
+			\vfill 
+			\newpage 
+			\item (10 pts) Prove that if $a$ is an integer, then $a^{ed}\equiv a\pmod N$ for all integers $a$.\\
+			You will receive at most 8 points if you ignore the case of $\gcd(a,N)\neq 1$.
+			\vfill
+			\item (5 pts) Using the correspondence between letters and integers given in the following table and the $(N,e)$ values above, I have encrypted a message. I did this by pairing letters, converting the pair to an integer $a$ using the table, then computing $a^e\pmod N$ for each integer.
+			\begin{center}
+				\begin{tabular}{llll}
+					A=00&H=07&O=14&V=21\\
+					B=01&I=08&P=15&W=22\\
+					C=02&J=09&Q=16&X=23\\
+					D=03&K=10&R=17&Y=24\\
+					E=04&L=11&S=18&Z=25\\
+					F=05&M=12&T=19&{\color{white}Z}=26\\
+					G=06&N=13&U=20
+				\end{tabular}
+			\end{center}
+			The result of my encryption, I send the numbers
+			
+			\[2060, 1341, 1694, 2274, 1868, 1603.\]
+			
+			What was the message I sent? 
+			
+			To be more clear: To encode the pair ``IN'', I would convert ``IN''$\rightarrow 0813$.  I would then compute $813^e=813^{2299}\equiv 790\pmod{3233}$.  Thus the encrypted message I am sending is $790$.  Verify that $790^d\equiv 813\pmod{3233}$.
+			\vfill
+		\end{enumerate}
+	\newpage
+		\item
+			\begin{enumerate}
+				\item (5 pts) Take one homework problem you have worked on this semester that you struggled to understand and solve, and explain how the struggle itself was valuable.
+				\vfill
+				\item (5 pts) In the context of this question, describe the struggle and how you overcame the struggle. You might also discuss whether struggling built aspects of character in you (e.g. endurance, self-confidence, competence to solve new problems) and how these virtues might benefit you in later ventures.
+				\vfill
+			\end{enumerate} 
+		\newpage
+		\item (10 pts) How has your mathematical imagination been enhanced as a result of taking Math 341?  Give at least three examples.
+			\vfill 
+		\item (10 pts) Consider one mathematical idea from the course that you have found beautiful, and explain why it is beautiful to you.  Your answer should: (1) explain the idea in a way that could be understood by a classmate who has taken Calculus II but has not yet Number Theory and (2) address how this beauty is similar to or different from other kinds of beauty that human beings encounter.
+		\vfill
+		\newpage
+		\item (17 pts) Choose one interesting \textbf{proof} problem from the text of medium difficulty that was not assigned. (You should not know how to solve it when you read it.) 
+			\begin{enumerate}
+				\item (2 pts) Write the problem here.
+				\vskip 1in
+				\item (5 pts) Describe why you find it interesting.
+				\vskip 1in
+				\item (10 pts) Then either prove it, or find a solution online and work through it, using your own understanding to critique that solution and improve it. 
+				\vfill
+			\end{enumerate}
+		\newpage	
+		\item (10 pts) Re-read the paper from the first homework assignment, \textit{On the Brocard--Ramanujan Diophantine Equation $n!+1=m^2$}, \begin{center}
+			\url{https://link.springer.com/article/10.1023/A:1009873805276}. 
+		\end{center}
+		Reflect on how your understanding of this paper has changed since you first read it. Include discussion related to your answer from the first assignment about what you did not understand, to the vocabulary (integral solutions, Diophantine equations, ...) we've learned through the course of this semester, and to topics we didn't discuss (Szpiro's conjecture, the ABC Conjecture,...).
+		\newpage
+		\item (25 pts) After briefly scanning the number theory research papers listed, select one of them to read and answer the questions (\ref{first_part})-(\ref{last_part}). Note that the papers vary in length, you aren't going to have to read every detail to answer the questions so length should absolutely not be a factor in your choosing.
+		\begin{itemize}
+			\item Axler--Le\ss mann, \textit{On the First k-Ramanujan Prime}\\ \url{http://proxy.uwec.edu/login?url=https://www.jstor.org/stable/10.4169/amer.math.monthly.124.7.642}
+			\item Bos--Halderman--Heninger--Moore--Naehrig--Wustrow, \textit{Elliptic Curve Cryptography in Practice}\\
+			\url{https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/734.pdf}
+			\item Cooper--Hirschhorn, \textit{On the number of primitive representations of integers as sums of squares}\\ \url{https://link.springer.com/content/pdf/10.1007/s11139-006-0240-6.pdf}
+			\item Lagarias--Sloane, \textit{Approximate Squaring}\\
+			\url{https://doi.org/10.1080/10586458.2004.10504526}
+			\item Rubinstein--Sarnak, \textit{Chebyshev's Bias}\\
+			\url{https://projecteuclid.org/journals/experimental-mathematics/volume-3/issue-3/Chebyshevs-bias/em/1048515870.full}
+			\item Shurman, \textit{Zolotarev's Proof of Quadratic Reciprocity}\\
+			\url{http://people.reed.edu/~jerry/361/lectures/qrz.pdf}
+			\item Steinlein, \textit{Fermat's Little Theorem and Gauss Congruence: Matrix Versions and Cyclic Permutations} \url{http://proxy.uwec.edu/login?url=https://www.jstor.org/stable/10.4169/amer.math.monthly.124.6.548}
+			\item Wall, \textit{Terminating Decimals in the Cantor Ternary Set}\\
+			\url{https://www.fq.math.ca/Scanned/28-2/wall.pdf}
+		\end{itemize}
+		\begin{enumerate}
+			\item\label{first_part} What paper did you choose to read and why? This should go beyond the surface level, what about the topic of the paper did you like when you glanced?
+			\vfill
+			\newpage
+			\item What is the main result of the paper?
+			\vfill
+			\item What is one striking equation or table in the paper and what is striking about it?
+			\vfill
+			\item How does the paper relate to the content of our course?
+			\vfill
+			\item\label{last_part} What are you inspired to learn more about after reading the paper?
+			\vfill		
+		\end{enumerate}
+	\end{enumerate}
+\end{document}
