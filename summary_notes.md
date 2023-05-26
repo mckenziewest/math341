@@ -111,5 +111,14 @@ Therefore, there is some assumption as to proof-writing abilities.
   * Day 3: Introduce Fermat's Little Theorem and do many examples. Finish by discussing pseudoprimes.
   * Day 4: Discuss Wilson's Theorem.
 
-### Chapter 8 (n days)
+### Chapter 8 (1 day)
 * Integers mod $n$
+* Materials
+    * Slides [Chapter_8/integers_mod_n.slides/integers_mod_n.tex]()
+* Content by Day
+    * Day 1: Integers as a ring and unit groups
+
+### Chapter 9 (n days)
+* Euler phi
+
+### Chapter 10
