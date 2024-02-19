@@ -10,7 +10,7 @@ import subprocess
 
 def tex_if_needed(filenames='ready_to_publish.txt',verbose=True):
     with open(filenames) as file:
-    	ready_files = file.read().split('\n')
+        ready_files = file.read().split('\n')
         
     for directory in [rf for rf in ready_files if rf != '']:
         items = os.listdir(directory)
